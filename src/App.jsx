@@ -1,12 +1,15 @@
-
+import Navbar from './sections/Navbar'
+import Homepage from './sections/Homepage'
 import './App.css'
 
 function App() {
   
 
-  return (
-    
-    <></>
+  return ( 
+    <>
+    <Navbar/>
+    <Homepage/>
+    </>
   )
 }
 
