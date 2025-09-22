@@ -1,0 +1,11 @@
+
+.header {
+  background-color: #333; 
+  color: #fff; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 2px 0; 
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 14px; 
+  margin-bottom: 50px;
+}
+
