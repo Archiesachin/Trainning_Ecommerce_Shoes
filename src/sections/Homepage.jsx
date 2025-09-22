@@ -8,7 +8,6 @@ const Homepage = ({ interval = 3000 }) => {
     "./images/homepage/hero-image-red.png",
     "./images/homepage/hero-image-blue.png",
     "./images/homepage/hero-image-green.png"
-    // Add more image URLs as needed
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +21,7 @@ const Homepage = ({ interval = 3000 }) => {
   }, [images.length, interval]);
 
   return (
-    <div style={{ position: "relative", width: "100%", overflow: "hidden" }}>
+    <div style={{ position: "relative", width: "100%", overflow: "hidden" , marginTop:'-71px'}}>
       {images.map((image, index) => (
         <img
           key={index}
