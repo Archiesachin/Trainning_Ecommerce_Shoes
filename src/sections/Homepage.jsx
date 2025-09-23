@@ -21,20 +21,61 @@ const Homepage = ({ interval = 3000 }) => {
   }, [images.length, interval]);
 
   return (
-    <div style={{ position: "relative", width: "100%", overflow: "hidden" , marginTop:'-71px'}}>
+    <>
+    <div className='hero-container'>
       {images.map((image, index) => (
         <img
           key={index}
           src={image}
           alt={`Slide ${index}`}
           style={{
-            display: index === currentIndex ? "block" : "none",
-            width: "100%",
-            height: "auto",
-          }}
+            display: index === currentIndex ? "block" : "none"}}
+          className='slideshow-img'
         />
       ))}
+      <div className="text-part">
+      <p>The new wool cruiser collection</p>
+      <h4>Cruise in color</h4>
+      <div className="buttons">
+        <button>Shop Men</button>
+        <button>Shop Women</button>
+      </div>
+      </div>  
     </div>
+
+    <div className="category-container">
+      <div className="category-box">
+        <img src="./images/homepage/category-bestseller.png" alt="" />
+        <div className="button-box">
+          <button>Bestseller</button>
+          <button>Shop Men</button>
+          <button>Shop Women</button>
+        </div>
+      </div>
+       <div className="category-box">
+        <img src="./images/homepage/category-men.png" alt="" />
+          <div className="button-box">
+            <button>Mens</button>
+            <button>Shop Men</button>
+          </div>
+      </div>
+       <div className="category-box">
+        <img src="./images/homepage/category-women.png" alt="" />
+           <div className="button-box">
+            <button>Womens</button>
+            <button>Shop Women</button>
+          </div>
+      </div>
+       <div className="category-box">
+        <img src="./images/homepage/category-cruisers.png" alt="" />
+          <div className="button-box">
+          <button>Cruiser</button>
+          <button>Shop Men</button>
+          <button>Shop Women</button>
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 
