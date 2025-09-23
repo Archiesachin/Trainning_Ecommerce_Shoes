@@ -26,13 +26,13 @@ const themes = ['green', 'yellow', 'grey', 'blue'];
 const GridHomepage = () => {
   const [themeIndex, setThemeIndex] = useState(0);
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setThemeIndex((prev) => (prev + 1) % themes.length);
-//     }, 5000); // Change theme every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setThemeIndex((prev) => (prev + 1) % themes.length);
+    }, 5000); // Change theme every 5 seconds
 
-//     return () => clearInterval(interval);
-//   }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   const currentTheme = themes[themeIndex];
   const images = imageSets[currentTheme];
