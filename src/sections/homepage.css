@@ -73,6 +73,13 @@ button{
 
 .category-box{
     border-radius: 30px;
+    transition: 0.3s ease-in;
+    height: 400px;
+    width: 300px;
+}
+
+.category-box:hover{
+    border-radius: 45%;
 }
 
 .button-box{
@@ -85,3 +92,8 @@ button{
     align-items: center;
 
 }
+
+.button-invisible{
+    display: none;
+}
+
