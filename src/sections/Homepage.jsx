@@ -48,30 +48,30 @@ const Homepage = ({ interval = 3000 }) => {
         <img src="./images/homepage/category-bestseller.png" alt="" />
         <div className="button-box">
           <button>Bestseller</button>
-          <button>Shop Men</button>
-          <button>Shop Women</button>
+          <button className='button-invisible'>Shop Men</button>
+          <button className='button-invisible'>Shop Women</button>
         </div>
       </div>
        <div className="category-box">
         <img src="./images/homepage/category-men.png" alt="" />
           <div className="button-box">
             <button>Mens</button>
-            <button>Shop Men</button>
+            <button className='button-invisible'>Shop Men</button>
           </div>
       </div>
        <div className="category-box">
         <img src="./images/homepage/category-women.png" alt="" />
            <div className="button-box">
             <button>Womens</button>
-            <button>Shop Women</button>
+            <button className='button-invisible'>Shop Women</button>
           </div>
       </div>
        <div className="category-box">
         <img src="./images/homepage/category-cruisers.png" alt="" />
           <div className="button-box">
           <button>Cruiser</button>
-          <button>Shop Men</button>
-          <button>Shop Women</button>
+          <button className='button-invisible'>Shop Men</button>
+          <button className='button-invisible'>Shop Women</button>
         </div>
       </div>
     </div>
