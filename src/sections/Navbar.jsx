@@ -7,6 +7,7 @@ const Navbar = () => {
   return (
     <nav>
         <div className="navbar">
+            <div className="nav-part1">
             <div className="logo">
                 <img src="./images/logo.jpeg" alt="logo-img" />
             </div>
@@ -17,7 +18,10 @@ const Navbar = () => {
                     <li>New Arrivals</li>
                 </ul>
             </div>
-             <div className="nav-links">
+            </div>
+
+            <div className="nav-part2">
+                <div className="nav-links">
                 <ul>
                     <li>Our Stores</li>
                     <li>Rerun</li>
@@ -28,6 +32,9 @@ const Navbar = () => {
                 <FaRegUser/>
                 <BsCart3/>
             </div>
+            </div>
+            
+             
         </div>
     </nav>
   )

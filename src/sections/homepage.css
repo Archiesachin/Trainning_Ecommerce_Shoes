@@ -2,4 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.hero-container{
+    position: relative;
+    width: 97%;
+    height: 530px;
+    overflow: hidden ;
+    margin:-68px 20px 30px 20px;
+    border-radius: 20px;
+}
+
+.slideshow-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-part{
+    position: absolute;
+    top: 300px;
+    right: 40px;
+    color: white;
+    padding: 30px;
+    text-align: right;
+}
+
+.text-part p{
+    font-size: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.text-part h4{
+    font-size: 25px;
+    padding: 0 15px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.buttons{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding-top: 15px;
+}
+
+button{
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.category-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.category-box img{
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.category-box{
+    border-radius: 30px;
+}
+
+.button-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: 270px;
+    justify-content: center;
+    align-items: center;
+
 }
