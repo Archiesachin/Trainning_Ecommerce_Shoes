@@ -3,10 +3,10 @@ import Navbar from './sections/Navbar'
 import Homepage from './sections/Homepage'
 import Header from './components/Header'
 import Footer from './components/footer'
-import GridHomepage from './components/gridHomepage'
+import Homeproduct from './Homeproduct';
+import ProductCard from './components/ProductCard';
+import './App.css';
 
-import './App.css'
-import Collection from './components/Collection'
 
 function App() {
   
@@ -18,9 +18,13 @@ function App() {
     <Navbar/>
     <Homepage/>
     <Footer />
-
+    <div className="App">
+      {Homeproduct.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
     </>
   )
 }
 
-export default App
+export default App;
