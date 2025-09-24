@@ -1,0 +1,63 @@
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    margin: 20px;
+    height: 100%;
+}
+
+.collection-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.collection-image{
+    width: 100%;
+    object-fit: cover;
+    filter:brightness(70%);
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover .collection-image{
+    transform: scale(1.05);
+}
+
+.collection-text{
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+    color:#fff;
+    max-width: 80%;
+}
+.collection-text h2{
+    margin:0.5rem;
+    font-size: 1.5rem;
+}   
+
+.collection-text p{
+    margin:1rem;
+    font-size: 0.9rem;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+button:hover{
+    background-color: #f1f1f1;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.8rem
+}

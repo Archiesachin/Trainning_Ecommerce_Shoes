@@ -1,6 +1,9 @@
 import {useEffect, useState} from 'react'
 import './homepage.css'
 import CategoryHomepage from '../components/CategoryHomepage';
+import Collection from '../components/Collection';
+import GridHomepage from '../components/gridHomepage';
+
 
 
 const Homepage = ({ interval = 3000 }) => {
@@ -47,8 +50,11 @@ const Homepage = ({ interval = 3000 }) => {
       </div>  
     </div>
 
+
 <CategoryHomepage/>
-   
+<GridHomepage />
+<Collection />
+
     </>
   );
 };
