@@ -6,6 +6,7 @@ import Footer from './components/footer'
 import GridHomepage from './components/gridHomepage'
 
 import './App.css'
+import Collection from './components/Collection'
 
 function App() {
   
@@ -16,8 +17,7 @@ function App() {
        <Header />
     <Navbar/>
     <Homepage/>
-      <GridHomepage />
-      <Footer />
+    <Footer />
 
     </>
   )

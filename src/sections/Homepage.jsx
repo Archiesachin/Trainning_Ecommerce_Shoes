@@ -1,5 +1,7 @@
 import {useEffect, useState} from 'react'
 import './homepage.css'
+import Collection from '../components/Collection';
+import GridHomepage from '../components/gridHomepage';
 
 
 const Homepage = ({ interval = 3000 }) => {
@@ -75,6 +77,8 @@ const Homepage = ({ interval = 3000 }) => {
         </div>
       </div>
     </div>
+    <GridHomepage />
+    <Collection />
     </>
   );
 };
