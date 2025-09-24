@@ -4,14 +4,15 @@
   grid-template-columns: 50% 30% 20%;  
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
-  width: 100vw;        /* Full viewport width */
-  margin: 0;
+  width: 95vw;        /* Full viewport width */
+  margin: 0 20px;
   padding: 10px;
   box-sizing: border-box;
   transition: background 0.5s;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  
 }
 
 .item-1 {
@@ -63,8 +64,4 @@
   display: block;
 }
 
-/* Theme backgrounds */
-.grid-container.green { background: #e0f7e9; }
-.grid-container.yellow { background: #fff9e0; }
-.grid-container.grey { background: #f0f0f0; }
-.grid-container.blue { background: #e0f0ff; }
+
