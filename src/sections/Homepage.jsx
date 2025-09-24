@@ -1,8 +1,12 @@
 import {useEffect, useState} from 'react'
 import './homepage.css'
+import CategoryHomepage from '../components/CategoryHomepage';
 
 
 const Homepage = ({ interval = 3000 }) => {
+
+
+
   // Define your images here
   const images = [
     "./images/homepage/hero-image-red.png",
@@ -43,38 +47,8 @@ const Homepage = ({ interval = 3000 }) => {
       </div>  
     </div>
 
-    <div className="category-container">
-      <div className="category-box">
-        <img src="./images/homepage/category-bestseller.png" alt="" />
-        <div className="button-box">
-          <button>Bestseller</button>
-          <button className='button-invisible'>Shop Men</button>
-          <button className='button-invisible'>Shop Women</button>
-        </div>
-      </div>
-       <div className="category-box">
-        <img src="./images/homepage/category-men.png" alt="" />
-          <div className="button-box">
-            <button>Mens</button>
-            <button className='button-invisible'>Shop Men</button>
-          </div>
-      </div>
-       <div className="category-box">
-        <img src="./images/homepage/category-women.png" alt="" />
-           <div className="button-box">
-            <button>Womens</button>
-            <button className='button-invisible'>Shop Women</button>
-          </div>
-      </div>
-       <div className="category-box">
-        <img src="./images/homepage/category-cruisers.png" alt="" />
-          <div className="button-box">
-          <button>Cruiser</button>
-          <button className='button-invisible'>Shop Men</button>
-          <button className='button-invisible'>Shop Women</button>
-        </div>
-      </div>
-    </div>
+<CategoryHomepage/>
+   
     </>
   );
 };
