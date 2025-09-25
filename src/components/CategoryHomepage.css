@@ -31,10 +31,13 @@
     width: 150px;
     border-radius: 20px;
     border: 1px solid white;
+    padding: 10px;
 }
 
 .button-invisible:hover{
     color: black;
+    background-color: white;
+    cursor: pointer;
 }
 
 .button-box{
