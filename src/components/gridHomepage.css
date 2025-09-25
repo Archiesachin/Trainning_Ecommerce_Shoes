@@ -47,6 +47,7 @@
 }
 
 .grid-item {
+  position: relative;
   overflow: hidden;
   display: flex;
   align-items: stretch;
@@ -55,6 +56,73 @@
   width: 100;
   border-radius: 20px;
 
+}
+
+.main-overlay{
+  position: absolute;
+  top: 38%;
+  left: 7%;
+  transform: translateY(-38%);
+  z-index: 2;
+  width: 70%;
+  color: #fff;
+  text-align: left;
+  pointer-events: none;
+}
+
+.main-header {
+  font-size: 1.04rem;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.main-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', serif;
+}
+
+.main-btns {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.shop-btn {
+  pointer-events: auto; /* buttons must be clickable */
+  padding: 12px 28px;
+  background: #fff;
+  border: none;
+  border-radius: 28px;
+  font-size: 1.06rem;
+  color: #222;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.17);
+  transition: background 0.16s, color 0.16s;
+}
+
+.shop-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Overlay for top-right grid item */
+.overlay-topright {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 100px;
+  pointer-events: none;
 }
 
 .grid-item img {
