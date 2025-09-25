@@ -5,7 +5,7 @@ import Collection from '../components/Collection';
 import GridHomepage from '../components/gridHomepage';
 import ProductCard from '../components/ProductCard'
 import Homeproduct from '../Homeproduct';
-
+import Chat from '../components/chat';
 
 
 const Homepage = ({ interval = 3000 }) => {
@@ -59,6 +59,7 @@ const Homepage = ({ interval = 3000 }) => {
                 ))}
               </div>
 <Collection />
+<Chat />
 
     </>
   );
