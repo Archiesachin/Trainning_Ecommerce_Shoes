@@ -8,9 +8,6 @@ import GridHomepage from '../components/gridHomepage';
 
 const Homepage = ({ interval = 3000 }) => {
 
-
-
-  // Define your images here
   const images = [
     "./images/homepage/hero-image-red.png",
     "./images/homepage/hero-image-blue.png",
@@ -44,8 +41,8 @@ const Homepage = ({ interval = 3000 }) => {
       <p>The new wool cruiser collection</p>
       <h4>Cruise in color</h4>
       <div className="buttons">
-        <button>Shop Men</button>
-        <button>Shop Women</button>
+        <button className='button-homepage'>Shop Men</button>
+        <button className='button-homepage'>Shop Women</button>
       </div>
       </div>  
     </div>
