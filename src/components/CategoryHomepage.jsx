@@ -13,7 +13,7 @@ function CategoryBoxBestseller() {
     >
       <img src="./images/homepage/category-bestseller.png" alt="" />
       <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
-        <button>Bestseller</button>
+        <button style={{ border: isHover ? "none" : "1px solid white",background:'none' }}>Bestseller</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Men
         </button>
@@ -36,7 +36,7 @@ function CategoryBoxMen() {
     >
       <img src="./images/homepage/category-men.png" alt="" />
       <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
-        <button>Mens</button>
+        <button style={{ border: isHover ? "none" : "1px solid white" ,background:'none' }}>Mens</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Men
         </button>
@@ -56,7 +56,7 @@ function CategoryBoxWomen() {
     >
       <img src="./images/homepage/category-women.png" alt="" />
       <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
-        <button>Womens</button>
+        <button style={{ border: isHover ? "none" : "1px solid white" ,background:'none'}}>Womens</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Women
         </button>
@@ -76,7 +76,7 @@ function CategoryBoxCruiser() {
     >
       <img src="./images/homepage/category-cruisers.png" alt="" />
       <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
-        <button>Cruiser</button>
+        <button style={{ border: isHover ? "none" : "1px solid white", background:'none' }}>Cruiser</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Men
         </button>

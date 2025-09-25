@@ -33,7 +33,7 @@
     border: 1px solid white;
 }
 
-.button-box button:hover{
+.button-invisible:hover{
     color: black;
 }
 
