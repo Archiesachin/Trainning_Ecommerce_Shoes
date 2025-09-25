@@ -9,6 +9,7 @@ import ProductCard from './components/ProductCard';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
+import Women from './sections/Women';
 function App() {
   return (
     <Router>
@@ -48,6 +49,16 @@ function App() {
         <Route path="/women" element={<Women />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
         */}
+
+        <Route 
+          path="/Women" 
+          element={
+            <>
+              <Women />
+              <Footer />
+            </>
+          } 
+        />
       </Routes>
     </Router>
   );
