@@ -42,9 +42,10 @@ nav{
     height: 50px;
 }
 
-.nav-links ul li{
+.nav-links ul a{
     text-decoration: none;
     list-style: none;
+    color: black;
 }
 
 .nav-links ul, .nav-options{

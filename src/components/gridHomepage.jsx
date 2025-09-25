@@ -39,11 +39,41 @@ const GridHomepage = () => {
 
   return (
     <div className={`grid-container ${currentTheme}`}>
-      {images.map((imgSrc, idx) => (
-        <div className={`grid-item item-${idx + 1}`} key={idx}>
-          <img src={imgSrc} alt={`Grid ${currentTheme} ${idx + 1}`} />
-        </div>
-      ))}
+      {images.map((imgSrc, idx) => {
+        // Overlay for main grid item
+        if (idx === 0) {
+          return (
+            <div className="grid-item item-1" key={idx}>
+              <img src={imgSrc} alt={`Grid ${currentTheme} ${idx + 1}`} />
+              <div className="main-overlay">
+                <div className="main-header">THE NEW WOOL CRUISER COLLECTION</div>
+                <div className="main-title">Colors of Expression</div>
+                <div className="main-btns">
+                  <button className="shop-btn">SHOP MEN</button>
+                  <button className="shop-btn">SHOP WOMEN</button>
+                </div>
+              </div>
+            </div>
+          );
+        }
+        // Overlay for top-right grid item
+        if (idx === 1) {
+          return (
+            <div className="grid-item item-2" key={idx}>
+              <img src={imgSrc} alt={`Grid ${currentTheme} ${idx + 1}`} />
+              <div className="overlay overlay-topright">
+                Allbirds partnered with Pantone to curate an exclusive palette of five colors that celebrate self-expression.
+              </div>
+            </div>
+          );
+        }
+        // All other grid items: just the image
+        return (
+          <div className={`grid-item item-${idx + 1}`} key={idx}>
+            <img src={imgSrc} alt={`Grid ${currentTheme} ${idx + 1}`} />
+          </div>
+        );
+      })}
     </div>
   );
 };

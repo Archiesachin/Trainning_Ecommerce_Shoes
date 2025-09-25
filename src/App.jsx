@@ -22,12 +22,6 @@ function App() {
           element={
             <>
               <Homepage />
-              <div className="App">
-                {Homeproduct.map(product => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-              <Footer />
             </>
           } 
         />
@@ -38,12 +32,21 @@ function App() {
           element={
             <>
               <Men />
-              <Footer />
             </>
           } 
         />
 
+
+
+        {/* Add similar routes for other sections as you build them */}
+        {/* Example: 
+        <Route path="/women" element={<Women />} />
+        <Route path="/new-arrivals" element={<NewArrivals />} />
+        */}
+
+
       </Routes>
+      <Footer/>
     </Router>
   );
 }
