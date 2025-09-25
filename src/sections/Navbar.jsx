@@ -2,7 +2,7 @@ import React from 'react'
 import { FaRegUser } from 'react-icons/fa6';
 import { BsCart3 } from 'react-icons/bs';
 import './Navbar.css'
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav>
@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className="nav-links">
                 <ul>
-                    <li>Mens</li>
+                   <Link to="/men">Mens</Link>
                     <li>Womens</li>
                     <li>New Arrivals</li>
                 </ul>
