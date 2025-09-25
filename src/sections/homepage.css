@@ -50,12 +50,18 @@
     padding-top: 15px;
 }
 
-button{
+.button-homepage{
     padding: 10px;
     font-size: 12px;
     border-radius: 30px;
     border: none;
     font-weight: bold;
+    width: 100px;
+}
+
+.button-homepage:hover{
+    color: white;
+    background-color: rgb(56, 56, 56);
 }
 
 
