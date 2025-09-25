@@ -36,11 +36,14 @@ function App() {
           } 
         />
 
+
+
         {/* Add similar routes for other sections as you build them */}
         {/* Example: 
         <Route path="/women" element={<Women />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
         */}
+
 
       </Routes>
       <Footer/>
