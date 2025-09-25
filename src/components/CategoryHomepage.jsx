@@ -12,7 +12,7 @@ function CategoryBoxBestseller() {
       onMouseLeave={() => setIsHover(false)}
     >
       <img src="./images/homepage/category-bestseller.png" alt="" />
-      <div className="button-box">
+      <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
         <button>Bestseller</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Men
@@ -35,7 +35,7 @@ function CategoryBoxMen() {
       onMouseLeave={() => setIsHover(false)}
     >
       <img src="./images/homepage/category-men.png" alt="" />
-      <div className="button-box">
+      <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
         <button>Mens</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Men
@@ -55,7 +55,7 @@ function CategoryBoxWomen() {
       onMouseLeave={() => setIsHover(false)}
     >
       <img src="./images/homepage/category-women.png" alt="" />
-      <div className="button-box">
+      <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
         <button>Womens</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Women
@@ -75,7 +75,7 @@ function CategoryBoxCruiser() {
       onMouseLeave={() => setIsHover(false)}
     >
       <img src="./images/homepage/category-cruisers.png" alt="" />
-      <div className="button-box">
+      <div className="button-box" style={{ bottom: isHover ? "250px" : "200px" }}>
         <button>Cruiser</button>
         <button className="button-invisible" style={{ display: isHover ? "block" : "none" }}>
           Shop Men
