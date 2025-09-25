@@ -22,12 +22,6 @@ function App() {
           element={
             <>
               <Homepage />
-              <div className="App">
-                {Homeproduct.map(product => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-              <Footer />
             </>
           } 
         />
@@ -38,7 +32,6 @@ function App() {
           element={
             <>
               <Men />
-              <Footer />
             </>
           } 
         />
@@ -48,7 +41,9 @@ function App() {
         <Route path="/women" element={<Women />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
         */}
+
       </Routes>
+      <Footer/>
     </Router>
   );
 }
