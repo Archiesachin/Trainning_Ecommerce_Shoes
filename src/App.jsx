@@ -44,7 +44,6 @@ function App() {
           element={
             <>
               <Women />
-              <Footer />
             </>
           } 
         />
