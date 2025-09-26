@@ -36,6 +36,15 @@ function App() {
           } 
         />
 
+<<<<<<<<< Temporary merge branch 1
+        {/* Add similar routes for other sections as you build them */}
+        {/* Example: 
+        <Route path="/women" element={<Women />} />
+        <Route path="/new-arrivals" element={<NewArrivals />} />
+        */}
+
+=========
+>>>>>>>>> Temporary merge branch 2
       </Routes>
       <Footer/>
     </Router>
