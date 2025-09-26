@@ -37,12 +37,20 @@ function App() {
           } 
         />
 
+<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+=======
+>>>>>>> 147de839abe95b0d18f3cb8b64d7b14b540a0f4c
         {/* Add similar routes for other sections as you build them */}
         {/* Example: 
         <Route path="/women" element={<Women />} />
         <Route path="/new-arrivals" element={<NewArrivals />} />
         */}
 
+<<<<<<< HEAD
+=========
+>>>>>>>>> Temporary merge branch 2
+=======
         <Route 
           path="/Women" 
           element={
@@ -53,6 +61,7 @@ function App() {
           } 
         />
         
+>>>>>>> 147de839abe95b0d18f3cb8b64d7b14b540a0f4c
       </Routes>
       <Footer/>
     </Router>
