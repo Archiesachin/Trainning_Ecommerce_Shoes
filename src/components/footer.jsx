@@ -7,8 +7,11 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-section">
           <h4>SUBSCRIBE TO OUR EMAILS</h4>
-          <input type="email" placeholder="Email Address" />
-          <button>Sign Up</button>
+          <div className="input-field">
+            <input type="email" placeholder="Email Address" />
+            <button>Sign Up</button>
+          </div>
+          
         </div>
         <div className="footer-section">
           <h4>HELP</h4>
