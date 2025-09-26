@@ -10,7 +10,11 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
 import Women from './sections/Women';
+import New from './sections/New';
+import SignUp from './sections/SignUp';
+
 function App() {
+  
   return (
     <Router>
       <Header />
@@ -36,16 +40,42 @@ function App() {
         />
 
 
+        {/* Add similar routes for other sections as you build them */}
+        {/* Example: 
+        <Route path="/women" element={<Women />} />
+        <Route path="/new-arrivals" element={<NewArrivals />} />
+        */}
+
+
         <Route 
           path="/Women" 
           element={
             <>
               <Women />
-              <Footer />
+            </>
+          } 
+        />
+        <Route 
+          path="/signup" 
+          element={
+            <>
+              <SignUp />
             </>
           } 
         />
         
+
+        <Route 
+          path="/New" 
+          element={
+            <>
+              <New />
+            </>
+          } 
+        />
+          
+      
+
       </Routes>
       <Footer/>
     </Router>

@@ -6,10 +6,7 @@
   padding: 32px 0 80px 0;
   font-family: 'Inter', Arial, sans-serif;
 }
-nav{
-  display:flex;
-  justify-content: flex-start; 
-}
+
 .men-breadcrumb {
   font-size: 12px;
   margin-bottom: 22px;
