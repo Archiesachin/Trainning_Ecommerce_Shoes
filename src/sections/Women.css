@@ -1,10 +1,29 @@
- 
+@font-face {
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+  src: url('/fonts/Calvino-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+  src: url('/fonts/Ekster-Regular-BF63c76121469b8.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('/fonts/FUTURAMEDIUM.TTF') format('truetype');
+  font-family: 'Ekster-Regular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 *{
-font-family: Maison Neue,Helvetica,Arial,sans-serif;
+
+font-family: Calvino-Regular-trial, Arial, sans-serif;
 }
 .women-section-bg {
   background: #ece8df;
-  min-height: 100vh;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   padding: 32px 0 80px 0;
   font-family: 'Inter', Arial, sans-serif;
 }
@@ -12,6 +31,7 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
 .women-breadcrumb {
   font-size: 12px;
   margin-bottom: 22px;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   color: #757575;
   letter-spacing: 0.01em;
   margin-left:30px;
@@ -28,11 +48,14 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
   font-weight: 400;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
 }
 .women-desc {
   margin-left: 30px;
   margin-bottom: 30px;
   color: #757575;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-size: 14px;
   margin-top: 6px;
 }
@@ -49,7 +72,9 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
   padding: 12px 16px;
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;}
+  overflow: hidden;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+}
 .women-filter {
   display: flex;
   align-items: center;
@@ -61,6 +86,7 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
   height:50px;
 }
 .women-filter-icon {
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   background: #ebe6db;
   border-radius: 50%;
   display: inline-flex;
@@ -70,6 +96,7 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
   height: 36px;
   font-size: 20px;
   margin-right: 14px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   box-shadow: 0 1px 5px rgba(80, 70, 40, 0.08);
 }
 .women-product-count {
@@ -132,6 +159,7 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
   height:200px;
   position: relative;
   margin: 0 16px 0 14px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
 }
 .promo-content {
   z-index: 2;
@@ -237,6 +265,7 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
 }
  
 .product-price {
+  font-family: 'Futura-Medium', Arial, sans-serif;
   font-size: 1.09rem;
   margin-top: 4px;
   font-weight: 500;

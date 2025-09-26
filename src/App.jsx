@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 import Navbar from './sections/Navbar';
 import Homepage from './sections/Homepage';
 import Header from './components/Header';
@@ -10,17 +11,18 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
 import Women from './sections/Women';
-
 import New from './sections/New';
 import SignUp from './sections/SignUp';
+import Chat from './components/chat';
 
 
 function App() {
   
   return (
     <Router>
-      <Header />
-      <Navbar />
+  <Header />
+  <Navbar />
+  <Chat />
       
       <Routes>
         <Route 
