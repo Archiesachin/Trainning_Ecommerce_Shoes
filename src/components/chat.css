@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 32px;
   right: 32px;
-  z-index: 9999;
+  z-index: 3000; /* sit below the cart drawer which uses 5001 */
   background: #222;
   color: #fff;
   padding: 1rem 2rem;
@@ -28,7 +28,7 @@
   background: #fff;
   border-radius: 16px 16px 8px 8px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-  z-index: 10000;
+  z-index: 3000; /* below cart drawer */
   animation: slideIn 0.25s;
   display: flex;
   flex-direction: column;
@@ -110,5 +110,21 @@
     right: 2vw;
     font-size: 1rem;
     padding: 0.8rem 1.3rem;
+  }
+}
+
+/* When cart is open, shift chat UI left so it doesn't overlap the cart drawer */
+.chat-button.cart-open {
+  right: calc(32px + 420px); /* shift left by drawer width + gap (400 + 20) */
+}
+.chat-popup.cart-open {
+  right: calc(32px + 420px);
+}
+
+/* On mobile, hide chat when cart is open (cart becomes bottom-sheet) */
+@media (max-width: 720px) {
+  .chat-button.cart-open,
+  .chat-popup.cart-open {
+    display: none;
   }
 }

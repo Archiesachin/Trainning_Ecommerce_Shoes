@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 import Navbar from './sections/Navbar';
 import Homepage from './sections/Homepage';
 import Header from './components/Header';
@@ -12,13 +13,17 @@ import Men from './sections/Men';
 import Women from './sections/Women';
 import New from './sections/New';
 import SignUp from './sections/SignUp';
+import CartDrawer from './components/CartDrawer';
+import { CartProvider, useCart } from './components/CartContext.jsx';
 
 function App() {
   
   return (
+     <CartProvider>
     <Router>
       <Header />
       <Navbar />
+      <CartDrawer />
       
       <Routes>
         <Route 
@@ -79,6 +84,7 @@ function App() {
       </Routes>
       <Footer/>
     </Router>
+    </CartProvider>
   );
 }
 
