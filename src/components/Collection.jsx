@@ -1,6 +1,6 @@
 import React from 'react'
 import './collection.css'
-
+ 
 const Collection = () => {
   return (
     <div className='collection-container'>
@@ -14,7 +14,7 @@ const Collection = () => {
            <button>Learn More</button>
         </div>
       </div>
-
+ 
        <div className="collection-card">
         <img src="./images/homepage/collection-2.jpeg" alt="" />
         <div className='collection-text'>
@@ -26,7 +26,7 @@ const Collection = () => {
           <button>Shop Women</button>
         </div>
       </div>
-
+ 
        <div className="collection-card">
         <img src="./images/homepage/collection-3.png" alt="" />
         <div className='collection-text'>
@@ -38,9 +38,9 @@ const Collection = () => {
           <button>Shop Women</button>
         </div>
       </div>
-      
+     
     </div>
   )
 }
-
+ 
 export default Collection
