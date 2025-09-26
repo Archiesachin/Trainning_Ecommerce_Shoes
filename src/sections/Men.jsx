@@ -23,9 +23,9 @@ function Men() {
  
   return (
     <div className="men-section-bg">
-      <nav className="men-breadcrumb">
+      <div className="men-breadcrumb">
         Home <span>/</span> Men&apos;s Shoes
-      </nav>
+      </div>
       <h1 className="men-title">Men&apos;s Shoes</h1>
       <p className="men-desc">
         The world's most comfortable shoes for life’s everyday adventures.
@@ -115,8 +115,8 @@ function Men() {
       </div>
     </div>
    
-      <div className="promo-banner">
-        <div className="promo-content">
+      <div className="promo-banner-men">
+        <div className="promo-content-men">
           <span className="promo-small">TWO DAYS ONLY</span>
           <h2 className="promo-title">$30 Off When You Spend $150</h2>
           <p className="promo-body">
