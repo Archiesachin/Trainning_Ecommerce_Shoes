@@ -1,17 +1,11 @@
- 
-*{
-font-family: Maison Neue,Helvetica,Arial,sans-serif;
-}
+
 .new-section-bg {
   background: #ece8df;
   min-height: 100vh;
   padding: 32px 0 80px 0;
   font-family: 'Inter', Arial, sans-serif;
 }
-nav{
-  display:flex;
-  justify-content: flex-start; 
-}
+
 .new-breadcrumb {
   font-size: 12px;
   margin-bottom: 22px;
