@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import menProducts from "./menProducts";
 import './Men.css';
-
+ 
 const promoImg = "/public/images/mens/25Q3_SpendandSave_Collections-TilePromo-ShortBanner_Banner01-02_Mobile_2x3_d1979ade-3243-44c0-ac2f-40264deb2ccf.png";
-
+ 
 function Men() {
   // Track which card is hovered for size chart, and selected color variant
   const [hoveredCardId, setHoveredCardId] = useState(null);
@@ -14,14 +14,14 @@ function Men() {
       return acc;
     }, {})
   );
-
+ 
   const handleColorSelect = (productId, variantIdx) => {
     setSelectedVariants({
       ...selectedVariants,
       [productId]: variantIdx
     });
   };
-
+ 
   return (
     <div className="men-section-bg">
       <nav className="men-breadcrumb">
@@ -31,7 +31,7 @@ function Men() {
       <p className="men-desc">
         The world's most comfortable shoes for life’s everyday adventures.
       </p>
-
+ 
       <div className="men-controls">
         <div className="men-filter">
           <div className="filter-icon-circle">
@@ -57,9 +57,9 @@ function Men() {
           </span>
         </button>
       </div>
-
-
-      
+ 
+ 
+     
       <div className="men-section-bg">
      {/* ...your banners/controls etc as before... */}
       <div className="men-products-wrapper">
@@ -104,7 +104,7 @@ function Men() {
                 </div>
                 {/* nothing here for size chart */}
               </div>
-              
+             
               {hoveredCardId === product.id && hasSizes && (
                 <div className="size-dropdown-float">
                   {product.sizes.map((size) => (
@@ -117,7 +117,7 @@ function Men() {
         })}
       </div>
     </div>
-    
+   
       <div className="promo-banner">
         <div className="promo-content">
           <span className="promo-small">TWO DAYS ONLY</span>
@@ -127,7 +127,7 @@ function Men() {
           </p>
         </div>
       </div>
-      
+     
       <div className="men-section-bg">
      {/* ...your banners/controls etc as before... */}
       <div className="men-products-wrapper">
@@ -172,7 +172,7 @@ function Men() {
                 </div>
                 {/* nothing here for size chart */}
               </div>
-              
+             
               {hoveredCardId === product.id && hasSizes && (
                 <div className="size-dropdown-float">
                   {product.sizes.map((size) => (
@@ -188,5 +188,5 @@ function Men() {
   </div>
   );
 }
-
+ 
 export default Men;
