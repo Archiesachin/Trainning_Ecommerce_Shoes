@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="nav-part1">
             <div className="logo">
-                <img src="./images/logo.jpeg" alt="logo-img" />
+                <Link to='/'><img src="./images/logo.jpeg" alt="logo-img" /></Link>
             </div>
             <div className="nav-links">
                 <ul>
@@ -29,7 +29,6 @@ const Navbar = () => {
             </div>
             <div className="nav-options">
 
-                <FaRegUser/>
 
                 <Link to='/signup'><FaRegUser/></Link>
 
