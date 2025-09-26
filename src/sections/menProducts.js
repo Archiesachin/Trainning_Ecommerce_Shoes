@@ -45,7 +45,7 @@ export const menProducts = [
   },
   {
     id: 3,
-    label: "",
+    label: "NEW",
     name: "MEN'S TREE GLIDER",
     subtitle: "Natural Black",
     price: 135,

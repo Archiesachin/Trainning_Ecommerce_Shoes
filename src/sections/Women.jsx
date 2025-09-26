@@ -24,9 +24,9 @@ function Women() {
  
   return (
     <div className="women-section-bg">
-      <nav className="women-breadcrumb">
+      <div className="women-breadcrumb">
         Home <span>/</span> Women&apos;s Shoes
-      </nav>
+      </div>
       <h1 className="women-title">Women&apos;s Shoes</h1>
       <p className="women-desc">
         The world's most comfortable shoes for life’s everyday adventures.
