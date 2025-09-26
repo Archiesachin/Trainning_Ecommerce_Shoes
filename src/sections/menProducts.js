@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 
-const menProducts = [
-=======
 export const menProducts = [
-
->>>>>>> 78c374aecfbb1cb5995c50506b07c9cf9a44a4c2
   {
     id: 1,
     label: "NEW",
