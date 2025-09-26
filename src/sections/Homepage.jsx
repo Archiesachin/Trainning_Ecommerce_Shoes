@@ -10,6 +10,7 @@ import ProductsHomepage from '../components/ProductsHomepage'
 import ChangingLayout from '../components/ChangingLayout';
 
 
+
 const Homepage = ({ interval = 3000 }) => {
 
   const images = [

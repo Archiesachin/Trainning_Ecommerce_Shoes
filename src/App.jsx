@@ -10,6 +10,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
 import Women from './sections/Women';
+import SignUp from './sections/SignUp';
 function App() {
   return (
     <Router>
@@ -37,13 +38,27 @@ function App() {
           } 
         />
 
-        
-   
+
+        {/* Add similar routes for other sections as you build them */}
+        {/* Example: 
+        <Route path="/women" element={<Women />} />
+        <Route path="/new-arrivals" element={<NewArrivals />} />
+        */}
+
+
         <Route 
           path="/Women" 
           element={
             <>
               <Women />
+            </>
+          } 
+        />
+        <Route 
+          path="/signup" 
+          element={
+            <>
+              <SignUp />
             </>
           } 
         />
