@@ -1,9 +1,28 @@
 
-.header {
+@font-face {
+  font-family: 'Calvino-Regular-trial';
+  src: url('/fonts/Calvino-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ekster-Regular';
+  src: url('/fonts/Ekster-Regular-BF63c76121469b8.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('/fonts/FUTURAMEDIUM.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.header, .header * {
   background-color: #333; 
   color: #fff; 
   text-align: center; 
   padding: 10px 0; 
   font-size: 14px; 
+  font-family: 'Ekster-Regular', Arial, sans-serif !important;
 }
 
