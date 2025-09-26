@@ -1,21 +1,43 @@
- 
+
+@font-face {
+  font-family: 'Calvino-Regular-trial';
+  src: url('/fonts/Calvino-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ekster-Regular';
+  src: url('/fonts/Ekster-Regular-BF63c76121469b8.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('/fonts/FUTURAMEDIUM.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+}
 
 .men-section-bg {
   background: #ece8df;
   min-height: 100vh;
   padding: 32px 0 80px 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
 
 .men-breadcrumb {
-  font-size: 12px;
   margin-bottom: 22px;
-  color: #757575;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   letter-spacing: 0.01em;
   margin-left:30px;
 }
 .men-breadcrumb span {
   margin: 0 10px;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
 .men-title {
   margin-left: 30px;
@@ -24,6 +46,7 @@
   color: #171717;
   font-weight: 700;
   letter-spacing: -0.02em;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-weight: 400;
 }
 .men-desc {
@@ -32,6 +55,7 @@
   color: #757575;
   font-size: 14px;
   margin-top: 6px;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
 .men-controls {
   background: #ddd6c6;
@@ -40,13 +64,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   width: 96vw;
   height:60px;
   margin: 0 14px 16px 14px;
   padding: 12px 16px;
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;}
+  overflow: hidden;
+}
 .men-filter {
   display: flex;
   align-items: center;
@@ -56,27 +82,32 @@
   letter-spacing: 0.01em;
   gap: 8px;
   height:50px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
 }
 .men-filter-icon {
   background: #ebe6db;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   justify-content: center;
   width: 36px;
   height: 36px;
   font-size: 20px;
   margin-right: 14px;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   box-shadow: 0 1px 5px rgba(80, 70, 40, 0.08);
 }
 .men-product-count {
   color: #626262;
   font-weight: 400;
   margin-left: 8px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-size: 0.97rem;
 }
 .featured-btn {
   display: flex;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   align-items: center;
   justify-content: space-between;
   gap: 13px;
@@ -89,6 +120,7 @@
   padding: 0 10px 0 10px;
   height: 40px;
   cursor: pointer;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   letter-spacing: 0.02em;
   transition: border 0.18s, background 0.18s;
 }
@@ -98,11 +130,11 @@
 }
 .featured-icon-circle {
   display: flex;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   align-items: center;
   justify-content: center;
   margin-left: 2px;
 }
- 
 .filter-icon-circle {
   display: flex;
   align-items: center;
@@ -112,9 +144,9 @@
   background: transparent;
   border: none;
 }
- 
 .filter-sliders-svg {
   display: block;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
 }
  
 .promo-banner {

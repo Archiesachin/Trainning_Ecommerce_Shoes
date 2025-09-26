@@ -6,18 +6,20 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
 import Women from './sections/Women';
-
 import New from './sections/New';
 import SignUp from './sections/SignUp';
+import Chat from './components/chat';
 import Login from './sections/Login';
+
 
 
 function App() {
   
   return (
     <Router>
-      <Header />
-      <Navbar />
+  <Header />
+  <Navbar />
+  <Chat />
       
       <Routes>
         <Route path="/" element={<Homepage />} />
