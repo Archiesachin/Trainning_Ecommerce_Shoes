@@ -10,7 +10,9 @@ import New from './sections/New';
 import SignUp from './sections/SignUp';
 import CartDrawer from './components/CartDrawer';
 import { CartProvider, useCart } from './components/CartContext.jsx';
+import Chat from './components/chat';
 import Login from './sections/Login';
+
 
 
 function App() {
@@ -18,9 +20,12 @@ function App() {
   return (
      <CartProvider>
     <Router>
+
       <Header />
       <Navbar />
       <CartDrawer />
+      <Chat />
+
       
       <Routes>
         <Route path="/" element={<Homepage />} />
