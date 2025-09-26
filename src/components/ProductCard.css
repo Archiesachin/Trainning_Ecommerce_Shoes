@@ -5,7 +5,7 @@
   background-color: #fff;
   margin: 16px;
   width: 400px;
-  height: 430px;
+  max-height: 430px;
   /* display: inline-block;
   position: relative; */
   text-align: left;
