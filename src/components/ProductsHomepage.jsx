@@ -16,7 +16,8 @@ function ProductsHomepage() {
   };
 
   return (
-    <div style={{ width: '100%', overflow: 'hidden', padding:'20px', marginTop:'30px' }}>
+    <div style={{ width: '100%', overflow: 'hidden', padding:'20px', marginTop:'30px' , display:'flex', justifyContent:'center', flexDirection:'column'}}>
+      <h3 style={{padding:'20px', fontWeight:'normal', fontSize:'30px'}}>New Arrivals</h3>
      <Slider {...settings}>
         {Homeproduct.map(product => (
           <ProductCard key={product.id} product={product} />
