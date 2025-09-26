@@ -22,12 +22,6 @@ function App() {
           element={
             <>
               <Homepage />
-              <div className="App">
-                {Homeproduct.map(product => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-              <Footer />
             </>
           } 
         />
@@ -38,12 +32,12 @@ function App() {
           element={
             <>
               <Men />
-              <Footer />
             </>
           } 
         />
 
       </Routes>
+      <Footer/>
     </Router>
   );
 }

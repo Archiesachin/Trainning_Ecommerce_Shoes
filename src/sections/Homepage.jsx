@@ -3,7 +3,9 @@ import './homepage.css'
 import CategoryHomepage from '../components/CategoryHomepage';
 import Collection from '../components/Collection';
 import GridHomepage from '../components/gridHomepage';
-
+import ProductCard from '../components/ProductCard'
+import Homeproduct from '../Homeproduct';
+import Chat from '../components/chat';
 
 
 const Homepage = ({ interval = 3000 }) => {
@@ -49,8 +51,15 @@ const Homepage = ({ interval = 3000 }) => {
 
 
 <CategoryHomepage/>
+
 <GridHomepage />
+ <div >
+                {Homeproduct.map(product => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
 <Collection />
+<Chat />
 
     </>
   );
