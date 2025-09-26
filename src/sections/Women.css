@@ -5,16 +5,21 @@ font-family: Maison Neue,Helvetica,Arial,sans-serif;
 .women-section-bg {
   background: #ece8df;
   min-height: 100vh;
-  padding: 32px 0 80px 0;
+  padding: 10px 0 80px 0;
   font-family: 'Inter', Arial, sans-serif;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .women-breadcrumb {
   font-size: 12px;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   color: #757575;
   letter-spacing: 0.01em;
-  margin-left:30px;
+ 
+  margin-left: 30px;
+  
 
 }
 .women-breadcrumb span {

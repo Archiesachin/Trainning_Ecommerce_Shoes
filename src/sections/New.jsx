@@ -24,9 +24,9 @@ function New() {
  
   return (
     <div className="new-section-bg">
-      <nav className="new-breadcrumb">
+      <div className="new-breadcrumb">
         Home <span>/</span> New Arrivals
-      </nav>
+      </div>
       <h1 className="new-title">New Arrivals</h1>
       <p className="new-desc">
         The world's most comfortable shoes for life’s everyday adventures.
@@ -118,14 +118,8 @@ function New() {
       </div>
     </div>
    
-      <div className="promo-banner">
-        <div className="promo-content">
-          <span className="promo-small">TWO DAYS ONLY</span>
-          <h2 className="promo-title">$30 Off When You Spend $150</h2>
-          <p className="promo-body">
-            For 9/24–9/25, your cart just got cozier. Spend $150 and we’ll drop $30 off, no code needed. Exclusions apply.
-          </p>
-        </div>
+      <div className="promo-banner-new">
+        
       </div>
      
       <div className="new-section-bg">
