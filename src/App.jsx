@@ -8,6 +8,8 @@ import Men from './sections/Men';
 import Women from './sections/Women';
 import New from './sections/New';
 import SignUp from './sections/SignUp';
+import CartDrawer from './components/CartDrawer';
+import { CartProvider, useCart } from './components/CartContext.jsx';
 import Chat from './components/chat';
 import Login from './sections/Login';
 
@@ -16,10 +18,14 @@ import Login from './sections/Login';
 function App() {
   
   return (
+     <CartProvider>
     <Router>
-  <Header />
-  <Navbar />
-  <Chat />
+
+      <Header />
+      <Navbar />
+      <CartDrawer />
+      <Chat />
+
       
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -39,6 +45,7 @@ function App() {
       </Routes>
       <Footer/>
     </Router>
+    </CartProvider>
   );
 }
 
