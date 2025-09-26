@@ -29,7 +29,9 @@ const Navbar = () => {
             </div>
             <div className="nav-options">
                 <FaRegUser/>
+
                 <BsCart3/>
+                
             </div>
             </div>
             
