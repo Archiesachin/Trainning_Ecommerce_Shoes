@@ -10,7 +10,9 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
 import Women from './sections/Women';
+import New from './sections/New';
 function App() {
+  
   return (
     <Router>
       <Header />
@@ -48,6 +50,16 @@ function App() {
           } 
         />
         
+        <Route 
+          path="/New" 
+          element={
+            <>
+              <New />
+            </>
+          } 
+        />
+          
+      
       </Routes>
       <Footer/>
     </Router>
