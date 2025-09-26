@@ -10,8 +10,10 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Men from './sections/Men';
 import Women from './sections/Women';
+
 import New from './sections/New';
 import SignUp from './sections/SignUp';
+
 
 function App() {
   
@@ -55,6 +57,7 @@ function App() {
             </>
           } 
         />
+
         <Route 
           path="/signup" 
           element={
@@ -63,6 +66,7 @@ function App() {
             </>
           } 
         />
+
         
 
         <Route 

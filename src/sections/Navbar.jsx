@@ -28,8 +28,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="nav-options">
+
+                <FaRegUser/>
+
                 <Link to='/signup'><FaRegUser/></Link>
+
                 <BsCart3/>
+                
             </div>
             </div>
             
