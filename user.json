@@ -1,24 +1,33 @@
 {
   "user": [
     {
-      "id": "7c4a",
+      "id": "67e2",
       "username": "Archie",
-      "Password": "1234"
+      "password": "300"
     },
     {
-      "id": "f3d8",
-      "username": "yashvi",
-      "password": "yashvi"
+      "id": "bf80",
+      "username": "Yashvi",
+      "password": "400"
     },
     {
-      "id": "80e0",
-      "username": "reena",
-      "password": "reena"
+      "id": "878c",
+      "username": "Reena",
+      "password": "300"
     },
     {
-      "id": "0703",
-      "username": "reena",
-      "password": "reena"
+      "id": "32ad",
+      "email": "sachin@gmail.com",
+      "username": "Sachin",
+      "password": "100",
+      "number": "1234567890"
+    },
+    {
+      "id": "a0a0",
+      "email": "nidhi@gmail.com",
+      "username": "Nidhi",
+      "password": "200",
+      "number": "1234567890"
     }
   ]
 }
