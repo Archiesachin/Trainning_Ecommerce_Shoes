@@ -1,0 +1,10 @@
+
+.header, .header *{
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  padding: 7px 0; 
+  font-size: 12px; 
+  font-family: "Lexend Exa", sans-serif;
+}
+

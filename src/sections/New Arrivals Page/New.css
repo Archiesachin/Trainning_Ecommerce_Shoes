@@ -1,70 +1,46 @@
-@font-face {
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
-  src: url('/fonts/Calvino-Regular-trial.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
-  src: url('/fonts/Ekster-Regular-BF63c76121469b8.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Futura-Medium';
-  src: url('/fonts/FUTURAMEDIUM.TTF') format('truetype');
-  font-family: 'Ekster-Regular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-*{
-
-font-family: Calvino-Regular-trial, Arial, sans-serif;
-}
-.women-section-bg {
+.new-section-bg {
   background: #ece8df;
-
   min-height: 100vh;
+
   padding: 10px 0 80px 0;
   font-family: 'Inter', Arial, sans-serif;
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
+
 }
 
-.women-breadcrumb {
+.new-breadcrumb {
   font-size: 12px;
   margin-bottom: 15px;
   color: #757575;
   letter-spacing: 0.01em;
- 
-  margin-left: 30px;
-  
+  margin-left:30px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
 
 }
-.women-breadcrumb span {
+.new-breadcrumb span {
   margin: 0 10px;
 }
-.women-title {
+.new-title {
   margin-left: 30px;
   font-size: 24px;
   margin-bottom: 0;
   color: #171717;
   font-weight: 700;
   letter-spacing: -0.02em;
-  font-weight: 400;
   font-family: 'Calvino-Regular-trial', Arial, sans-serif;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
+  font-weight: 400;
 }
-.women-desc {
+.new-desc {
   margin-left: 30px;
   margin-bottom: 30px;
   color: #757575;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-size: 14px;
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   margin-top: 6px;
 }
-.women-controls {
+.new-controls {
   background: #ddd6c6;
   height:auto;
   border-radius: 32px;
@@ -80,18 +56,20 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
   overflow: hidden;
   font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
-.women-filter {
+.new-filter {
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   display: flex;
   align-items: center;
   font-size: 14px;
   font-weight: 600;
   color: #6b6d6e;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   letter-spacing: 0.01em;
   gap: 8px;
   height:50px;
 }
-.women-filter-icon {
-  font-family: 'Ekster-Regular', Arial, sans-serif;
+.new-filter-icon {
+  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   background: #ebe6db;
   border-radius: 50%;
   display: inline-flex;
@@ -99,12 +77,13 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
   justify-content: center;
   width: 36px;
   height: 36px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-size: 20px;
   margin-right: 14px;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
   box-shadow: 0 1px 5px rgba(80, 70, 40, 0.08);
 }
-.women-product-count {
+
+.new-product-count {
   color: #626262;
   font-weight: 400;
   margin-left: 8px;
@@ -116,6 +95,7 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
   justify-content: space-between;
   gap: 13px;
   border-radius: 29px;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   border: 1px solid #23201c;
   background: none;
   font-size: 14px;
@@ -125,11 +105,13 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
   height: 40px;
   cursor: pointer;
   letter-spacing: 0.02em;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   transition: border 0.18s, background 0.18s;
 }
 .featured-btn:hover {
   border-color: #42657e;
   background: #ede6ce;
+  font-family: 'Futura-Medium', Arial, sans-serif;
 }
 .featured-icon-circle {
   display: flex;
@@ -142,6 +124,7 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Ekster-Regular', Arial, sans-serif;
   width: 42px;
   height: 42px;
   background: transparent;
@@ -152,54 +135,27 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
   display: block;
 }
  
-.promo-banner {
+.promo-banner-new {
   display: flex;
   border-radius: 24px;
   overflow: hidden;
-  background-image: url('public/images/25Q3_SpendandSave_Collections-TilePromo-ShortBanner_Banner02-01_Desktop_16x9_45b71270-d87c-4261-aa5d-d4281a9769c0.png');
+  background-image: url('public/images/newarrival.png');
   background-repeat: no-repeat;
   background-size: cover;
- 
+  
   max-width: 1700px;
   height:200px;
   position: relative;
   margin: 0 16px 0 14px;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
 }
-.promo-content {
-  z-index: 2;
-  padding: 37px 30px 35px 43px;
-  color: #ffffff;
-  width: 45%;
- 
-}
-.promo-small {
-  font-size: 12px;
-  letter-spacing: 0.13em;
-  font-weight: 500;
-  margin-bottom: 18px;
-  display: block;
-}
-.promo-title {
-  font-size:20px;
-  font-weight: 400;
-  margin: 8px 0 20px 0;
-}
-.promo-body {
-  font-size: 14px;
-  font-weight: 400;
-  margin: 2px ;
- 
-}
-/* Code Generated by Sidekick is for learning and experimentation purposes only. */
-.women-products-wrapper {
+.new-products-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
- 
+  padding-top: 20px;
+  margin-top: 20px;;
   background: #ece8df;
   margin-left: 15px;
-  padding-top:20px;
 }
  
 .product-card {
@@ -270,7 +226,6 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
 }
  
 .product-price {
-  font-family: 'Futura-Medium', Arial, sans-serif;
   font-size: 1.09rem;
   margin-top: 4px;
   font-weight: 500;
@@ -354,15 +309,15 @@ font-family: Calvino-Regular-trial, Arial, sans-serif;
 }
  
 @media (max-width: 800px) {
-  .women-section-bg,
-  .women-product-grid,
-  .women-controls {
+  .new-section-bg,
+  .new-product-grid,
+  .new-controls {
     width: 98vw;
     max-width: 99vw;
     padding-left: 0;
     padding-right: 0;
   }
-  .women-title, .women-desc, .women-breadcrumb {
+  .new-title, .new-desc, .new-breadcrumb {
     margin-left: 14px;
   }
 }

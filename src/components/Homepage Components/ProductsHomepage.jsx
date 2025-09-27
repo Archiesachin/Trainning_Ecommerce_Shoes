@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import ProductCard from './ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Homeproduct from '../Homeproduct'
+import Homeproduct from '../../sections/Homepage/Homeproduct'
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 
 export default function ProductsHomepage() {
@@ -11,7 +12,7 @@ export default function ProductsHomepage() {
     var settings = {
      dots: false,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -46,7 +47,10 @@ export default function ProductsHomepage() {
 
   return (
     <div style={{ width: '100%', overflow: 'hidden', padding:'20px', marginTop:'30px' , display:'flex', justifyContent:'center', flexDirection:'column'}}>
-      <h3 style={{padding:'20px', fontWeight:'normal', fontSize:'30px'}}>New Arrivals</h3>
+      <div className="heading" style={{display:'flex', gap:'10px', fontFamily:'Lexend Exa'}}>
+      <Link to='/men'><h3 style={{color:'black',padding:'20px', fontWeight:'normal', fontSize:'16px', textDecoration:'underline'}}>SHOP MEN</h3></Link>
+      <Link to='/women'><h3 style={{color:'black', padding:'20px', fontWeight:'normal', fontSize:'16px', textDecoration:'underline'}}>SHOP WOMEN</h3></Link>
+      </div>
      <Slider {...settings}>
         {Homeproduct.map(product => (
           <ProductCard key={product.id} product={product} />

@@ -1,13 +1,13 @@
 import {useEffect, useState} from 'react'
 import './homepage.css'
-import CategoryHomepage from '../components/CategoryHomepage';
-import Collection from '../components/Collection';
-import GridHomepage from '../components/gridHomepage';
-import ProductCard from '../components/ProductCard'
-import Homeproduct from '../Homeproduct';
-import Chat from '../components/chat';
-import ProductsHomepage from '../components/ProductsHomepage'
-import ChangingLayout from '../components/ChangingLayout';
+import CategoryHomepage from '../../components/Homepage Components/CategoryHomepage';
+import Collection from '../../components/Homepage Components/Collection';
+import GridHomepage from '../../components/Homepage Components/gridHomepage';
+import Homeproduct from './Homeproduct';
+import Chat from '../../components/ChatBot/chat';
+import ProductsHomepage from '../../components/Homepage Components/ProductsHomepage'
+import ChangingLayout from '../../components/Homepage Components/ChangingLayout';
+import { Link } from 'react-router-dom';
 
 
 
@@ -46,8 +46,8 @@ const Homepage = ({ interval = 3000 }) => {
       <p>The new wool cruiser collection</p>
       <h4>Cruise in color</h4>
       <div className="buttons">
-        <button className='button-homepage'>Shop Men</button>
-        <button className='button-homepage'>Shop Women</button>
+        <Link to='/men'><button className='button-homepage'>Shop Men</button></Link>
+         <Link to='/women'><button className='button-homepage'>Shop Women</button></Link>
       </div>
       </div>  
     </div>

@@ -36,11 +36,13 @@
     border-radius: 15px;
     outline: none;
     border: 1px solid black;
+    font-family: "Lexend Exa", sans-serif;
 }
 
 .form label{
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: "Lexend Exa", sans-serif;
 }
 
 .form button{
@@ -50,9 +52,11 @@
     color: white;
     border: none;
     border-radius: 20px;
+    font-family: "Lexend Exa", sans-serif;
 }
 
 .form p{
     text-align: center;
+    font-family: "Fjord One", serif;
 }
 

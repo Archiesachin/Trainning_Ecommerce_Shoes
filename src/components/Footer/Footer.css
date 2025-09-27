@@ -1,21 +1,4 @@
-@font-face {
-  font-family: 'Calvino-Regular-trial';
-  src: url('/fonts/Calvino-Regular-trial.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ekster-Regular';
-  src: url('/fonts/Ekster-Regular-BF63c76121469b8.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Futura-Medium';
-  src: url('/fonts/FUTURAMEDIUM.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 .footer {
   background-color: #333; 
   color: #fff; 
@@ -69,15 +52,15 @@
 
 .footer-section li {
   margin-bottom: 15px; 
-  font-size: 13px;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+  font-size: 12px;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .footer-bottom {
   text-align: center; 
   margin-top: 20px; 
   font-size: 12px;
-  font-family: Arial, 'Futura-Medium', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 

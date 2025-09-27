@@ -3,7 +3,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import './Signup.css';
 import { Link, useNavigate } from 'react-router-dom';
-import Homepage from './Homepage';
+
 
 const usernameRegex = /^[a-zA-Z0-9]{3,20}$/;
 const numberRegex = /^\d{10}$/;
