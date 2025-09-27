@@ -44,12 +44,13 @@
   gap: 4px;
 }
 .cart-title {
-  font-weight: 800;
+  font-weight: 500;
 }
 .cart-promo {
   font-size: 0.95rem;
   color: #5d5651;
   white-space: nowrap;
+  font-weight: 500;
 }
 .cart-close-btn {
   background: none;
@@ -96,7 +97,7 @@
   flex: 1;
 }
 .cart-item-name {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 4px;
 }
 .cart-item-info span {
@@ -120,7 +121,7 @@
   cursor: pointer;
 }
 .cart-item-price {
-  font-weight: 700;
+  font-weight: 500;
   margin-left: 14px;
   font-size: 15px;
 }
@@ -153,7 +154,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -167,7 +168,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .rec-collapse-btn {
@@ -217,14 +218,14 @@
 .rec-carousel-wrapper.collapsed .rec-carousel { display: none; }
 .rec-card img { width: 88px; height: 72px; object-fit: cover; border-radius: 8px; }
 .rec-card-body { flex: 1; }
-.rec-title { font-weight: 600; margin-bottom: 6px; }
+.rec-title { font-weight: 500; margin-bottom: 6px; }
 .rec-dots { display:flex; gap:6px; margin-bottom:6px; }
 .dot { width:16px; height:16px; border-radius:50%; border:1px solid #ddd; }
-.rec-price { font-weight:700; color:#d33; margin-bottom:8px; }
+.rec-price { font-weight:500; color:#d33; margin-bottom:8px; }
 .rec-price .list { text-decoration: line-through; color:#9b9b9b; font-weight:400; margin-left:8px; }
 .rec-controls { display:flex; gap:10px; align-items:center; }
 .rec-size { padding:8px 12px; border-radius:24px; border:1px solid #ece8df; background:#fff; }
-.rec-add { background:none; border:none; font-weight:700; color:#111; cursor:pointer; }
+.rec-add { background:none; border:none; font-weight:500; color:#111; cursor:pointer; }
 .rec-arrow { background:#fff; border:1px solid #e6e1db; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; }
 .rec-arrow.left { margin-right:8px; }
 .rec-arrow.right { margin-left:8px; }
