@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import Homepage from './Homepage'
+
 
 
 const Login = () => {
@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <div className='form-container'>
         <form action="" className='form'>
-            <h3>Login <span>to buy products</span></h3>
+            <h3>Login</h3>
             <div className="username">
                 <label htmlFor="name">Enter Username</label>
                 <input type="text" id='name' placeholder='Username' value={username} onChange={(e) => {setUsername(e.target.value)}}/>

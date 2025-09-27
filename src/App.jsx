@@ -1,17 +1,17 @@
-import Navbar from './sections/Navbar';
-import Homepage from './sections/Homepage';
-import Header from './components/Header';
-import Footer from './components/footer';
+import Navbar from './sections/Navbar/Navbar.jsx';
+import Homepage from './sections/Homepage/Homepage.jsx';
+import Header from './components/Header/header.jsx';
+import Footer from './components/Footer/footer.jsx';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Men from './sections/Men';
-import Women from './sections/Women';
-import New from './sections/New';
-import SignUp from './sections/SignUp';
-import CartDrawer from './components/CartDrawer';
-import { CartProvider, useCart } from './components/CartContext.jsx';
-import Chat from './components/chat';
-import Login from './sections/Login';
+import Men from './sections/Mens Page/Men.jsx';
+import Women from './sections/Womens Page/Women.jsx';
+import New from './sections/New Arrivals Page/New.jsx';
+import SignUp from './sections/Login/SignUp.jsx';
+import CartDrawer from './components/Cart/CartDrawer.jsx';
+import { CartProvider, useCart } from './components/Cart/CartContext.jsx';
+import Chat from './components/ChatBot/chat.jsx';
+import Login from './sections/Login/Login.jsx';
 
 
 

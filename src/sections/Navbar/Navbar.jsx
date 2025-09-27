@@ -3,7 +3,7 @@ import { FaRegUser } from 'react-icons/fa6';
 import { BsCart3 } from 'react-icons/bs';
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import { useCart } from '../components/CartContext.jsx';
+import { useCart } from '../../components/Cart/CartContext';
 
 const Navbar = () => {
     const { openCart } = useCart();
@@ -26,15 +26,12 @@ const Navbar = () => {
             <div className="nav-part2">
                 <div className="nav-links">
                 <ul>
-                    <li>Our Stores</li>
-                    <li>About</li>
+                    <Link>Our Stores</Link>
+                    <Link>About</Link>
                 </ul>
             </div>
             <div className="nav-options">
-
-
                 <Link to='/signup'><FaRegUser/></Link>
-
                  <BsCart3 onClick={openCart} style={{ cursor: "pointer" }} />
 
             </div>

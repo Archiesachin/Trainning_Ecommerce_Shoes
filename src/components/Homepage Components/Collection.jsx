@@ -10,7 +10,7 @@ const Collection = () => {
           <h3>The New Remix Collection</h3>
         <p>Sustainably crafted with superior comfort and effortless style</p>
         </div>
-        <div className="button-group" style={{bottom:'240px'}}>
+        <div className="button-group" style={{bottom:'250px'}}>
            <button>Learn More</button>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Collection = () => {
           <h3>Brezzy BestSellers</h3>
         <p>Light and airy staples for anytime, anywhere</p>
         </div>
-        <div className="button-group">
+        <div className="button-group" style={{bottom: '185px'}}>
           <button>Shop Men</button>
           <button>Shop Women</button>
         </div>

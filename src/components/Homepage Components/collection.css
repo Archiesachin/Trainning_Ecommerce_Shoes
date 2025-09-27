@@ -36,15 +36,16 @@
 }
  
 .collection-text h3{
-  font-size: 35px;
+  font-size: 40px;
   font-weight: normal;
   padding: 20px;
+  font-family: "Fjord One", serif;
 }
  
 .collection-text p{
-  font-size: 15px;
-  letter-spacing: 2px;
+  font-size: 13px;
   padding: 10px;
+  font-family: "Lexend Exa", sans-serif;
  
 }
  
@@ -65,5 +66,13 @@
   border-radius: 20px;
   color: white;
   width: 400px;
+  transition: 0.3s ease-in;
+}
+
+.button-group button:hover{
+  color: white;
+  background-color: rgb(49, 49, 49);
+  border: none;
+  cursor: pointer;
 }
  

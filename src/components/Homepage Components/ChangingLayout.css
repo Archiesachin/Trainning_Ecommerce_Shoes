@@ -36,7 +36,8 @@
 }
 
 .left-container p{
-    font-size: 18px;
+    font-size: 16px;
+    font-family: "Lexend Exa", sans-serif;
 }
 
 .changing-button{
@@ -54,6 +55,7 @@
     font-size: 14px;
     text-transform: uppercase;
     transition: 0.3s ease-in;
+    font-family: "Lexend Exa", sans-serif;
 }
 
 .changing-button button:hover{
@@ -67,4 +69,6 @@
     margin-top: -60px;
     font-size: 25px;
     text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
