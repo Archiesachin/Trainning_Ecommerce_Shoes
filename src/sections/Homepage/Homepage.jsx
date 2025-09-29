@@ -1,0 +1,74 @@
+import {useEffect, useState} from 'react'
+import './homepage.css'
+import CategoryHomepage from '../../components/Homepage Components/CategoryHomepage';
+import Collection from '../../components/Homepage Components/Collection';
+import GridHomepage from '../../components/Homepage Components/gridHomepage';
+import Homeproduct from './Homeproduct';
+import Chat from '../../components/ChatBot/chat';
+import ProductsHomepage from '../../components/Homepage Components/ProductsHomepage'
+import ChangingLayout from '../../components/Homepage Components/ChangingLayout';
+import { Link } from 'react-router-dom';
+
+
+
+const Homepage = ({ interval = 3000 }) => {
+
+  const images = [
+    "./images/homepage/hero-image-red.png",
+    "./images/homepage/hero-image-blue.png",
+    "./images/homepage/hero-image-green.png"
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+
+    return () => clearInterval(timer); // Cleanup on unmount
+  }, [images.length, interval]);
+
+  return (
+    <>
+    <div className='hero-container'>
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Slide ${index}`}
+          style={{
+            display: index === currentIndex ? "block" : "none"}}
+          className='slideshow-img'
+        />
+      ))}
+      <div className="text-part">
+      <p>The new wool cruiser collection</p>
+      <h4>Cruise in color</h4>
+      <div className="buttons">
+        <Link to='/men'><button className='button-homepage'>Shop Men</button></Link>
+         <Link to='/women'><button className='button-homepage'>Shop Women</button></Link>
+      </div>
+      </div>  
+    </div>
+
+
+<CategoryHomepage/>
+<ChangingLayout/>
+
+<GridHomepage />
+ {/* <div >
+  {Homeproduct.map(product => (
+  <ProductCard key={product.id} product={product} />
+    ))}
+  </div> */}
+
+  <ProductsHomepage products={Homeproduct} />
+<Collection />
+<Chat />
+
+    </>
+  );
+};
+
+export default Homepage;

@@ -1,0 +1,56 @@
+.category-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.category-box img{
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.category-box{
+    border-radius: 30px;
+    transition: 0.3s ease-in;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.category-box:hover{
+    border-radius: 45%;
+    display: inline-block;
+    
+}
+
+.button-box button{
+    background: transparent;
+    color: white;
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.button-invisible:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: 200px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+.button-box button{
+    font-family: "Lexend Exa", sans-serif;
+}

@@ -1,33 +1,5 @@
 {
   "user": [
-    {
-      "id": "67e2",
-      "username": "Archie",
-      "password": "300"
-    },
-    {
-      "id": "bf80",
-      "username": "Yashvi",
-      "password": "400"
-    },
-    {
-      "id": "878c",
-      "username": "Reena",
-      "password": "300"
-    },
-    {
-      "id": "32ad",
-      "email": "sachin@gmail.com",
-      "username": "Sachin",
-      "password": "100",
-      "number": "1234567890"
-    },
-    {
-      "id": "a0a0",
-      "email": "nidhi@gmail.com",
-      "username": "Nidhi",
-      "password": "200",
-      "number": "1234567890"
-    }
+    
   ]
 }
