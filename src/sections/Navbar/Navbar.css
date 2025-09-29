@@ -17,7 +17,7 @@ nav{
     gap: 35px;
 }
 
-.navbar-home{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,27 +42,61 @@ nav{
     height: 50px;
 }
 
-.nav-links ul{
-   margin-bottom: 0px !important;
-}
-
 .nav-links ul a{
-    text-decoration: none !important;
+    text-decoration: none;
     list-style: none;
-    color: black !important;
+    color: black;
     font-family: "Lexend Exa", sans-serif;
     font-size: 14px;
 }
-
 
 .nav-links ul, .nav-options{
     display: flex;
     gap: 30px;
 }
 
-.nav-options svg{
-  vertical-align: baseline !important;
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+  .nav-part1, .nav-part2 {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+    display: none;
+  }
+  .nav-links.active ul {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .nav-options {
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
 }
 
-
+/* Hide links on mobile by default */
+@media (max-width: 900px) {
+  .nav-links ul {
+    display: none;
+  }
+  .nav-links.active ul {
+    display: flex;
+  }
+}
 
