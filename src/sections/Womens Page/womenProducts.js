@@ -2,7 +2,7 @@ export const womenProducts = [
  
   {
     id: 1,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S CRUISER",
     subtitle: "Blizzard",
     price: 120,
@@ -22,7 +22,7 @@ export const womenProducts = [
   },
   {
     id: 2,
-    label: "BESTSELLER",
+    label: "Bestseller",
     name: "WOMEN'S TREE RUNNER",
     subtitle: "Mist",
     price: 100,
@@ -65,7 +65,7 @@ export const womenProducts = [
   },
   {
     id: 4,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S RUNNER NZ CORDUROY",
     subtitle: "Dark Tan",
     price: 160,
@@ -88,7 +88,7 @@ export const womenProducts = [
   },
   {
     id: 5,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S TREE DASHER 2",
     subtitle: "Dark Tan",
     price: 90,
@@ -110,7 +110,7 @@ export const womenProducts = [
   },
   {
     id: 6,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S WOOL CRUISER SLIP-ON",
     subtitle: "Dark Tan",
     price: 121,
@@ -131,7 +131,7 @@ export const womenProducts = [
   },
   {
     id: 7,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S STRIDER",
     subtitle: "Dark Tan",
     price: 139,
@@ -152,7 +152,7 @@ export const womenProducts = [
   },
   {
     id: 8,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
@@ -168,12 +168,66 @@ export const womenProducts = [
         colorHex: "#b1b8afff",
         image: "public/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png",
       },
-    ],
+    ]},
+  {
+    id: 9,
+    label: "New",
+    name: "WOMEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 140,
     
-    extraColors: 0,
-    sizes: [],
-  
+    variants: [
+      {
+        colorName: "Mist",
+        colorHex: "#6fc139ff",
+        image: "public/images/mens/womenshoe.png",
+      },
+      {
+        colorName: "Slate",
+        colorHex: "#b1b8afff",
+        image: "public/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png",
+      }
+    ],
   }
+ ,
+  {
+    id: 10,
+    label: "Bestseller",
+    name: "WOMEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 140,
+    
+    variants: [
+      {
+        colorName: "Mist",
+        colorHex: "#6fc139ff",
+        image: "public/images/mens/A12113_25Q3_Anytime_Soft_Merino_Tee_Deep_Navy_PDP_F-2000x2000.png",
+      },
+      {
+        colorName: "Slate",
+        colorHex: "#b1b8afff",
+        image: "public/images/mens/A11199_24Q4_Anytime_Soft_Merino_Tee_Chasm_Teal_F-1000x1000.png",
+        
+      }
+    ],
+  },
+  {
+    id: 11,
+    label: "New",
+    name: "WOMEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 140,
+    
+    variants: [
+      {
+        colorName: "Mist",
+        colorHex: "#6fc139ff",
+        image: "public/images/mens/A11541_24Q4_Recycled_Tote_Bag_Rugged_Beige_PDP_Front_25059-1300x1300.png",
+      },
+      
+    ],
+  },
+
  
 ];
  

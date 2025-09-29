@@ -2,7 +2,7 @@ export const newProducts = [
  
     {
     id: 1,
-    label: "NEW",
+    label: "New",
     name: "WOMEN'S CRUISER",
     subtitle: "Blizzard",
     price: 110,
@@ -20,7 +20,7 @@ export const newProducts = [
   },
   {
     id: 2,
-    label: "NEW",
+    label: "New",
     name: "MEN'S CRUISER",
     subtitle: "Blizzard",
     price: 100,
@@ -42,7 +42,7 @@ export const newProducts = [
   },
   {
     id: 3,
-    label: "NEW",
+    label: "New",
     name: "MEN'S RUNNER NZ CORDUROY",
     subtitle: "Dark Tan",
     price: 120,
@@ -50,12 +50,12 @@ export const newProducts = [
       {
         colorName: "Dark Tan",
         colorHex: "#1c1a19ff",
-        image: "/public/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
+        image: "public/images/mens/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_LEFT-2000x2000.png",
       },
       {
         colorName: "Navy",
         colorHex: "#454546ff",
-        image: "public/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png",
+        image: "public/images/mens/A11065_24Q3_Tree_Dasher_Relay_Rugged_Beige_Rugged_Beige_PDP_LEFT-2000x2000.png",
       }
     ],
     extraColors: 0,
@@ -63,7 +63,7 @@ export const newProducts = [
   },
   {
     id: 4,
-    label: "NEW",
+    label: "New",
     name: "MEN'S TREE DASHER 2",
     subtitle: "Dark Tan",
     price: 120,
@@ -84,7 +84,7 @@ export const newProducts = [
   },
   {
     id: 5,
-    label: "NEW",
+    label: "New",
     name: "MEN'S WOOL CRUISER SLIP-ON",
     subtitle: "Dark Tan",
     price: 120,
@@ -105,7 +105,7 @@ export const newProducts = [
   },
   {
     id: 6,
-    label: "NEW",
+    label: "New",
     name: "MEN'S STRIDER",
     subtitle: "Dark Tan",
     price: 120,
@@ -126,7 +126,7 @@ export const newProducts = [
   },
   {
     id: 7,
-    label: "NEW",
+    label: "New",
     name: "MEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 120,
@@ -147,7 +147,7 @@ export const newProducts = [
   },
     {
     id: 3,
-    label: "NEW",
+    label: "New",
     name: "MEN'S TREE GLIDER",
     subtitle: "Natural Black",
     price: 135,
@@ -165,7 +165,85 @@ export const newProducts = [
       
     ],
     sizes: [],
+  },{
+    id: 9,
+    label: "New",
+    name: "WOMEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 140,
+    
+    variants: [
+      {
+        colorName: "Mist",
+        colorHex: "#6fc139ff",
+        image: "public/images/mens/A11541_24Q4_Recycled_Tote_Bag_Rugged_Beige_PDP_Front_25059-1300x1300.png",
+      },
+      
+    ],
   },
+  {
+    id: 10,
+    label: "New",
+    name: "WOMEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 140,
+    
+    variants: [
+      {
+        colorName: "Mist",
+        colorHex: "#6fc139ff",
+        image: "public/images/mens/womenshoe.png",
+      },
+      {
+        colorName: "Slate",
+        colorHex: "#b1b8afff",
+        image: "public/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png",
+      }
+    ],
+  }
+ ,
+  ,{
+    id: 11,
+    label: "New",
+    name: "MEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 120,
+    variants: [
+      {
+        colorName: "Dark Tan",
+        colorHex: "#cd3f3fff",
+        image: "public/images/mens/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_LEFT-2000x2000.png",
+      },
+      {
+        colorName: "Navy",
+        colorHex: "#A88256",
+        image: "public/images/mens/A11254_25Q1_Courier_Travel_Blizzard_Hazy_Indigo_Blizzard_PDP_LEFT-2000x2000.png",
+      }
+    ],
+    extraColors: 0,
+    sizes: [],
+  },
+  {
+    id: 12,
+    label: "New",
+    name: "MEN'S CANVAS PIPER",
+    subtitle: "Dark Tan",
+    price: 120,
+    variants: [
+      {
+        colorName: "Dark Tan",
+        colorHex: "#cd3f3fff",
+        image: "public/images/mens/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Front_25106-2000x2000.png",
+      },
+      {
+        colorName: "Navy",
+        colorHex: "#A88256",
+        image: "public/images/mens/A11544_24Q4_Recycled_Shoe_Bag_True_Black_PDP_Front_25120-1300x1300.png",
+      }
+    ],
+    extraColors: 0,
+    sizes: [],
+  }
   
 ];
 
