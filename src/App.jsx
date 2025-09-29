@@ -45,7 +45,7 @@ function App() {
       <Router>
         <Layout />
 
-{/* //      <CartProvider>
+//      <CartProvider>
 //     <Router>
 
 //       <Header />
@@ -73,8 +73,7 @@ function App() {
 
 //       </Routes>
 //       <Footer/>
-//     </Router> */}
-</Router>
+//     </Router>
 
     </CartProvider>
   );

@@ -9,7 +9,7 @@ const Navbar = () => {
     const { openCart } = useCart();
   return (
     <nav>
-        <div className="navbar-home">
+        <div className="navbar">
             <div className="nav-part1">
             <div className="logo">
                 <Link to='/'><img src="./images/logo.jpeg" alt="logo-img" /></Link>
