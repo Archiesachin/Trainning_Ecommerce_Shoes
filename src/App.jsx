@@ -12,6 +12,7 @@ import CartDrawer from './components/Cart/CartDrawer.jsx';
 import { CartProvider, useCart } from './components/Cart/CartContext.jsx';
 import Chat from './components/ChatBot/chat.jsx';
 import Login from './sections/Login/Login.jsx';
+import SingleProductPage from './sections/Single_Product/SingleProductPage.jsx';
 
 
 
@@ -39,6 +40,8 @@ function App() {
        <Route path="/login" element={ <Login />} />
 
         <Route path="/New" element={<New />} />
+
+        <Route path="/singleProduct" element={<SingleProductPage />} />
           
       
 
