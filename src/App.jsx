@@ -13,6 +13,7 @@ import { CartProvider, useCart } from './components/Cart/CartContext.jsx';
 import Chat from './components/ChatBot/chat.jsx';
 import Login from './sections/Login/Login.jsx';
 import Checkout from './components/Checkout/checkout.jsx';
+import SingleProductPage from './sections/Single_Product/SingleProductPage.jsx';
 
 
 function App() {
@@ -39,10 +40,41 @@ function App() {
     );
   }
   return (
+
     <CartProvider>
       <Router>
         <Layout />
-      </Router>
+
+//      <CartProvider>
+//     <Router>
+
+//       <Header />
+//       <Navbar />
+//       <CartDrawer />
+//       <Chat />
+
+      
+//       <Routes>
+//         <Route path="/" element={<Homepage />} />
+
+//         <Route path="/Men" element={<Men />} />
+
+//         <Route path="/Women" element={<Women />}/>
+
+//         <Route path="/signup" element={ <SignUp />} />
+
+//        <Route path="/login" element={ <Login />} />
+
+//         <Route path="/New" element={<New />} />
+
+//         <Route path="/singleProduct" element={<SingleProductPage />} />
+          
+      
+
+//       </Routes>
+//       <Footer/>
+//     </Router>
+
     </CartProvider>
   );
 }

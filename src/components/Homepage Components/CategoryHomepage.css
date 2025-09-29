@@ -51,6 +51,8 @@
     transition: 0.3s ease-in;
 }
 
-.button-box button{
+.button-box a{
     font-family: "Lexend Exa", sans-serif;
+    text-decoration: none;
+
 }
