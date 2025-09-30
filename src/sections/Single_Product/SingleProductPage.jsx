@@ -36,11 +36,11 @@ const SingleProductPage = () => {
       <img src={selectedImg} alt={product.product_name} width={300} className='singleProduct-img'/>
       </div>
       <div className="title-price">
-        <h1 className='product-title'>{product.product_name}</h1>
-        <p className='product-price'>${product.price}</p>
+        <h1 className='single-product-title'>{product.product_name}</h1>
+        <p className='single-product-price'>${product.price}</p>
       </div>
       
-      <p className='product-desc'>{product.description}</p>
+      <p className='single-product-desc'>{product.description}</p>
 
       <div className='size-cart'>
         <h2>Explore product Details</h2>
