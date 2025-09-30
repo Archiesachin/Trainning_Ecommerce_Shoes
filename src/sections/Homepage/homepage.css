@@ -69,8 +69,52 @@
     cursor: pointer;
 }
 
+@media (max-width: 1165px) {
+  .text-part {
+    display: none !important;
+  }
+}
 
-
+@media (max-width: 900px) {
+  .hero-container {
+    height: auto;              /* Allow to shrink to content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Optional: add padding or margins to separate sections */
+    padding-bottom: 20px;
+  }
+  .slideshow-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .text-part {
+    position: static !important; /* Removes absolute positioning */
+    top: unset;
+    right: unset;
+    left: unset;
+    margin: 20px 0 0 0;         /* Space above the text */
+    text-align: center !important; /* Center text and buttons */
+    padding: 24px 0 0 0;
+    width: 100%;
+    background: none;
+    color: #222; /* Pick color for good contrast on beige */
+    font-size: 18px; /* Optional: reduce font size for mobile */
+  }
+  .text-part p, .text-part h4 {
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .buttons {
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
 
 
 
