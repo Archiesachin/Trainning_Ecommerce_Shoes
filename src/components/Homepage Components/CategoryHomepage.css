@@ -6,17 +6,17 @@
 }
 
 .category-box img{
-    height: 400px;
-    width: 300px;
-    border-radius: 30px;
+  width: 100%;
+  height: auto; /* preserve aspect ratio */
+  border-radius: 30px;
+  display: block;
 }
 
 .category-box{
-    border-radius: 30px;
-    transition: 0.3s ease-in;
-    height: 400px;
-    width: 300px;
-    overflow: hidden;
+  border-radius: 30px;
+  transition: 0.3s ease-in;
+  width: 300px;
+  overflow: hidden;
 }
 
 .category-box:hover{
@@ -55,4 +55,63 @@
     font-family: "Lexend Exa", sans-serif;
     text-decoration: none;
 
+}
+
+@media (max-width: 1024px) {
+  .category-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .category-box {
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+  .category-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+}
+/* At tablet widths show two items per row */
+@media (max-width: 768px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 0 12px;
+    justify-items: center;
+  }
+  .category-box {
+    width: 100%;
+    max-width: 420px;
+  }
+  .category-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+/* On small screens stack one-per-row */
+@media (max-width: 480px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 0 8px;
+  }
+  .category-box {
+    width: 100%;
+    max-width: none;
+  }
+  .button-box button, .button-invisible {
+    width: 90%;
+    max-width: 320px;
+  }
+  /* keep hiding the fourth box on very small screens if desired */
+  .category-box:nth-child(4) {
+    display: none;
+  }
 }
