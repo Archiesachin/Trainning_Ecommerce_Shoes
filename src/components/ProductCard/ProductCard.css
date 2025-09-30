@@ -33,7 +33,10 @@
   color: white;
   font-family: "Lexend Exa", sans-serif;
   font-weight: normal;
+  text-decoration: underline;
+  
 }
+
 
 /* .product-card__category{
   color: black;

@@ -35,7 +35,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/New" element={<New />} />
-          <Route path="/singleProduct" element={<SingleProductPage />} />
+          <Route path="/singleProduct/:id" element={<SingleProductPage />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
         {!isCheckout && <Footer />}
