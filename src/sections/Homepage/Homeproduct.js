@@ -4,6 +4,7 @@ const Homeproduct = [
     Title: "Kelly Green",
     img: "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
     colors: '#406e42',
+    
   },
   {
     id: 2,
@@ -14,8 +15,18 @@ const Homeproduct = [
   {
     id: 3,
     Title: "Poppy Red",
-    img: "/images/Products/A11832_25Q3_Wool-Cruiser-Poppy-Red-Natural-White-Sole_PDP_LEFT__1_1.png",
+    img: "/images/Products/A11832_25Q3_Wool-Cruiser-Poppy-Red-Natural-White-Sole_PDP_LEFT__1.png",
     colors: 'rgb(190, 50, 65)',
+    product_name: 'Womens Wool Cruiser',
+    images: [
+      "/images/Products/A11832_25Q3_Wool-Cruiser-Poppy-Red-Natural-White-Sole_PDP_TD.png",
+      "/images/Products/A11832_25Q3_Wool-Cruiser-Poppy-Red-Natural-White-Sole_PDP_BACK.png",
+      "/images/Products/A11832_25Q3_Wool-Cruiser-Poppy-Red-Natural-White-Sole_PDP_PAIR_3Q.png",
+      "/images/Products/A11832_25Q3_Wool-Cruiser-Poppy-Red-Natural-White-Sole_PDP_SOLE.png"
+    ],
+    description: "Lightweight comfort and classic style crafted with recycled Italian felt wool.",
+    price: 100.00,
+
   },
   {
     id: 4,

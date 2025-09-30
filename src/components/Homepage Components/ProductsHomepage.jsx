@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Homeproduct from '../../sections/Homepage/Homeproduct'
+import product from '../../sections/Homepage/Homeproduct'
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 
@@ -51,11 +51,13 @@ export default function ProductsHomepage() {
       <Link to='/men'><h3 style={{color:'black',padding:'20px', fontWeight:'normal', fontSize:'16px', textDecoration:'underline'}}>SHOP MEN</h3></Link>
       <Link to='/women'><h3 style={{color:'black', padding:'20px', fontWeight:'normal', fontSize:'16px', textDecoration:'underline'}}>SHOP WOMEN</h3></Link>
       </div>
-     <Slider {...settings}>
-        {Homeproduct.map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </Slider>
+      <Slider {...settings}>
+      {product.map(product => (
+        <Link key={product.id} to={`/singleProduct/${product.id}`} style={{ textDecoration: "none" }}>
+          <ProductCard product={product} />
+        </Link>
+      ))}
+    </Slider>
     </div>
   );
 }
