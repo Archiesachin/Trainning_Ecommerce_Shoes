@@ -46,14 +46,14 @@
     border: 0.5px solid #757575;
 }
 
-.product-title{
+.single-product-title{
     font-family: "Lexend Era", sans-serif;
     font-size: 30px;
     font-weight: normal;
     padding-bottom:10px ;
 }
 
-.product-desc{
+.single-product-desc{
     color: #575755;
     font-family: "Lexend Exa", sans-serif;
     letter-spacing: -1px;
@@ -65,7 +65,7 @@
     gap: 20px;
 }
 
-.product-price{
+.single-product-price{
     font-size: 25px;
     padding-bottom: 10px;
 }
