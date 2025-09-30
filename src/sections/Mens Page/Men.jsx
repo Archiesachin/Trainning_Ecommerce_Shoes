@@ -136,12 +136,11 @@ function Men() {
       {/* Filter Panel */}
       {showFilterPanel && (
         <div className="filter-panel">
-          <h3>Filter Products</h3>
 
           {/* Label filter */}
           <div className="filter-group">
-            <strong>Label:</strong>
-            {["NEW", "BESTSELLER"].map((lbl) => (
+            <h4>Label:</h4>
+            {["New", "Bestseller"].map((lbl) => (
               <label key={lbl}>
                 <input
                   type="checkbox"
@@ -158,7 +157,7 @@ function Men() {
 
           {/* Color filter */}
           <div className="filter-group">
-            <strong>Colors:</strong>
+            <h4>Color:</h4>
             {allColors.map((c) => (
               <label key={c}>
                 <input
@@ -177,12 +176,12 @@ function Men() {
           {/* Price filter */}
           <div className="filter-group">
             <label>
-              <strong>Max Price: ${maxPriceFilter}</strong>
+              <h4>Price: ${maxPriceFilter}</h4>
             </label>
             <input
               type="range"
               min="0"
-              max="500"
+              max="300"
               value={maxPriceFilter}
               onChange={(e) => setMaxPriceFilter(Number(e.target.value))}
             />
@@ -248,74 +247,7 @@ function Men() {
         })}
       </div>
 
-      {/* Promo Banner */}
-      
-      <div className="promo-banner-men">
-        <div className="promo-content-men">
-          <span className="promo-small">TWO DAYS ONLY</span>
-          <h2 className="promo-title">$30 Off When You Spend $150</h2>
-          <p className="promo-body">
-            For 9/24–9/25, your cart just got cozier. Spend $150 and we’ll drop $30 off, no code needed. Exclusions apply.
-          </p>
-        </div>
-      </div>
-
-
-      
-      <div className="men-products-wrapper">
-        {sortedProducts.map((product) => {
-          const currentVariant = product.variants[selectedVariants[product.id]];
-          const hasSizes = product.sizes && product.sizes.length > 0;
-          return (
-            <div
-              key={product.id}
-              className={`product-card${hoveredCardId === product.id ? " hover" : ""}`}
-              onMouseEnter={() => setHoveredCardId(product.id)}
-              onMouseLeave={() => setHoveredCardId(null)}
-              style={{ position: "relative", overflow: "visible" }}
-            >
-              {product.label && <span className="product-label">{product.label}</span>}
-              <img
-                src={currentVariant.image}
-                alt={`${product.name} - ${currentVariant.colorName}`}
-                className="product-image"
-                draggable="false"
-              />
-              <div className="product-body">
-                <h3 className="product-title">{product.name}</h3>
-                <div className="product-subtitle">{product.subtitle}</div>
-                <div className="product-price">${product.price}</div>
-                <div className="product-colors" onClick={(e) => e.stopPropagation()}>
-                  {product.variants.map((variant, idx) => (
-                    <span
-                      key={idx}
-                      className={`color-dot${
-                        selectedVariants[product.id] === idx ? " selected" : ""
-                      }`}
-                      style={{ background: variant.colorHex }}
-                      title={variant.colorName}
-                      onClick={() => handleColorSelect(product.id, idx)}
-                    ></span>
-                  ))}
-                  {product.extraColors > 0 && (
-                    <span className="extra-colors">{`+${product.extraColors}`}</span>
-                  )}
-                </div>
-              </div>
-
-              {hoveredCardId === product.id && hasSizes && (
-                <div className="size-dropdown-float">
-                  {product.sizes.map((size) => (
-                    <div className="size-box-float" key={size}>
-                      {size}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
+   
 
     </div>
   );
