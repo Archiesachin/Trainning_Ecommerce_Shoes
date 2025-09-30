@@ -157,12 +157,11 @@ function Women() {
       {/* Filter Panel */}
       {showFilterPanel && (
         <div className="filter-panel">
-          <h3>Filter Products</h3>
 
           {/* Label filter */}
           <div className="filter-group">
-            <strong>Label:</strong>
-            {["NEW", "BESTSELLER"].map((lbl) => (
+            <h4>Label:</h4>
+            {["New", "Bestseller"].map((lbl) => (
               <label key={lbl}>
                 <input
                   type="checkbox"
@@ -181,7 +180,7 @@ function Women() {
 
           {/* Color filter */}
           <div className="filter-group">
-            <strong>Colors:</strong>
+            <h4>Colors:</h4>
             {allColors.map((c) => (
               <label key={c}>
                 <input
@@ -201,7 +200,7 @@ function Women() {
           {/* Price filter */}
           <div className="filter-group">
             <label>
-              <strong>Max Price: ${maxPriceFilter}</strong>
+              <h4>Price: ${maxPriceFilter}</h4>
             </label>
             <input
               type="range"
@@ -279,17 +278,6 @@ function Women() {
         })}
       </div>
 
-      {/* Promo Banner */}
-      <div className="promo-banner-women">
-        <div className="promo-content-women">
-          <span className="promo-small">TWO DAYS ONLY</span>
-          <h2 className="promo-title">$30 Off When You Spend $150</h2>
-          <p className="promo-body">
-            For 9/24–9/25, your cart just got cozier. Spend $150 and we’ll drop
-            $30 off, no code needed. Exclusions apply.
-          </p>
-        </div>
-      </div>
     </div>
   );
 }

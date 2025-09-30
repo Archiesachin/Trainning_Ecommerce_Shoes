@@ -5,6 +5,7 @@ import "./CartDrawer.css";
 import { FaTimes } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useCart } from "./CartContext.jsx";
+import { Link} from "react-router-dom";
 
 const CartDrawer = () => {
   const { cartOpen, closeCart, cartItems, increaseQty, decreaseQty, removeFromCart, addToCart } = useCart();
@@ -122,7 +123,7 @@ const CartDrawer = () => {
             ${cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0)}
           </span>
         </div>
-        <button className="cart-checkout-btn">CHECKOUT</button>
+        <Link to="/checkout"><button className="cart-checkout-btn">CHECKOUT</button></Link>
         <div className="cart-express-btns">
           <button className="amazon-pay">amazon pay</button>
           <button className="paypal">PayPal</button>
