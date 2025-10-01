@@ -3,7 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useParams } from "react-router-dom";
 import homeData from "../Homepage/Homeproduct";
-import mensData from '../Mens Page/menProducts'
+import mensData from '../Mens Page/menProducts';
+import womenData from '../Womens Page/womenProducts'
+import newData from '../New Arrivals Page/newProducts'
 import { useState } from "react";
 import './singleProduct.css'
 import { useCart } from '../../components/Cart/CartContext';
@@ -18,6 +20,10 @@ const SingleProductPage = () => {
     product = mensData.find(p => p.id === parseInt(id));
   } else if (category === "home") {
     product = homeData.find(p => p.id === parseInt(id));
+  }else if (category === "womens") {
+    product = womenData.find(p => p.id === parseInt(id));
+  }else if (category === "new") {
+    product = newData.find(p => p.id === parseInt(id));
   }
 
   const [selectedImg, setSelectedImg] = useState(product.images[0]);

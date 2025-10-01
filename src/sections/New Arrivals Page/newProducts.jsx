@@ -3,7 +3,7 @@ export const newProducts = [
     {
     id: 1,
     label: "New",
-    name: "WOMEN'S CRUISER",
+    product_name: "WOMEN'S CRUISER",
     subtitle: "Blizzard",
     price: 110,
     variants: [
@@ -30,7 +30,7 @@ export const newProducts = [
   {
     id: 2,
     label: "New",
-    name: "MEN'S CRUISER",
+    product_name: "MEN'S CRUISER",
     subtitle: "Blizzard",
     price: 100,
     variants: [
@@ -62,7 +62,7 @@ export const newProducts = [
   {
     id: 3,
     label: "New",
-    name: "MEN'S RUNNER NZ CORDUROY",
+    product_name: "MEN'S RUNNER NZ CORDUROY",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -93,7 +93,7 @@ export const newProducts = [
   {
     id: 4,
     label: "New",
-    name: "MEN'S TREE DASHER 2",
+    product_name: "MEN'S TREE DASHER 2",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -123,7 +123,7 @@ export const newProducts = [
   {
     id: 5,
     label: "New",
-    name: "MEN'S WOOL CRUISER SLIP-ON",
+    product_name: "MEN'S WOOL CRUISER SLIP-ON",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -153,7 +153,7 @@ export const newProducts = [
   {
     id: 6,
     label: "New",
-    name: "MEN'S STRIDER",
+    product_name: "MEN'S STRIDER",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -184,7 +184,7 @@ export const newProducts = [
   {
     id: 7,
     label: "New",
-    name: "MEN'S CANVAS PIPER",
+    product_name: "MEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -214,7 +214,7 @@ export const newProducts = [
     {
     id: 8,
     label: "New",
-    name: "MEN'S TREE GLIDER",
+    product_name: "MEN'S TREE GLIDER",
     subtitle: "Natural Black",
     price: 135,
     variants: [
@@ -245,7 +245,7 @@ export const newProducts = [
   {
     id: 9,
     label: "New",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
     
@@ -269,7 +269,7 @@ export const newProducts = [
   {
     id: 10,
     label: "New",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
     
@@ -300,7 +300,7 @@ export const newProducts = [
   ,{
     id: 11,
     label: "New",
-    name: "MEN'S COURIER",
+    product_name: "MEN'S COURIER",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -330,7 +330,7 @@ export const newProducts = [
   {
     id: 12,
     label: "New",
-    name: "RECYCLED SHOE BAGTOTE ",
+    product_name: "RECYCLED SHOE BAGTOTE ",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
