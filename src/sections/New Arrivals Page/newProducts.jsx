@@ -205,18 +205,18 @@ export const newProducts = [
   ,{
     id: 11,
     label: "New",
-    name: "MEN'S CANVAS PIPER",
+    name: "MEN'S COURIER",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
       {
-        colorName: "Dark Tan",
-        colorHex: "#cd3f3fff",
+        colorName: "Grey",
+        colorHex: "#322e2eff",
         image: "public/images/mens/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_LEFT-2000x2000.png",
       },
       {
-        colorName: "Navy",
-        colorHex: "#A88256",
+        colorName: "White",
+        colorHex: "#f0f0f0ff",
         image: "public/images/mens/A11254_25Q1_Courier_Travel_Blizzard_Hazy_Indigo_Blizzard_PDP_LEFT-2000x2000.png",
       }
     ],
@@ -226,18 +226,18 @@ export const newProducts = [
   {
     id: 12,
     label: "New",
-    name: "MEN'S CANVAS PIPER",
+    name: "RECYCLED SHOE BAGTOTE ",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
       {
-        colorName: "Dark Tan",
-        colorHex: "#cd3f3fff",
+        colorName: "Green",
+        colorHex: "#0a2404ff",
         image: "public/images/mens/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Front_25106-2000x2000.png",
       },
       {
-        colorName: "Navy",
-        colorHex: "#A88256",
+        colorName: "Black",
+        colorHex: "#000000ff",
         image: "public/images/mens/A11544_24Q4_Recycled_Shoe_Bag_True_Black_PDP_Front_25120-1300x1300.png",
       }
     ],
