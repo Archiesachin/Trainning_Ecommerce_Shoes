@@ -1,7 +1,4 @@
-/* ====================== General Section ====================== */
-*{
-  font-family: "Lexend Exa", sans-serif;
-}.men-section-bg {
+.men-section-bg {
   min-height: 100vh;
   padding: 10px 0 80px 0;
   display: flex;
@@ -27,6 +24,7 @@
   margin-bottom: 0;
   color: #171717;
   font-weight: 400;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .men-desc {
@@ -34,6 +32,7 @@
   margin-bottom: 30px;
   color: #757575;
   font-size: 14px;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 /* ====================== Filter + Sort Section ====================== */
@@ -221,6 +220,7 @@
   padding: 4px 12px;
   border-radius: 14px;
   font-weight: 600;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .product-image {
@@ -238,22 +238,26 @@
   gap: 5px;
 }
 .product-title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0 0 2px 0;
   text-transform: uppercase;
-  
   font-family: "Lexend Exa", sans-serif;
   
 }
+
+.product-title a{
+  text-decoration: none;
+}
 .product-subtitle {
-  font-size: 16px;
+  font-size: 13px;
   color: #444;
+  font-family: "Lexend Exa", sans-serif;
 }
 .product-price {
-  font-size: 1.09rem;
+  font-size: 13px;
   margin-top: 4px;
-  font-weight: 500;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .product-colors {
