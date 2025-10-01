@@ -1,8 +1,9 @@
 /* ====================== General Section ====================== */
-.men-section-bg {
+*{
+  font-family: "Lexend Exa", sans-serif;
+}.men-section-bg {
   min-height: 100vh;
   padding: 10px 0 80px 0;
-  font-family: 'Inter', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,10 +15,10 @@
   color: #757575;
   letter-spacing: 0.01em;
   margin-left: 40px;
+  font-family: "Lexend Exa", sans-serif;
 }
 .men-breadcrumb span {
   margin: 0 10px;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
 
 .men-title {
@@ -25,7 +26,6 @@
   font-size: 24px;
   margin-bottom: 0;
   color: #171717;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -34,8 +34,6 @@
   margin-bottom: 30px;
   color: #757575;
   font-size: 14px;
-  margin-top: 6px;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
 
 /* ====================== Filter + Sort Section ====================== */
@@ -45,7 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
+  
+  font-family:"Geograph",system-ui, sans-serif;
   width: 95.6vw;
   height: 60px;
   margin: 0 23px 0 23px;
@@ -65,6 +64,8 @@
   cursor: pointer;
   margin: 5px 5px 5px 5px;
   width: auto;
+  
+  font-family:"Geograph",system-ui, sans-serif;
 }
 
 .filter-icon-circle {
@@ -75,9 +76,17 @@
   height: 42px;
   background: transparent;
   border: none;
+  
+  font-family:"Geograph",system-ui, sans-serif;
 }
 .filter-sliders-svg {
   display: block;
+  
+  font-family:"Geograph",system-ui, sans-serif;
+}
+.men-product-count{
+  
+  font-family:"Geograph",system-ui, sans-serif;
 }
 
 /* Featured dropdown */
@@ -93,10 +102,11 @@
   height: 40px;
   text-align: center;
   cursor: pointer;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
   letter-spacing: 0.02em;
   transition: border 0.18s, background 0.18s;
   margin-top: 10px auto 10px auto;
+  
+  font-family:"Geograph",system-ui, sans-serif;
 }
 .featured-dropdown:hover {
   border-color: #044879;
@@ -232,6 +242,9 @@
   font-weight: 400;
   margin: 0 0 2px 0;
   text-transform: uppercase;
+  
+  font-family: "Lexend Exa", sans-serif;
+  
 }
 .product-subtitle {
   font-size: 16px;

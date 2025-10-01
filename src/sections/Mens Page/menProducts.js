@@ -5,22 +5,23 @@ export const menProducts = [
     label: "New",
     name: "MEN'S CRUISER",
     subtitle: "Blizzard",
-    price: 100,
+    price: 73,
     variants: [
       {
         colorName: "Blizzard",
         colorHex: "#474130ff",
-        image: "public/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
+        image: "public/images/mens/products/A11946_25Q3_Runner-NZ-Corduroy-Dark-Tan-Stony-Cream-Sole_PDP_LEFT__1.png",
       },
-      {
-        colorName: "Navy",
-        colorHex: "#395131ff",
-        image: "public/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png",
-      }
+      
     
     ],
     
     sizes: [],
+    images:["public/images/mens/products/A11946_25Q3_Runner-NZ-Corduroy-Dark-Tan-Stony-Cream-Sole_PDP_LEFT__1.png",
+      "public/images/mens/products/A11946_25Q3_Runner-NZ-Corduroy-Dark-Tan-Stony-Cream-Sole_PDP_BACK.png",
+     " public/images/mens/products/A11946_25Q3_Runner-NZ-Corduroy-Dark-Tan-Stony-Cream-Sole_PDP_TD.png"
+    ],
+    desc:"The Cruiser is a modern take on a classic silhouette, crafted with sustainable materials and designed for all-day comfort."
   },
   {
     id: 2,
@@ -32,7 +33,8 @@ export const menProducts = [
       {
         colorName: "Mist",
         colorHex: "#6fc139ff",
-        image: "public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+        image:"public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+        
       },
       {
         colorName: "Slate",
@@ -42,6 +44,11 @@ export const menProducts = [
     ],
     
     sizes: [],
+    images: ["public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+          "public/images/mens/products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_BACK_510089fd-5e54-4168-95d6-ae58e8f538b6 (1).png",
+          "public/images/mens/products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_TD_e514df00-2a9a-4317-a3d2-4df09256af98.png"
+        ],
+    desc:"The Tree Runner NZ offers a brand new featherbed insole while preserving the effortless style of our best-selling original."
   },
   {
     id: 3,
@@ -53,7 +60,8 @@ export const menProducts = [
       {
         colorName: "Natural Black",
         colorHex: "#222223",
-        image: "/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+        image:"/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+       
       },
       {
         colorName: "Slate",
@@ -63,32 +71,45 @@ export const menProducts = [
       
     ],
     sizes: [],
+     images:[ "/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+          "public/images/mens/products/A11749_25Q3_Wool_Cruiser_Slip_On_Natural_Black_Blizzard_Sole_PDP_BACK.png",
+          "public/images/mens/products/A11749_25Q3_Wool_Cruiser_Slip_On_Natural_Black_Blizzard_Sole_PDP_TD.png"
+        ],
+    desc:"The Tree Glider is designed for all-day comfort with a lightweight, breathable knit upper and our signature Tree™ sole."
   },
   {
     id: 4,
     label: "New",
     name: "MEN'S RUNNER NZ CORDUROY",
     subtitle: "Dark Tan",
-    price: 120,
+    price: 106,
     variants: [
       {
         colorName: "Dark Tan",
         colorHex: "#1c1a19ff",
-        image: "/public/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
+        image: "https://www.allbirds.com/cdn/shop/files/A10995_24Q4_Runner-Protect-Dark-Grey-Medium-Grey_PDP_LEFT__1_37e926eb-9007-4be0-bb92-d7a5f7e3e567.png?v=1751060054&width=1024",
       },
       {
         colorName: "Navy",
         colorHex: "#454546ff",
-        image: "public/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png",
+        image: "https://www.allbirds.com/cdn/shop/files/A10998_24Q4_Runner-Protect-Natural-Black-Natural-White_PDP_LEFT__1_3b971c6e-b6f9-472d-b0e0-991dc8e44df5.png?v=1751060746&width=1024",
       }
     ],
     extraColors: 0,
     sizes: [],
+    images:["https://www.allbirds.com/cdn/shop/files/A10995_24Q4_Runner-Protect-Dark-Grey-Medium-Grey_PDP_LEFT__1_37e926eb-9007-4be0-bb92-d7a5f7e3e567.png?v=1751060054&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A10998_24Q4_Runner-Protect-Natural-Black-Natural-White_PDP_BACK_34195584-bc1f-4bda-a6c7-d36eade623ca.png?v=1751060747&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A10998_24Q4_Runner-Protect-Natural-Black-Natural-White_PDP_TD_4cc577b8-7fa1-4515-a4e6-1831aa7b013b.png?v=1751060747&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A10998_24Q4_Runner-Protect-Natural-Black-Natural-White_PDP_SOLE_d3cfb331-3357-454f-9add-4248d91d6381.png?v=1751060746&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A10998_24Q4_Runner-Protect-Natural-Black-Natural-White_PDP_PAIR_3Q_6aa7d544-e369-4891-8a47-d9449d17f26c.png?v=1751060747&width=1024"
+    ],
+    desc:"The Runner NZ Corduroy is a seasonal update to our classic Tree Runner, crafted with soft corduroy fabric made from recycled plastic bottles."
+    
   },
   {
     id: 5,
     label: "New",
-    name: "MEN'S TREE DASHER 2",
+    name: "MEN'S SUPERLIGHT TR",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
@@ -105,34 +126,47 @@ export const menProducts = [
     ],
     extraColors: 0,
     sizes: [],
+    images:["	https://www.allbirds.com/cdn/shop/files/TR3MMST080…2fc-aef3-7d6093c605bf.png?v=1751166590&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/TR3MMST080…66b-a5e1-091a32c6382f.png?v=1751166590&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/TR2MMST_SHOE_TOP_GLOBAL_MENS_TREE_RUNNER_MIST_WHITE_2be3a688-1266-4a6a-a702-d897c853a2a1.png?v=1751166590&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/TR3MMST080…f95-a531-ddb3d833201e.png?v=1751166590&width=1024"
+    ],
+    desc:"The Superlight TR is our lightest and most breathable shoe, designed for maximum comfort and performance with a sleek, minimalist design."
   },
   {
     id: 6,
     label: "New",
-    name: "MEN'S WOOL CRUISER SLIP-ON",
+    name: "MEN'S TREE DASHER 2",
     subtitle: "Dark Tan",
     price: 120,
     variants: [
       {
         colorName: "Dark Tan",
         colorHex: "#232439",
-        image: "public/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
+        image: "https://www.allbirds.com/cdn/shop/files/A11814_25Q4_Tree-Dasher-2-Natural-Black-Royal-Blue-Blizzard-Sole_PDP_LEFT.png?v=1758327119&width=1024",
       },
       {
         colorName: "Navy",
         colorHex: "#f3f3f3ff",
-        image: "public/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png",
+        image: "https://www.allbirds.com/cdn/shop/files/A10684_24Q1_Tree-Dasher-2-Blizzard-Hazy-Cobalt-Clarity-Blue_PDP_LEFT__1.png?v=1750973302&width=1024",
       }
     ],
     extraColors: 0,
     sizes: [],
+    images:["https://www.allbirds.com/cdn/shop/files/A11814_25Q4_Tree-Dasher-2-Natural-Black-Royal-Blue-Blizzard-Sole_PDP_LEFT.png?v=1758327119&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11814_25Q4_Tree-Dasher-2-Natural-Black-Royal-Blue-Blizzard-Sole_PDP_BACK.png?v=1758327119&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11814_25Q4_Tree-Dasher-2-Natural-Black-Royal-Blue-Blizzard-Sole_PDP_TD.png?v=1758327119&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11814_25Q4_Tree-Dasher-2-Natural-Black-Royal-Blue-Blizzard-Sole_PDP_SOLE.png?v=1758327119&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11814_25Q4_Tree-Dasher-2-Natural-Black-Royal-Blue-Blizzard-Sole_PDP_PAIR_3Q.png?v=1758327120&width=1024"
+    ],
+    desc:"The Wool Cruiser Slip-On is a convenient and comfortable sneaker made with sustainable materials, perfect for on-the-go wear."  
   },
   {
     id: 7,
     label: "New",
     name: "MEN'S STRIDER",
     subtitle: "Dark Tan",
-    price: 120,
+    price: 90,
     variants: [
       {
         colorName: "Dark Tan",
@@ -147,13 +181,18 @@ export const menProducts = [
     ],
     extraColors: 0,
     sizes: [],
+    images:["https://www.allbirds.com/cdn/shop/files/TP1MMOO_TR…240-9f3b-d888fb001faa.png?v=1751165148&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/TP1MMOO_TREE_PIPER_BACK_GLOBAL_MOONRISE_WHITE_cd5bba77-76f3-4a66-90a9-6b295a7846c9.png?v=1751165148&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/TP1MMOO_TR…951-9250-6c84cd2fc772.png?v=1751165148&width=1024"
+    ],
+    desc:"The Strider is a versatile sneaker designed for all-day comfort, featuring a breathable knit upper and our signature Tree™ sole."
   },
   {
     id: 8,
     label: "New",
     name: "MEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
-    price: 120,
+    price: 78,
     variants: [
       {
         colorName: "Dark Tan",
@@ -168,48 +207,96 @@ export const menProducts = [
     ],
     extraColors: 0,
     sizes: [],
+    images:[
+      "https://www.allbirds.com/cdn/shop/files/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4.png?v=1756338702&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_BACK_0b450df4-7209-43bb-b688-cf18304fe665.png?v=1756338701&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_TD_ef902ed7-6e12-4f4c-8c9d-8da35c383cb6.png?v=1756338702&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_SOLE_2a7ea35d-c59f-4e7d-a891-75dbb816bcb5.png?v=1756338702&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_PAIR_3Q_428da3b0-95c3-4343-9915-7ee4792ff409.png?v=1756338702&width=1024"
+    ],
+    desc:"The Canvas Piper is a casual sneaker made with sustainable materials, designed for everyday wear with a comfortable fit and timeless style."
   }
   ,{
     id: 9,
     label: "Bestseller",
-    name: "MEN'S CANVAS PIPER",
+    name: "MEN'S CRUISER MID EXPLOREER",
     subtitle: "Dark Tan",
-    price: 120,
+    price: 110,
     variants: [
       {
         colorName: "Dark Tan",
-        colorHex: "#cd3f3fff",
-        image: "public/images/mens/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_LEFT-2000x2000.png",
+        colorHex: "#223420ff",
+        image: "https://www.allbirds.com/cdn/shop/files/A11853_25Q3_Cruiser-Mid-Explore-Rustic-Green-Hazy-Beige_PDP_LEFT_161a7d72-a755-49cc-b977-31305c32594b.png?v=1758235530&width=1024",
       },
       {
         colorName: "Navy",
-        colorHex: "#A88256",
-        image: "public/images/mens/A11254_25Q1_Courier_Travel_Blizzard_Hazy_Indigo_Blizzard_PDP_LEFT-2000x2000.png",
+        colorHex: "#906692ff",
+        image: "https://www.allbirds.com/cdn/shop/files/A11570_25Q3_Cruiser-Mid-Explore-Hazy-Burgundy-Rustic-Brown_PDP_LEFT.png?v=1758235265&width=1024",
       }
     ],
     extraColors: 0,
     sizes: [],
+    images:["https://www.allbirds.com/cdn/shop/files/A11853_25Q3_Cruiser-Mid-Explore-Rustic-Green-Hazy-Beige_PDP_LEFT_161a7d72-a755-49cc-b977-31305c32594b.png?v=1758235530&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11853_25Q3_Cruiser-Mid-Explore-Rustic-Green-Hazy-Beige_PDP_BACK_fad64830-1196-4754-9a78-5c87d7a26f43.png?v=1758235529&width=1024",
+    "https://www.allbirds.com/cdn/shop/files/A11853_25Q3_Cruiser-Mid-Explore-Rustic-Green-Hazy-Beige_PDP_TD_8453a411-8ff4-4b01-9402-f4a1a0c2b836.png?v=1758235529&width=1024",
+    "https://www.allbirds.com/cdn/shop/files/A11853_25Q3_Cruiser-Mid-Explore-Rustic-Green-Hazy-Beige_PDP_SOLE_e50f8a39-6a1c-4508-ad70-af561ea57c06.png?v=1758235530&width=1024",
+  "https://www.allbirds.com/cdn/shop/files/A11853_25Q3_Cruiser-Mid-Explore-Rustic-Green-Hazy-Beige_PDP_PAIR_3Q_0d144f2e-be40-4c75-9220-cd7e83498d25.png?v=1758235529&width=1024"],
+  desc:"The Cruiser mid explorer is a casual sneaker made with sustainable materials, designed for everyday wear with a comfortable fit and timeless style."
   },
   {
     id: 10,
     label: "New",
-    name: "MEN'S CANVAS PIPER",
+    name: "RECYCLED SHOE BAG",
     subtitle: "Dark Tan",
-    price: 120,
+    price: 60,
     variants: [
       {
         colorName: "Dark Tan",
-        colorHex: "#cd3f3fff",
-        image: "public/images/mens/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Front_25106-2000x2000.png",
+        colorHex: "#295630ff",
+        image: "https://www.allbirds.com/cdn/shop/files/A11546_24Q4_Recycled_Shoe_Bag_Twilight_Teal_PDP_Front_25106-1300x1300.png?v=1731027696&width=1024",
       },
       {
         colorName: "Navy",
-        colorHex: "#A88256",
+        colorHex: "#050404ff",
         image: "public/images/mens/A11544_24Q4_Recycled_Shoe_Bag_True_Black_PDP_Front_25120-1300x1300.png",
       }
     ],
     extraColors: 0,
     sizes: [],
+    images:["https://www.allbirds.com/cdn/shop/files/A11546_24Q4_Recycled_Shoe_Bag_Twilight_Teal_PDP_Front_25106-1300x1300.png?v=1731027696&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11546_24Q4_Recycled_Shoe_Bag_Twilight_Teal_PDP_Back_25112-1300x1300.png?v=1731027696&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11546_24Q4_Recycled_Shoe_Bag_Twilight_Teal_PDP_Shoe_25314-1300x1300.png?v=1731027696&width=1024"
+    ],
+    desc:"The Allbirds recycled shoe bag is made from 100% recycled materials, providing a sustainable and stylish way to carry your shoes on the go.",
+  }
+  ,
+   {
+    id: 11,
+    label: "New",
+    name: "MEN'S TRAIL RUNNER",
+    subtitle: "Dark Tan",
+    price: 60,
+    variants: [
+      {
+        colorName: "Dark Tan",
+        colorHex: "#ebf3ecff",
+        image: "https://www.allbirds.com/cdn/shop/files/A11428_25Q1_Trail_Runner_SWT_Weathered_White_Weathered_Grey_PDP_LEFT-2000x2000.png?v=1750995429&width=1024",
+      },
+      {
+        colorName: "Navy",
+        colorHex: "#bec5e6ff",
+        image: "https://www.allbirds.com/cdn/shop/files/A11106_24Q2_Trail-Runner-SWT-Medium-Grey-Medium-Grey-Rugged-Khaki_PDP_LEFT__1.png?v=1750997224&width=1024",
+      }
+    ],
+    extraColors: 0,
+    sizes: [],
+    images:["https://www.allbirds.com/cdn/shop/files/A11428_25Q1_Trail_Runner_SWT_Weathered_White_Weathered_Grey_PDP_LEFT-2000x2000.png?v=1750995429&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11428_25Q1_Trail_Runner_SWT_Weathered_White_Weathered_Grey_PDP_BACK-2000x2000.png?v=1750995428&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11428_25Q1_Trail_Runner_SWT_Weathered_White_Weathered_Grey_PDP_TD-2000x2000.png?v=1750995428&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11428_25Q1_Trail_Runner_SWT_Weathered_White_Weathered_Grey_PDP_SOLE-2000x2000.png?v=1750995428&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11428_25Q1_Trail-Runner-SWT-Weathered-White-Weathered-Grey_PDP_PAIR_3Q_ac12e5d7-e8c6-4121-a83c-45c7ebe896d9.png?v=1750995428&width=1024"
+    ],
+    desc:"Technical adventure shoe, built for rugged durability and sneaker-like comfort",
   }
   
 ];
