@@ -1,8 +1,8 @@
 .cart-drawer {
   position: fixed;
   top: 0;
-  right: -560px; /* hide fully off-screen based on new width */
-  width: 520px; /* wider cart */
+  right: -560px; 
+  width: 520px;
   height: 100vh;
   background: #fff;
   box-shadow: -8px 0 24px rgba(60,60,60,0.18);
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 18px 0 0 18px;
+  font-family: "Lexend Exa", sans-serif;
 }
 .cart-drawer.open {
   right: 0;
