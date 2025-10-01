@@ -7,13 +7,41 @@ import { useParams } from "react-router-dom";
 import products from "../Homepage/Homeproduct";
 import { useState } from "react";
 import './singleProduct.css'
+import { useCart } from '../../components/Cart/CartContext';
 
 const SingleProductPage = () => {
   const { id } = useParams();
   const product = products.find(p => p.id === parseInt(id));
   const [selectedImg, setSelectedImg] = useState(product.images[0]);
+  const [selectedSize, setSelectedSize] = useState("");
+
+  const handleSizeChange = (e) => {
+    setSelectedSize(e.target.value);
+  };
 
   if (!product) return <div>Product not found.</div>;
+
+   const { addToCart, openCart } = useCart();
+
+  const handleAddToCart = () => {
+    if (!selectedSize || selectedSize === "size") {
+      // Optionally add validation.
+      alert("Please select a size before adding to cart.");
+      return;
+    }
+   
+    addToCart({
+      id: product.id,
+      image: product.img,
+      name: product.product_name,
+      color: "Default",
+      size: selectedSize,
+      price: product.price,
+      quantity: 1 
+    });
+
+    openCart();
+  };
   return (
     <div className="singleProduct-wrapper">
         <div className="products-breadcrumb">
@@ -46,24 +74,27 @@ const SingleProductPage = () => {
         <h2>Explore product Details</h2>
         <div className="add-button-grp">
           <div className="dropdown">
-            <select name="size-dropdown" id="">
-            <option value="size">Size</option>
-            <option >5</option>
-            <option>5.5</option>
-            <option>6</option>
-            <option>6.5</option>
-            <option>7</option>
-            <option>7.5</option>
-            <option>8</option>
-            <option>8.5</option>
-            <option >9</option>
-            <option>9.5</option>
-            <option>10</option>
-            <option>11</option>
+            <select 
+            name="size-dropdown"
+            value={selectedSize}
+            onChange={handleSizeChange}>
+                <option value="size">Size</option>
+                <option value="5">5</option>
+                <option value="5.5">5.5</option>
+                <option value="6">6</option>
+                <option value="6.5">6.5</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
             </select>
           </div>
 
-          <button>Add to Cart</button>
+          <button onClick={handleAddToCart}>Add to Cart</button>
           
         </div>
       </div>

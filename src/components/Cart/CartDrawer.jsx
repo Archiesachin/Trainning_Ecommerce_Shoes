@@ -25,7 +25,6 @@ const CartDrawer = () => {
         <div className="cart-header">
           <div className="cart-header-left">
             <span className="cart-title">CART ({cartItems.length})</span>
-            <span className="cart-promo">Spend $30 more to save $30!</span>
           </div>
           <button className="cart-close-btn" onClick={closeCart} aria-label="Close cart">
             <FaTimes size={22} />
