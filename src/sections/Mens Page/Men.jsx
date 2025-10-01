@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import menProducts from "./menProducts";
 import "./Men.css";
+import { Link } from "react-router-dom";
 
 const promoImg =
   "/public/images/mens/25Q3_SpendandSave_Collections-TilePromo-ShortBanner_Banner01-02_Mobile_2x3_d1979ade-3243-44c0-ac2f-40264deb2ccf.png";
@@ -197,6 +198,7 @@ function Men() {
           const currentVariant = product.variants[selectedVariants[product.id]];
           const hasSizes = product.sizes && product.sizes.length > 0;
           return (
+           
             <div
               key={product.id}
               className={`product-card${hoveredCardId === product.id ? " hover" : ""}`}
@@ -204,6 +206,7 @@ function Men() {
               onMouseLeave={() => setHoveredCardId(null)}
               style={{ position: "relative", overflow: "visible" }}
             >
+               <Link key={product.id} to={`/singleProduct/mens/${product.id}`}>
               {product.label && <span className="product-label">{product.label}</span>}
               <img
                 src={currentVariant.image}
@@ -211,8 +214,9 @@ function Men() {
                 className="product-image"
                 draggable="false"
               />
+              </Link>
               <div className="product-body">
-                <h3 className="product-title">{product.name}</h3>
+                <h3 className="product-title">{product.product_name}</h3>
                 <div className="product-subtitle">{product.subtitle}</div>
                 <div className="product-price">${product.price}</div>
                 <div className="product-colors" onClick={(e) => e.stopPropagation()}>

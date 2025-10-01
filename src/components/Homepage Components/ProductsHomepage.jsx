@@ -53,7 +53,7 @@ export default function ProductsHomepage() {
       </div>
       <Slider {...settings}>
       {product.map(product => (
-        <Link key={product.id} to={`/singleProduct/${product.id}`} style={{ textDecoration: "none" }}>
+        <Link key={product.id} to={`/singleProduct/home/${product.id}`} style={{ textDecoration: "none" }}>
           <ProductCard product={product} />
         </Link>
       ))}
