@@ -3,7 +3,7 @@ export const womenProducts = [
   {
     id: 1,
     label: "New",
-    name: "WOMEN'S CRUISER",
+    product_name: "WOMEN'S CRUISER",
     subtitle: "Blizzard",
     price: 120,
     variants: [
@@ -27,12 +27,11 @@ export const womenProducts = [
       "https://www.allbirds.com/cdn/shop/files/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_PAIR_3Q_245266dc-9e22-4670-99cf-3b704636df94.png?v=1756338372&width=1024"
     ],
     description: "Lightweight comfort and classic style crafted with recycled Italian felt wool.",
-    price: 120.00
   },
   {
     id: 2,
     label: "Bestseller",
-    name: "WOMEN'S TREE RUNNER",
+    product_name: "WOMEN'S TREE RUNNER",
     subtitle: "Mist",
     price: 100,
     variants: [
@@ -64,7 +63,7 @@ export const womenProducts = [
   {
     id: 3,
     label: "",
-    name: "WOMEN'S TREE GLIDER",
+    product_name: "WOMEN'S TREE GLIDER",
     subtitle: "Natural Black",
     price: 135,
     variants: [
@@ -94,7 +93,7 @@ export const womenProducts = [
   {
     id: 4,
     label: "New",
-    name: "WOMEN'S RUNNER NZ CORDUROY",
+    product_name: "WOMEN'S RUNNER NZ CORDUROY",
     subtitle: "Dark Tan",
     price: 160,
     
@@ -126,7 +125,7 @@ export const womenProducts = [
   {
     id: 5,
     label: "New",
-    name: "WOMEN'S TREE DASHER 2",
+    product_name: "WOMEN'S TREE DASHER 2",
     subtitle: "Dark Tan",
     price: 90,
     
@@ -157,7 +156,7 @@ export const womenProducts = [
   {
     id: 6,
     label: "New",
-    name: "WOMEN'S WOOL CRUISER SLIP-ON",
+    product_name: "WOMEN'S WOOL CRUISER SLIP-ON",
     subtitle: "Dark Tan",
     price: 121,
     variants: [
@@ -187,7 +186,7 @@ export const womenProducts = [
   {
     id: 7,
     label: "New",
-    name: "WOMEN'S STRIDER",
+    product_name: "WOMEN'S STRIDER",
     subtitle: "Dark Tan",
     price: 139,
     variants: [
@@ -217,7 +216,7 @@ export const womenProducts = [
   {
     id: 8,
     label: "New",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
     
@@ -247,7 +246,7 @@ export const womenProducts = [
   {
     id: 9,
     label: "New",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
     
@@ -277,7 +276,7 @@ export const womenProducts = [
   {
     id: 10,
     label: "Bestseller",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
     
@@ -307,7 +306,7 @@ export const womenProducts = [
   {
     id: 11,
     label: "New",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     subtitle: "Dark Tan",
     price: 140,
     

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import womenProducts from "./womenProducts";
 import "./Women.css";
+import { Link } from "react-router-dom";
 
 const promoImg =
   "/public/images/mens/25Q3_SpendandSave_Collections-TilePromo-ShortBanner_Banner01-02_Mobile_2x3_d1979ade-3243-44c0-ac2f-40264deb2ccf.png";
@@ -230,6 +231,7 @@ function Women() {
               onMouseLeave={() => setHoveredCardId(null)}
               style={{ position: "relative", overflow: "visible" }}
             >
+              <Link key={product.id} to={`/singleProduct/womens/${product.id}`}>
               {product.label && (
                 <span className="product-label">{product.label}</span>
               )}
@@ -239,8 +241,9 @@ function Women() {
                 className="product-image"
                 draggable="false"
               />
+              </Link>
               <div className="product-body">
-                <h3 className="product-title">{product.name}</h3>
+                <h3 className="product-title">{product.product_name}</h3>
                 <div className="product-subtitle">{product.subtitle}</div>
                 <div className="product-price">${product.price}</div>
                 <div
