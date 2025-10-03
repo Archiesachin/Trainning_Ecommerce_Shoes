@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import menProducts from "./menProducts";
 import "./Men.css";
@@ -23,7 +22,6 @@ function Men() {
   const [colorFilter, setColorFilter] = useState([]);
   const [maxPriceFilter, setMaxPriceFilter] = useState(500);
 
-  // Handle color selection for product variant
   const handleColorSelect = (productId, variantIdx) => {
     setSelectedVariants({
       ...selectedVariants,
@@ -31,15 +29,9 @@ function Men() {
     });
   };
 
-  // Toggle filter panel display
   const handleFilterClick = () => {
     setShowFilterPanel(!showFilterPanel);
   };
-
-  // Get all unique colors from products
-  const allColors = [
-    ...new Set(menProducts.flatMap((p) => p.variants.map((v) => v.colorName))),
-  ];
 
   // Apply filters
   const filteredProducts = menProducts.filter((product) => {
@@ -77,6 +69,11 @@ function Men() {
         return 0;
     }
   });
+
+  // Get all unique colors from products
+  const allColors = [
+    ...new Set(menProducts.flatMap((p) => p.variants.map((v) => v.colorName))),
+  ];
 
   return (
     <div className="men-section-bg">
@@ -116,10 +113,7 @@ function Men() {
               <circle cx="16" cy="20" r="1.2" fill="#23201c" />
             </svg>
           </div>
-          FILTER{" "}
-          <span className="men-product-count">
-            ({filteredProducts.length} products)
-          </span>
+          FILTER <span className="men-product-count">({filteredProducts.length} products)</span>
         </div>
 
         {/* Featured dropdown */}
@@ -137,71 +131,13 @@ function Men() {
           <option value="DATE_OLD_NEW">DATE, OLD TO NEW</option>
           <option value="DATE_NEW_OLD">DATE, NEW TO OLD</option>
         </select>
-      </div>
-
-      {/* Filter Pills Bar */}
-      <div className="filter-pills-bar">
-        {/* Label Pills */}
-        {labelFilter.map((lbl) => (
-          <span key={lbl} className="filter-pill">
-            {lbl}
-            <button
-              className="filter-pill-remove"
-              onClick={() => setLabelFilter(labelFilter.filter((l) => l !== lbl))}
-              aria-label={`Remove ${lbl} filter`}
-            >
-              ×
-            </button>
-          </span>
-        ))}
-        {/* Color Pills */}
-        {colorFilter.map((color) => (
-          <span key={color} className="filter-pill">
-            {color}
-            <button
-              className="filter-pill-remove"
-              onClick={() =>
-                setColorFilter(colorFilter.filter((c) => c !== color))
-              }
-              aria-label={`Remove ${color} filter`}
-            >
-              ×
-            </button>
-          </span>
-        ))}
-        {/* Price pill (if active) */}
-        {maxPriceFilter < 500 && (
-          <span className="filter-pill">
-            {`≤ $${maxPriceFilter}`}
-            <button
-              className="filter-pill-remove"
-              onClick={() => setMaxPriceFilter(500)}
-              aria-label="Remove price filter"
-            >
-              ×
-            </button>
-          </span>
-        )}
-        {/* Clear All Button */}
-        {(labelFilter.length > 0 ||
-          colorFilter.length > 0 ||
-          maxPriceFilter < 500) && (
-          <button
-            className="filter-pill-clearall"
-            onClick={() => {
-              setLabelFilter([]);
-              setColorFilter([]);
-              setMaxPriceFilter(500);
-            }}
-          >
-            Clear All
-          </button>
-        )}
+        
       </div>
 
       {/* Filter Panel */}
       {showFilterPanel && (
         <div className="filter-panel">
+
           {/* Label filter */}
           <div className="filter-group">
             <h4>Label:</h4>
@@ -211,10 +147,8 @@ function Men() {
                   type="checkbox"
                   checked={labelFilter.includes(lbl)}
                   onChange={(e) => {
-                    if (e.target.checked)
-                      setLabelFilter([...labelFilter, lbl]);
-                    else
-                      setLabelFilter(labelFilter.filter((l) => l !== lbl));
+                    if (e.target.checked) setLabelFilter([...labelFilter, lbl]);
+                    else setLabelFilter(labelFilter.filter((l) => l !== lbl));
                   }}
                 />{" "}
                 {lbl}
@@ -231,10 +165,8 @@ function Men() {
                   type="checkbox"
                   checked={colorFilter.includes(c)}
                   onChange={(e) => {
-                    if (e.target.checked)
-                      setColorFilter([...colorFilter, c]);
-                    else
-                      setColorFilter(colorFilter.filter((cl) => cl !== c));
+                    if (e.target.checked) setColorFilter([...colorFilter, c]);
+                    else setColorFilter(colorFilter.filter((cl) => cl !== c));
                   }}
                 />{" "}
                 {c}
@@ -250,15 +182,13 @@ function Men() {
             <input
               type="range"
               min="0"
-              max="500"
+              max="300"
               value={maxPriceFilter}
               onChange={(e) => setMaxPriceFilter(Number(e.target.value))}
             />
           </div>
 
-          <button onClick={() => setShowFilterPanel(false)}>
-            Apply Filters
-          </button>
+          <button onClick={() => setShowFilterPanel(false)}>Apply Filters</button>
         </div>
       )}
 
@@ -278,9 +208,6 @@ function Men() {
             >
                <Link key={product.id} to={`/singleProduct/mens/${product.id}`}>
               {product.label && <span className="product-label">{product.label}</span>}
-              {product.label && (
-                <span className="product-label">{product.label}</span>
-              )}
               <img
                 src={currentVariant.image}
                 alt={`${product.name} - ${currentVariant.colorName}`}
@@ -291,11 +218,6 @@ function Men() {
               <div className="product-body">
                 <h3 className="product-title">{product.product_name}</h3>
                 <div className="product-subtitle">{product.subtitle}</div>
-                <h3 className="product-title">{product.name}</h3>
-                {/* Updated subtitle to be color-specific */}
-                <div className="product-subtitle">
-                  {currentVariant.subtitle}
-                </div>
                 <div className="product-price">${product.price}</div>
                 <div className="product-colors" onClick={(e) => e.stopPropagation()}>
                   {product.variants.map((variant, idx) => (
@@ -309,11 +231,12 @@ function Men() {
                       onClick={() => handleColorSelect(product.id, idx)}
                     ></span>
                   ))}
-                  {!!product.extraColors && product.extraColors > 0 && (
+                  {product.extraColors > 0 && (
                     <span className="extra-colors">{`+${product.extraColors}`}</span>
                   )}
                 </div>
               </div>
+
               {hoveredCardId === product.id && hasSizes && (
                 <div className="size-dropdown-float">
                   {product.sizes.map((size) => (
@@ -327,6 +250,9 @@ function Men() {
           );
         })}
       </div>
+
+   
+
     </div>
   );
 }
