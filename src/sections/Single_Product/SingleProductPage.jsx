@@ -1,19 +1,32 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import { useParams } from "react-router-dom";
-import products from "../Homepage/Homeproduct";
+import homeData from "../Homepage/Homeproduct";
+import mensData from '../Mens Page/menProducts';
+import womenData from '../Womens Page/womenProducts'
+import newData from '../New Arrivals Page/newProducts'
 import { useState } from "react";
 import './singleProduct.css'
 import { useCart } from '../../components/Cart/CartContext';
 
 const SingleProductPage = () => {
-  const { id } = useParams();
-  const product = products.find(p => p.id === parseInt(id));
-  const [selectedImg, setSelectedImg] = useState(product.images[0]);
+  const { category, id } = useParams();
   const [selectedSize, setSelectedSize] = useState("");
+
+ 
+  let product
+  if (category === "mens") {
+    product = mensData.find(p => p.id === parseInt(id));
+  } else if (category === "home") {
+    product = homeData.find(p => p.id === parseInt(id));
+  }else if (category === "womens") {
+    product = womenData.find(p => p.id === parseInt(id));
+  }else if (category === "new") {
+    product = newData.find(p => p.id === parseInt(id));
+  }
+
+  const [selectedImg, setSelectedImg] = useState(product.images[0]);
 
   const handleSizeChange = (e) => {
     setSelectedSize(e.target.value);

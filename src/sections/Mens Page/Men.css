@@ -27,6 +27,7 @@
   margin-bottom: 0;
   color: #171717;
   font-weight: 400;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .men-desc {
@@ -34,6 +35,7 @@
   margin-bottom: 30px;
   color: #757575;
   font-size: 14px;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 /* Filter + Sort Section  */
@@ -331,6 +333,7 @@
   padding: 4px 12px;
   border-radius: 14px;
   font-weight: 600;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .product-image {
@@ -359,12 +362,13 @@
 .product-subtitle {
   font-size: 14px;
   color: #444;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .product-price {
   font-size: 12px;
   margin-top: 4px;
-  font-weight: 500;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .product-colors {
