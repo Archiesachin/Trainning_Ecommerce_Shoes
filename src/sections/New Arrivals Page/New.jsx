@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import newProducts from "./newProducts";
 import './New.css';
@@ -5,6 +6,8 @@ import { Link } from "react-router-dom";
  
 const promoImg = "/public/images/mens/25Q3_SpendandSave_Collections-TilePromo-ShortBanner_Banner01-02_Mobile_2x3_d1979ade-3243-44c0-ac2f-40264deb2ccf.png";
  
+import "./New.css";
+
 function New() {
   const [hoveredCardId, setHoveredCardId] = useState(null);
   const [selectedVariants, setSelectedVariants] = useState(
@@ -13,83 +16,60 @@ function New() {
       return acc;
     }, {})
   );
+
   const [sortOption, setSortOption] = useState("FEATURED");
   const [showFilterPanel, setShowFilterPanel] = useState(false);
 
-  // Filters state
+  // Filters
   const [labelFilter, setLabelFilter] = useState([]);
   const [colorFilter, setColorFilter] = useState([]);
   const [maxPriceFilter, setMaxPriceFilter] = useState(500);
 
-  const handleColorSelect = (productId, variantIdx) => {
-    setSelectedVariants({
-      ...selectedVariants,
-      [productId]: variantIdx,
-    });
-  };
+  // Unique values
+  const allColors = Array.from(new Set(newProducts.flatMap((p) => p.variants.map((v) => v.colorName.trim()))));
+  const allLabels = Array.from(new Set(newProducts.map((p) => p.label).filter(Boolean)));
 
-  const handleFilterClick = () => {
-    setShowFilterPanel(!showFilterPanel);
-  };
-
-  // Apply filters
+  // Filtering
   const filteredProducts = newProducts.filter((product) => {
-    // Label filter
-    const labelMatch =
-      labelFilter.length === 0 || labelFilter.includes(product.label);
-
-    // Color filter
+    const labelMatch = labelFilter.length === 0 || labelFilter.includes(product.label);
     const colorMatch =
       colorFilter.length === 0 ||
-      product.variants.some((v) => colorFilter.includes(v.colorName));
-
-    // Price filter
+      product.variants.some((v) => colorFilter.includes(v.colorName.trim()));
     const priceMatch = product.price <= maxPriceFilter;
-
     return labelMatch && colorMatch && priceMatch;
   });
 
-  // Sorting logic
+  // Sorting
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     switch (sortOption) {
-      case "PRICE_LOW_HIGH":
-        return a.price - b.price;
-      case "PRICE_HIGH_LOW":
-        return b.price - a.price;
-      case "ALPHA_AZ":
-        return a.name.localeCompare(b.name);
-      case "ALPHA_ZA":
-        return b.name.localeCompare(a.name);
-      case "DATE_NEW_OLD":
-        return b.id - a.id;
-      case "DATE_OLD_NEW":
-        return a.id - b.id;
-      default:
-        return 0;
+      case "PRICE_LOW_HIGH": return a.price - b.price;
+      case "PRICE_HIGH_LOW": return b.price - a.price;
+      case "ALPHA_AZ": return a.name.localeCompare(b.name);
+      case "ALPHA_ZA": return b.name.localeCompare(a.name);
+      case "DATE_NEW_OLD": return b.id - a.id;
+      case "DATE_OLD_NEW": return a.id - b.id;
+      default: return 0;
     }
   });
 
-  // Get all unique colors from products
-  const allColors = [
-    ...new Set(newProducts.flatMap((p) => p.variants.map((v) => v.colorName))),
-  ];
+  // Filter pill actions
+  const removeColor = (color) => setColorFilter(colorFilter.filter((c) => c !== color));
+  const removeLabel = (lbl) => setLabelFilter(labelFilter.filter((l) => l !== lbl));
+  const clearAllFilters = () => { setColorFilter([]); setLabelFilter([]); setMaxPriceFilter(500); };
 
   return (
     <div className="new-section-bg">
       {/* Breadcrumbs */}
       <div className="new-breadcrumb">
-        Home <span>/</span>New Arrivals
+        Home <span>/</span> New Arrivals
       </div>
       <h1 className="new-title">New Arrivals</h1>
-      <p className="new-desc">
-        The world's most comfortable shoes for life’s everyday adventures.
-      </p>
+      <p className="new-desc">The world's most comfortable shoes for life’s everyday adventures.</p>
 
-      {/* Filter + Sort Controls */}
+      {/* Controls */}
       <div className="new-controls">
-        <div className="new-filter" onClick={handleFilterClick}>
-          <div className="filter-icon-circle">
-            <svg
+        <div className="new-filter" onClick={() => setShowFilterPanel(!showFilterPanel)}>
+          <div className="filter-icon-circle"><svg
               className="filter-sliders-svg"
               width="32"
               height="32"
@@ -110,12 +90,10 @@ function New() {
               <circle cx="19" cy="16" r="1.2" fill="#23201c" />
               <line x1="10" y1="20" x2="22" y2="20" stroke="#23201c" strokeWidth="1" />
               <circle cx="16" cy="20" r="1.2" fill="#23201c" />
-            </svg>
-          </div>
-          FILTER <span className="men-product-count">({filteredProducts.length} products)</span>
+            </svg></div>
+          <span style={{ fontWeight: 500 }}>FILTER</span>
+          <span className="new-product-count">({filteredProducts.length} products)</span>
         </div>
-
-        {/* Featured dropdown */}
         <select
           className="featured-dropdown"
           value={sortOption}
@@ -130,17 +108,39 @@ function New() {
           <option value="DATE_OLD_NEW">DATE, OLD TO NEW</option>
           <option value="DATE_NEW_OLD">DATE, NEW TO OLD</option>
         </select>
-        
       </div>
+
+      {/* Filter Pills Bar */}
+      {(colorFilter.length > 0 || labelFilter.length > 0 || maxPriceFilter < 500) && (
+        <div className="filter-pills-bar">
+          {colorFilter.map((color) => (
+            <span className="filter-pill" key={"color-"+color}>
+              {color}
+              <button className="filter-pill-remove" onClick={() => removeColor(color)}>&times;</button>
+            </span>
+          ))}
+          {labelFilter.map((lbl) => (
+            <span className="filter-pill" key={"label-"+lbl}>
+              {lbl}
+              <button className="filter-pill-remove" onClick={() => removeLabel(lbl)}>&times;</button>
+            </span>
+          ))}
+          {maxPriceFilter < 500 && (
+            <span className="filter-pill" key="price">
+              ≤ ${maxPriceFilter}
+              <button className="filter-pill-remove" onClick={() => setMaxPriceFilter(500)}>&times;</button>
+            </span>
+          )}
+          <button className="filter-pill-clearall" onClick={clearAllFilters}>Clear all</button>
+        </div>
+      )}
 
       {/* Filter Panel */}
       {showFilterPanel && (
         <div className="filter-panel">
-
-          {/* Label filter */}
           <div className="filter-group">
             <h4>Label:</h4>
-            {["New", "Bestseller"].map((lbl) => (
+            {allLabels.map((lbl) => (
               <label key={lbl}>
                 <input
                   type="checkbox"
@@ -149,13 +149,10 @@ function New() {
                     if (e.target.checked) setLabelFilter([...labelFilter, lbl]);
                     else setLabelFilter(labelFilter.filter((l) => l !== lbl));
                   }}
-                />{" "}
-                {lbl}
+                /> {lbl}
               </label>
             ))}
           </div>
-
-          {/* Color filter */}
           <div className="filter-group">
             <h4>Colors:</h4>
             {allColors.map((c) => (
@@ -167,16 +164,13 @@ function New() {
                     if (e.target.checked) setColorFilter([...colorFilter, c]);
                     else setColorFilter(colorFilter.filter((cl) => cl !== c));
                   }}
-                />{" "}
-                {c}
+                /> {c}
               </label>
             ))}
           </div>
-
-          {/* Price filter */}
           <div className="filter-group">
             <label>
-              <h4> Price: ${maxPriceFilter}</h4>
+              <h4>Price: ${maxPriceFilter}</h4>
             </label>
             <input
               type="range"
@@ -186,7 +180,6 @@ function New() {
               onChange={(e) => setMaxPriceFilter(Number(e.target.value))}
             />
           </div>
-
           <button onClick={() => setShowFilterPanel(false)}>Apply Filters</button>
         </div>
       )}
@@ -206,6 +199,9 @@ function New() {
             >
                <Link key={product.id} to={`/singleProduct/new/${product.id}`}>
               {product.label && <span className="product-label">{product.label}</span>}
+              {product.label && (
+                <span className="product-label">{product.label}</span>
+              )}
               <img
                 src={currentVariant.image}
                 alt={`${product.name} - ${currentVariant.colorName}`}
@@ -216,31 +212,25 @@ function New() {
               <div className="product-body">
                 <h3 className="product-title">{product.product_name}</h3>
                 <div className="product-subtitle">{product.subtitle}</div>
+                <h3 className="product-title">{product.name}</h3>
+                <div className="product-subtitle">{currentVariant.subtitle}</div>
                 <div className="product-price">${product.price}</div>
                 <div className="product-colors" onClick={(e) => e.stopPropagation()}>
                   {product.variants.map((variant, idx) => (
                     <span
                       key={idx}
-                      className={`color-dot${
-                        selectedVariants[product.id] === idx ? " selected" : ""
-                      }`}
+                      className={`color-dot${selectedVariants[product.id] === idx ? " selected" : ""}`}
                       style={{ background: variant.colorHex }}
                       title={variant.colorName}
-                      onClick={() => handleColorSelect(product.id, idx)}
+                      onClick={() => setSelectedVariants({ ...selectedVariants, [product.id]: idx })}
                     ></span>
                   ))}
-                  {product.extraColors > 0 && (
-                    <span className="extra-colors">{`+${product.extraColors}`}</span>
-                  )}
                 </div>
               </div>
-
               {hoveredCardId === product.id && hasSizes && (
                 <div className="size-dropdown-float">
                   {product.sizes.map((size) => (
-                    <div className="size-box-float" key={size}>
-                      {size}
-                    </div>
+                    <div className="size-box-float" key={size}>{size}</div>
                   ))}
                 </div>
               )}
@@ -248,12 +238,11 @@ function New() {
           );
         })}
       </div>
-
-      {/* Promo Banner */}
-      
-
-  </div>
+    </div>
   );
 }
- 
+
 export default New;
+
+
+

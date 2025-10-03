@@ -1,3 +1,8 @@
+/* Upper Section  */
+* {
+  font-family: "Lexend Exa", sans-serif;
+}
+
 .men-section-bg {
   min-height: 100vh;
   padding: 10px 0 80px 0;
@@ -14,9 +19,7 @@
   margin-left: 40px;
   font-family: "Lexend Exa", sans-serif;
 }
-.men-breadcrumb span {
-  margin: 0 10px;
-}
+
 
 .men-title {
   margin-left: 40px;
@@ -35,21 +38,20 @@
   font-family: "Lexend Exa", sans-serif;
 }
 
-/* ====================== Filter + Sort Section ====================== */
+/* Filter + Sort Section  */
 .men-controls {
   background: #ddd6c6;
   border-radius: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  font-family:"Geograph",system-ui, sans-serif;
+  font-family:"Geograph", system-ui, sans-serif;
   width: 95.6vw;
   height: 60px;
   margin: 0 23px 0 23px;
   padding: 12px 16px;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .men-filter {
@@ -63,8 +65,7 @@
   cursor: pointer;
   margin: 5px 5px 5px 5px;
   width: auto;
-  
-  font-family:"Geograph",system-ui, sans-serif;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-icon-circle {
@@ -75,17 +76,16 @@
   height: 42px;
   background: transparent;
   border: none;
-  
-  font-family:"Geograph",system-ui, sans-serif;
+  font-family:"Geograph", system-ui, sans-serif;
 }
+
 .filter-sliders-svg {
   display: block;
-  
-  font-family:"Geograph",system-ui, sans-serif;
+  font-family: "Geograph", system-ui, sans-serif;
 }
-.men-product-count{
-  
-  font-family:"Geograph",system-ui, sans-serif;
+
+.men-product-count {
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 /* Featured dropdown */
@@ -93,7 +93,7 @@
   appearance: none;
   border-radius: 29px;
   border: 1px solid #23201c;
-  background:#ddd6c6;;
+  background: #ddd6c6;
   font-size: 14px;
   font-weight: 500;
   color: #0d0d0e;
@@ -104,19 +104,21 @@
   letter-spacing: 0.02em;
   transition: border 0.18s, background 0.18s;
   margin-top: 10px auto 10px auto;
-  
-  font-family:"Geograph",system-ui, sans-serif;
+  font-family:"Geograph", system-ui, sans-serif;
 }
+
 .featured-dropdown:hover {
   border-color: #044879;
   background: #ddd6c6;
 }
+
 .featured-dropdown option {
   color: #000;
   background: #fff;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
-/* ====================== Filter Panel ====================== */
+/* Filter Panel  */
 .filter-panel {
   background: #fff;
   border-radius: 20px;
@@ -126,11 +128,13 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-panel h3 {
   font-size: 17px;
   font-weight: normal;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-group {
@@ -138,6 +142,7 @@
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-group label {
@@ -146,12 +151,59 @@
   gap: 6px;
   font-size: 14px;
   cursor: pointer;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-group input[type="checkbox"] {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  
+}
+
+.filter-group input[type="range"] {
+  width: 200px;
+  cursor: pointer;
+  .filter-panel {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin: 10px 40px 16px 40px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+
+.filter-group h4 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+
+.filter-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  
 }
 
 .filter-group input[type="range"] {
@@ -169,14 +221,73 @@
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
-  margin-left: 520px;;
+  margin-left: 520px;
+  font-family:"Geograph", system-ui, sans-serif;
 }
+
 .filter-panel button:hover {
   background: #000000;
+  font-family:"Geograph", system-ui, sans-serif;
+}
 }
 
+.filter-panel button {
+  width: 120px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  background: #000000;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 520px;
+  font-family:"Geograph", system-ui, sans-serif;
+}
 
-/* ====================== Product Grid ====================== */
+.filter-panel button:hover {
+  background: #000000;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+.filter-pills-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.filter-pill {
+  background-color: #f4f2eb;
+  border-radius: 24px;
+  padding: 6px 18px 6px 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3cdb7;
+  color: #23201c;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+.filter-pill-remove {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #23201c;
+  margin-left: 4px;
+}
+.filter-pill-clearall {
+  background: none;
+  border: none;
+  color: #2872a1;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+  
+  font-family:"Geograph", system-ui, sans-serif;
+}
+
+/* Product Grid  */
 .men-products-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -203,6 +314,7 @@
   z-index: 5;
   margin-left: 5px;
 }
+
 .product-card:hover {
   box-shadow: 0 12px 36px rgba(40, 40, 40, 0.18);
   transform: translateY(-8px) scale(1.04);
@@ -210,6 +322,7 @@
               transform 0.3s cubic-bezier(.25,.8,.25,1);
   z-index: 2;
 }
+
 .product-label {
   position: absolute;
   top: 16px;
@@ -237,25 +350,23 @@
   flex-direction: column;
   gap: 5px;
 }
+
 .product-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0 0 2px 0;
   text-transform: uppercase;
   font-family: "Lexend Exa", sans-serif;
-  
 }
 
-.product-title a{
-  text-decoration: none;
-}
 .product-subtitle {
-  font-size: 13px;
+  font-size: 14px;
   color: #444;
   font-family: "Lexend Exa", sans-serif;
 }
+
 .product-price {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 4px;
   font-family: "Lexend Exa", sans-serif;
 }
@@ -267,6 +378,7 @@
   align-items: center;
   gap: 6px;
 }
+
 .color-dot {
   width: 21px;
   height: 21px;
@@ -277,10 +389,12 @@
   cursor: pointer;
   transition: border .14s;
 }
+
 .color-dot.selected {
   border: 2.5px solid #2d2d2d;
   box-shadow: 0 0 5px #acae;
 }
+
 .extra-colors {
   margin-left: 3px;
   font-size: 1rem;
@@ -290,8 +404,6 @@
   padding: 3px 8px;
   font-weight: 500;
 }
-
-/* ====================== Sizes Dropdown ====================== */
 .size-dropdown-float {
   position: absolute;
   left: 50%;
@@ -310,10 +422,12 @@
   z-index: 10;
   animation: animDropdown 0.2s ease;
 }
+
 @keyframes animDropdown {
   0% { opacity:0; transform: translateX(-50%) translateY(18px) scale(.97);}
   100% { opacity:1; transform: translateX(-50%) translateY(0) scale(1);}
 }
+
 .size-box-float {
   padding: 13px 0;
   background: #fafaf7;
@@ -326,47 +440,45 @@
   border: 1.2px solid #e9e6e4;
   transition: border-color .16s, background .14s;
 }
+
 .size-box-float:hover {
   border: 1.5px solid #a5a398;
   background: #ede6ce;
 }
 
-/* ====================== Responsive ====================== */
+/*  Responsive  */
 @media (max-width: 1200px) {
   .men-products-wrapper { grid-template-columns: repeat(3, 1fr); }
-  .men-controls {
-    margin: 0 23px 0 23px; /* Keep margin consistent */
-  }
+  .men-controls { margin: 0 23px 0 23px; }
 }
+
 @media (max-width: 900px) {
   .men-products-wrapper { grid-template-columns: repeat(2, 1fr); }
-  .men-controls {
-    margin: 0 23px 0 23px; /* Keep margin consistent */
-  }
+  .men-controls { margin: 0 23px 0 23px; }
 }
+
 @media( max-width: 768px ) {
   .men-controls{
     gap: auto;
     margin: 0 14px 0 23px;
   }
   .filter-panel{
-    
-  margin: 10px 40px 16px 40px;
+    margin: 10px 40px 16px 40px;
   }
   .men-controls {
-    margin: 0 23px 0 23px; /* Keep margin consistent */
+    margin: 0 23px 0 23px;
   }
 }
+
 @media (max-width: 600px) {
   .men-products-wrapper { grid-template-columns: 1fr; justify-items: center; }
   .men-controls {
-    margin: 0 23px 0 23px; /* Keep margin consistent */
-    width: calc(100vw - 46px); /* Prevent overflow on mobile */
+    margin: 0 23px 0 23px;
+    width: calc(100vw - 46px);
     box-sizing: border-box;
   }
-  
-  
 }
+
 @media (max-width: 752px) {
   .filter-panel button {
     display: block;
@@ -374,4 +486,5 @@
     width: 120px;
   }
 }
+       
 

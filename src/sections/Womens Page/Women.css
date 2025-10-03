@@ -1,4 +1,8 @@
-/* ====================== General Section ====================== */
+/* Upper Section  */
+*{
+  font-family: "Lexend Exa", sans-serif;
+}
+
 .women-section-bg {
   background: #ece8df;
   min-height: 100vh;
@@ -16,17 +20,11 @@
   letter-spacing: 0.01em;
   margin-left: 40px;
 }
-.women-breadcrumb span {
-  margin: 0 10px;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
-}
-
 .women-title {
   margin-left: 40px;
   font-size: 24px;
   margin-bottom: 0;
   color: #171717;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -35,18 +33,15 @@
   margin-bottom: 30px;
   color: #757575;
   font-size: 14px;
-  margin-top: 6px;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
 }
 
-/* ====================== Filter + Sort Section ====================== */
+/* Filter + Sort Section */
 .women-controls {
   background: #ddd6c6;
   border-radius: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Calvino-Regular-trial', Arial, sans-serif;
   width: 95.6vw;
   height: 60px;
   margin: 0 23px 0 23px;
@@ -66,6 +61,7 @@
   cursor: pointer;
   margin: 5px 5px 5px 5px;
   width: auto;
+  font-family:"Geograph",system-ui, sans-serif;
 }
 
 .filter-icon-circle {
@@ -80,8 +76,9 @@
 .filter-sliders-svg {
   display: block;
 }
-
-/* Featured dropdown */
+.women-product-count{
+  font-family:"Geograph",system-ui, sans-serif;
+}
 .featured-dropdown {
   appearance: none;
   border-radius: 29px;
@@ -93,7 +90,7 @@
   padding: 0px 12px;
   height: 40px;
   cursor: pointer;
-  font-family: 'Ekster-Regular', Arial, sans-serif;
+  font-family:"Geograph",system-ui, sans-serif;
   letter-spacing: 0.02em;
   transition: border 0.18s, background 0.18s;
   margin-top: 10px auto 10px auto;
@@ -106,9 +103,10 @@
 .featured-dropdown option {
   color: #000;
   background: #fff;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
-/* ====================== Filter Panel ====================== */
+/*Filter Panel */
 .filter-panel {
   background: #fff;
   border-radius: 20px;
@@ -118,11 +116,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  font-family:"Geograph", system-ui, sans-serif;
 }
-
-.filter-panel h4 {
+.filter-group h4 {
   font-size: 17px;
-  font-weight: normal;
+  font-weight: bold;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-group {
@@ -130,6 +129,7 @@
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-group label {
@@ -138,17 +138,24 @@
   gap: 6px;
   font-size: 14px;
   cursor: pointer;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
 .filter-group input[type="checkbox"] {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  
+  font-family:"Geograph", system-ui, sans-serif;
+  
 }
 
 .filter-group input[type="range"] {
   width: 200px;
   cursor: pointer;
+  
+  font-family:"Geograph", system-ui, sans-serif;
+  
 }
 
 .filter-panel button {
@@ -161,15 +168,54 @@
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
-  margin-left: 520px;;
+  margin-left: 520px;
+  font-family:"Geograph", system-ui, sans-serif;
 }
+
 .filter-panel button:hover {
   background: #000000;
+  font-family:"Geograph", system-ui, sans-serif;
 }
 
+.filter-pills-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.filter-pill {
+  background-color: #f4f2eb;
+  border-radius: 24px;
+  padding: 6px 18px 6px 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3cdb7;
+  color: #23201c;
+  font-family:"Geograph", system-ui, sans-serif;
+}
+.filter-pill-remove {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #23201c;
+  margin-left: 4px;
+}
+.filter-pill-clearall {
+  background: none;
+  border: none;
+  color: #2872a1;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+  
+  font-family:"Geograph", system-ui, sans-serif;
+}
 
-
-/* ====================== Product Grid ====================== */
+/*Product Grid */
 .women-products-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -231,7 +277,7 @@
   gap: 5px;
 }
 .product-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0 0 2px 0;
   text-transform: uppercase;
@@ -241,11 +287,11 @@
   text-decoration: none;
 }
 .product-subtitle {
-  font-size: 13px;
+  font-size: 14px;
   color: #444;
 }
 .product-price {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 4px;
 
 }
@@ -281,7 +327,7 @@
   font-weight: 500;
 }
 
-/* ====================== Sizes Dropdown ====================== */
+/* Sizes Dropdown */
 .size-dropdown-float {
   position: absolute;
   left: 50%;
@@ -321,7 +367,7 @@
   background: #ede6ce;
 }
 
-/* ====================== Responsive ====================== */
+/*  Responsive  */
 @media (max-width: 1200px) {
   .women-products-wrapper { grid-template-columns: repeat(3, 1fr); }
   .women-controls {
@@ -350,14 +396,15 @@
   .women-products-wrapper { grid-template-columns: 1fr; justify-items: center; }
   .women-controls {
     margin: 0 23px 0 23px;
-    width: calc(100vw - 46px); /* Prevent overflow on mobile */
+    width: calc(100vw - 46px);
     box-sizing: border-box;
   }
 }
 @media (max-width: 752px) {
   .filter-panel button {
     display: block;
-    margin: 0 auto; /* Center the button horizontally */
+    margin: 0 auto; 
     width: 120px;
   }
 }
+
