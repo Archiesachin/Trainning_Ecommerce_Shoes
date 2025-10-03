@@ -10,7 +10,7 @@ export const menProducts = [
       {
         colorName: "Blizzard",
         colorHex: "#474130ff",
-        image: "public/images/mens/products/A11946_25Q3_Runner-NZ-Corduroy-Dark-Tan-Stony-Cream-Sole_PDP_LEFT__1.png",
+        image: "/images/mens/products/A11946_25Q3_Runner-NZ-Corduroy-Dark-Tan-Stony-Cream-Sole_PDP_LEFT__1.png",
       },
       
     
@@ -33,20 +33,20 @@ export const menProducts = [
       {
         colorName: "Mist",
         colorHex: "#6fc139ff",
-        image:"public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+        image:"/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
         
       },
       {
         colorName: "Slate",
         colorHex: "#b1b8afff",
-        image: "public/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png",
+        image: "/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png",
       },
     ],
     
     sizes: [],
-    images: ["public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
-          "public/images/mens/products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_BACK_510089fd-5e54-4168-95d6-ae58e8f538b6 (1).png",
-          "public/images/mens/products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_TD_e514df00-2a9a-4317-a3d2-4df09256af98.png"
+    images: ["/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+          "/images/mens/products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_BACK_510089fd-5e54-4168-95d6-ae58e8f538b6 (1).png",
+          "/images/mens/products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_TD_e514df00-2a9a-4317-a3d2-4df09256af98.png"
         ],
     description:"The Tree Runner NZ offers a brand new featherbed insole while preserving the effortless style of our best-selling original."
   },
@@ -60,20 +60,20 @@ export const menProducts = [
       {
         colorName: "Natural Black",
         colorHex: "#222223",
-        image:"/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+        image:"/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
        
       },
       {
         colorName: "Slate",
         colorHex: "#C4C9C3",
-        image: "public/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png",
+        image: "/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png",
       },
       
     ],
     sizes: [],
-     images:[ "/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
-          "public/images/mens/products/A11749_25Q3_Wool_Cruiser_Slip_On_Natural_Black_Blizzard_Sole_PDP_BACK.png",
-          "public/images/mens/products/A11749_25Q3_Wool_Cruiser_Slip_On_Natural_Black_Blizzard_Sole_PDP_TD.png"
+     images:[ "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+          "/images/mens/products/A11749_25Q3_Wool_Cruiser_Slip_On_Natural_Black_Blizzard_Sole_PDP_BACK.png",
+          "/images/mens/products/A11749_25Q3_Wool_Cruiser_Slip_On_Natural_Black_Blizzard_Sole_PDP_TD.png"
         ],
     description:"The Tree Glider is designed for all-day comfort with a lightweight, breathable knit upper and our signature Tree™ sole."
   },
@@ -116,12 +116,12 @@ export const menProducts = [
       {
         colorName: "Dark Tan",
         colorHex: "#494045ff",
-        image: "public/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
+        image: "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
       },
       {
         colorName: "Navy",
         colorHex: "#f1f1f7ff",
-        image: "public/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png",
+        image: "/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png",
       }
     ],
     extraColors: 0,
@@ -171,12 +171,12 @@ export const menProducts = [
       {
         colorName: "Dark Tan",
         colorHex: "#232439",
-        image: "public/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
+        image: "/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
       },
       {
         colorName: "Navy",
         colorHex: "#716b6bff",
-        image: "public/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png",
+        image: "/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png",
       }
     ],
     extraColors: 0,
@@ -197,12 +197,12 @@ export const menProducts = [
       {
         colorName: "Dark Tan",
         colorHex: "#cd3f3fff",
-        image: "public/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
+        image: "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
       },
       {
         colorName: "Navy",
         colorHex: "#A88256",
-        image: "public/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png",
+        image: "/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png",
       }
     ],
     extraColors: 0,
@@ -258,7 +258,7 @@ export const menProducts = [
       {
         colorName: "Navy",
         colorHex: "#050404ff",
-        image: "public/images/mens/A11544_24Q4_Recycled_Shoe_Bag_True_Black_PDP_Front_25120-1300x1300.png",
+        image: "/images/mens/A11544_24Q4_Recycled_Shoe_Bag_True_Black_PDP_Front_25120-1300x1300.png",
       }
     ],
     extraColors: 0,
