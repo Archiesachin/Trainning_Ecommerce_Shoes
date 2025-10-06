@@ -1,5 +1,11 @@
 {
   "user": [
-    
+    {
+      "id": "73a8",
+      "email": "archie@gmail.com",
+      "username": "Archie",
+      "password": "400",
+      "number": "8767222341"
+    }
   ]
 }

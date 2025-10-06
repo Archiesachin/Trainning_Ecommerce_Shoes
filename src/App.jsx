@@ -9,7 +9,7 @@ import Women from './sections/Womens Page/Women.jsx';
 import New from './sections/New Arrivals Page/New.jsx';
 import SignUp from './sections/Login/SignUp.jsx';
 import CartDrawer from './components/Cart/CartDrawer.jsx';
-import { CartProvider, useCart } from './components/Cart/CartContext.jsx';
+import { CartProvider } from './context/CartContext.jsx';
 import Chat from './components/ChatBot/chat.jsx';
 import Login from './sections/Login/Login.jsx';
 import SingleProductPage from './sections/Single_Product/SingleProductPage.jsx';

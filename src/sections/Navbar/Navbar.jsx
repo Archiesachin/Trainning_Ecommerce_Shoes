@@ -3,7 +3,7 @@ import { FaRegUser } from 'react-icons/fa6';
 import { BsCart3 } from 'react-icons/bs';
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import { useCart } from '../../components/Cart/CartContext';
+import { useCart } from '../../context/CartContext';
 
 const Navbar = () => {
     const { openCart } = useCart();
