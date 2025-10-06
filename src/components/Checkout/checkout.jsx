@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import './checkout.css';
 import { Link } from 'react-router-dom';
+import { useCart } from '../Cart/CartContext.jsx';
+import { useNavigate } from 'react-router-dom';
 
 export default function Checkout() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState('credit');
+  const { closeCart } = useCart();
+  const navigate = useNavigate();
   const handlePayNow = () => {
     setShowSuccess(true);
     setTimeout(() => setShowSuccess(false), 2000);
@@ -34,9 +38,20 @@ export default function Checkout() {
         <div className="checkout-section">
           <h2>Contact</h2>
           <div className="checkout-input-row">
-            <input type="email" placeholder="Email" />
-            <Link to="/login" className="checkout-signin-link">Sign in</Link>
-          </div>
+  <input type="email" placeholder="Email" />
+  <button
+    type="button"
+    className="checkout-signin-link"
+    onClick={() => {
+      closeCart();
+      navigate('/login');
+    }}
+    style={{ background: "none", border: "none", color: "#007bff", cursor: "pointer", textDecoration: "underline" }}
+  >
+    Sign in
+  </button>
+</div>
+
           <div className="checkout-checkbox-row">
             <input type="checkbox" id="news1" checked readOnly />
             <label htmlFor="news1">Email me with news and offers</label>

@@ -21,8 +21,11 @@ const womenProducts = [
     ],
     sizes: [],
     images: [
-      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
-      "/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png"
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1.png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_BACK.png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_TD.png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_SOLE.png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_PAIR_3Q.png"
     ],
     description: "The Cruiser is a modern take on a classic silhouette, crafted with sustainable materials and designed for all-day comfort."
   },
@@ -48,8 +51,12 @@ const womenProducts = [
     ],
     sizes: [],
     images: [
-      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
-      "/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png"
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_BACK.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_TD.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_SOLE.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_PAIR_3Q.png"
+    
     ],
     description: "The Tree Runner NZ offers a featherbed insole while preserving the effortless style of our best-selling original."
   },
@@ -75,8 +82,11 @@ const womenProducts = [
     ],
     sizes: [],
     images: [
-      "/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
-      "/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png"
+      "/images/Products/A10807_24Q2_Tree-Runner-Go-Natural-Black-Natural-Black_PDP_LEFT__1.png",
+      "/images/Products/A10807_24Q2_Tree-Runner-Go-Natural-Black-Natural-Black_PDP_BACK.png",
+      "/images/Products/A10807_24Q2_Tree-Runner-Go-Natural-Black-Natural-Black_PDP_PAIR_3Q.png",
+      "/images/Products/A10807_24Q2_Tree-Runner-Go-Natural-Black-Natural-Black_PDP_SOLE.png",
+      "/images/Products/A10807_24Q2_Tree-Runner-Go-Natural-Black-Natural-Black_PDP_PAIR_3Q.png"
     ],
     description: "Designed for all-day comfort with a lightweight, breathable knit upper and our signature Tree sole."
   },
@@ -103,8 +113,11 @@ const womenProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
-      "/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png"
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1_056967a9-8421-46db-a3ed-cae6cdae557a.png",
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_BACK_43adc80e-c022-45fb-8daf-21ff8ceb6818.png",
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_PAIR_3Q_61d42c50-2974-4214-af27-631cba1c247f.png",
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_SOLE_551959af-1b9a-4585-8552-b198ed6854c6.png",
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_TD_b0dd3bfd-707c-483a-ae3a-8e3429510718.png"
     ],
     description: "A seasonal update to our classic Tree Runner, crafted with soft corduroy fabric."
   },
@@ -131,8 +144,11 @@ const womenProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
-      "/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png"
+      "/images/Products/A10614_24Q2_Tree-Runner-GO-Deep-Navy-Blizzard_PDP_LEFT__1.png",
+      "/images/Products/A10614_24Q2_Tree-Runner-GO-Deep-Navy-Blizzard_PDP_BACK.png",
+      "/images/Products/A10614_24Q2_Tree-Runner-GO-Deep-Navy-Blizzard_PDP_PAIR_3Q.png",
+      "/images/Products/A10614_24Q2_Tree-Runner-GO-Deep-Navy-Blizzard_PDP_SOLE.png",
+      "/images/Products/A10614_24Q2_Tree-Runner-GO-Deep-Navy-Blizzard_PDP_TD.png"
     ],
     description: "Our lightest and most breathable shoe, designed for maximum comfort and performance."
   },
@@ -160,8 +176,11 @@ const womenProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
-      "/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png"
+      "/images/Products/A10610_24Q2_Tree-Runner-GO-Medium-Grey-Blizzard_PDP_BACK.png",
+      "/images/Products/A10610_24Q2_Tree-Runner-GO-Medium-Grey-Blizzard_PDP_LEFT__1.png",
+      "/images/Products/A10610_24Q2_Tree-Runner-GO-Medium-Grey-Blizzard_PDP_PAIR_3Q.png",
+      "/images/Products/A10610_24Q2_Tree-Runner-GO-Medium-Grey-Blizzard_PDP_SOLE.png",
+      "/images/Products/A10610_24Q2_Tree-Runner-GO-Medium-Grey-Blizzard_PDP_TD.png"
     ],
     description: "A convenient and comfortable sneaker made with sustainable materials."
   },
@@ -190,8 +209,11 @@ const womenProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
-      "/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png"
+      "/images/Products/Allbirds_TR_RN_SF_PDP_Kauri_Marine_HEL_01cc7057-b465-4b66-a976-09cc72fca705.png",
+      "/images/Products/Allbirds_TR_RN_SF_PDP_Kauri_Marine_LAT_08a4c324-9b63-4207-8520-d543418524e6.png",
+      "/images/Products/Allbirds_TR_RN_SF_PDP_Kauri_Marine_OUT_364f7121-1b19-41a8-a8de-93d2d8d5add5.png",
+      "/images/Products/Allbirds_TR_RN_SF_PDP_Kauri_Marine_TOP_14979164-ad79-4ccf-896d-29694692b67d.png"
+  
     ],
     description: "A versatile sneaker designed for all-day comfort."
   },
@@ -220,7 +242,10 @@ const womenProducts = [
     sizes: [],
     images: [
       "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
-      "/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png"
+      "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_BACK.png",
+      "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_PAIR_3Q.png",
+      "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_SOLE.png",
+      "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_TD.png"
     ],
     description: "A casual sneaker made with sustainable materials and designed for everyday wear."
   },
@@ -248,8 +273,10 @@ const womenProducts = [
     ],
     sizes: [],
     images: [
-      "/images/mens/womenshoe.png",
-      "/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png"
+      "/images/Products/TB1WJBK_SHOE_TOP_GLOBAL_WOMENS_TREE_BREEZER_JET_BLACK_BLACK.png",
+      "/images/Products/TB1WJBK_SHOE_BACK_GLOBAL_WOMENS_TREE_BREEZER_JET_BLACK_BLACK.png",
+      "/images/Products/TB1WJBK_SHOE_LEFT_GLOBAL_WOMENS_TREE_BREEZER_JET_BLACK_BLACK.png",
+      "/images/Products/TB1WJBK_SHOE_BOTTOM_GLOBAL_WOMENS_TREE_BREEZER_JET_BLACK_BLACK.png"
     ],
     description: "Timeless style and effortless comfort for everyday adventures."
   }
