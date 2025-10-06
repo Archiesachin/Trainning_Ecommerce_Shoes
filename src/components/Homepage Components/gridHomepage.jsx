@@ -5,7 +5,7 @@ import './GridHomepage.css';
 const imageSets = {
   green: [
     '/images/homepage/Grid/green/Grid_01_green.jpeg', '/images/homepage/Grid/green/Grid_02_green.jpeg', '/images/homepage/Grid/green/Grid_03_green.jpeg',
-    '/images/homepage/Grid/green/Grid_04_green.jpeg', '/images/homepage/Grid/green/Grid_05_green.jpeg', '/images/homepage/Grid/green/Grid_06_green.jpeg'
+    '/images/homepage/Grid/green/Grid_04_Green.jpeg', '/images/homepage/Grid/green/Grid_05_green.jpeg', '/images/homepage/Grid/green/Grid_06_green.jpeg'
   ],
   yellow: [
     '/images/homepage/Grid/yellow/Grid_01_yellow.jpeg', '/images/homepage/Grid/yellow/Grid_02_yellow.jpeg', '/images/homepage/Grid/yellow/Grid_03_yellow.jpeg',
@@ -16,8 +16,8 @@ const imageSets = {
     '/images/homepage/Grid/grey/Grid_04_grey.jpeg', '/images/homepage/Grid/grey/Grid_05_grey.jpeg', '/images/homepage/Grid/grey/Grid_06_grey.jpeg'
   ],
   blue: [
-    '/images/homepage/Grid/blue/Grid_01_Blue.jpeg', '/images/homepage/Grid/blue/Grid_02_Blue.jpeg', '/images/homepage/Grid/blue/Grid_03_Blue.jpeg',
-    '/images/homepage/Grid/blue/Grid_04_Blue.jpeg', '/images/homepage/Grid/blue/Grid_05_Blue.jpeg', '/images/homepage/Grid/blue/Grid_06_Blue.jpeg'
+    '/images/homepage/Grid/blue/Grid_01_Blue.jpeg', '/images/homepage/Grid/blue/Grid_02_Blue.jpeg', '/images/homepage/Grid/blue/Grid_03_blue.jpeg',
+    '/images/homepage/Grid/blue/Grid_04_Blue.jpeg', '/images/homepage/Grid/blue/Grid_05_blue.jpeg', '/images/homepage/Grid/blue/Grid_06_blue.jpeg'
   ]
 };
 
