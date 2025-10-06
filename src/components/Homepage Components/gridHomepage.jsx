@@ -4,20 +4,20 @@ import './GridHomepage.css';
 
 const imageSets = {
   green: [
-    'public/images/homepage/Grid/green/Grid_01_green.jpeg', 'public/images/homepage/Grid/green/Grid_02_green.jpeg', 'public/images/homepage/Grid/green/Grid_03_green.jpeg',
-    'public/images/homepage/Grid/green/Grid_04_green.jpeg', 'public/images/homepage/Grid/green/Grid_05_green.jpeg', 'public/images/homepage/Grid/green/Grid_06_green.jpeg'
+    '/images/homepage/Grid/green/Grid_01_green.jpeg', '/images/homepage/Grid/green/Grid_02_green.jpeg', '/images/homepage/Grid/green/Grid_03_green.jpeg',
+    '/images/homepage/Grid/green/Grid_04_green.jpeg', '/images/homepage/Grid/green/Grid_05_green.jpeg', '/images/homepage/Grid/green/Grid_06_green.jpeg'
   ],
   yellow: [
-    'public/images/homepage/Grid/yellow/Grid_01_yellow.jpeg', 'public/images/homepage/Grid/yellow/Grid_02_yellow.jpeg', 'public/images/homepage/Grid/yellow/Grid_03_yellow.jpeg',
-    'public/images/homepage/Grid/yellow/Grid_04_yellow.jpeg', 'public/images/homepage/Grid/yellow/Grid_05_yellow.jpeg', 'public/images/homepage/Grid/yellow/Grid_06_yellow.jpeg'
+    '/images/homepage/Grid/yellow/Grid_01_yellow.jpeg', '/images/homepage/Grid/yellow/Grid_02_yellow.jpeg', '/images/homepage/Grid/yellow/Grid_03_yellow.jpeg',
+    '/images/homepage/Grid/yellow/Grid_04_yellow.jpeg', '/images/homepage/Grid/yellow/Grid_05_yellow.jpeg', '/images/homepage/Grid/yellow/Grid_06_yellow.jpeg'
   ],
   grey: [
-    'public/images/homepage/Grid/grey/Grid_01_grey.jpeg', 'public/images/homepage/Grid/grey/Grid_02_grey.jpeg', 'public/images/homepage/Grid/grey/Grid_03_grey.jpeg',
-    'public/images/homepage/Grid/grey/Grid_04_grey.jpeg', 'public/images/homepage/Grid/grey/Grid_05_grey.jpeg', 'public/images/homepage/Grid/grey/Grid_06_grey.jpeg'
+    '/images/homepage/Grid/grey/Grid_01_grey.jpeg', '/images/homepage/Grid/grey/Grid_02_grey.jpeg', '/images/homepage/Grid/grey/Grid_03_grey.jpeg',
+    '/images/homepage/Grid/grey/Grid_04_grey.jpeg', '/images/homepage/Grid/grey/Grid_05_grey.jpeg', '/images/homepage/Grid/grey/Grid_06_grey.jpeg'
   ],
   blue: [
-    'public/images/homepage/Grid/blue/Grid_01_Blue.jpeg', 'public/images/homepage/Grid/blue/Grid_02_Blue.jpeg', 'public/images/homepage/Grid/blue/Grid_03_Blue.jpeg',
-    'public/images/homepage/Grid/blue/Grid_04_Blue.jpeg', 'public/images/homepage/Grid/blue/Grid_05_Blue.jpeg', 'public/images/homepage/Grid/blue/Grid_06_Blue.jpeg'
+    '/images/homepage/Grid/blue/Grid_01_Blue.jpeg', '/images/homepage/Grid/blue/Grid_02_Blue.jpeg', '/images/homepage/Grid/blue/Grid_03_Blue.jpeg',
+    '/images/homepage/Grid/blue/Grid_04_Blue.jpeg', '/images/homepage/Grid/blue/Grid_05_Blue.jpeg', '/images/homepage/Grid/blue/Grid_06_Blue.jpeg'
   ]
 };
 
