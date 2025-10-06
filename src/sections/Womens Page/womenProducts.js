@@ -3,156 +3,156 @@ const womenProducts = [
   {
     id: 1,
     label: "New",
-    name: "WOMEN'S CRUISER",
+    product_name: "WOMEN'S CRUISER",
     price: 120,
     variants: [
       {
         colorName: "Orange",
         colorHex: "#cd3f3fff",
-        image: "public/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
+        image: "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
         subtitle: "Orange",
       },
       {
         colorName: "Brown",
         colorHex: "#A88256",
-        image: "public/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png",
+        image: "/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png",
         subtitle: "Golden Brown",
       }
     ],
     sizes: [],
     images: [
-      "public/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
-      "public/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png"
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
+      "/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png"
     ],
-    desc: "The Cruiser is a modern take on a classic silhouette, crafted with sustainable materials and designed for all-day comfort."
+    description: "The Cruiser is a modern take on a classic silhouette, crafted with sustainable materials and designed for all-day comfort."
   },
 
   {
     id: 2,
     label: "Bestseller",
-    name: "WOMEN'S TREE RUNNER",
+    product_name: "WOMEN'S TREE RUNNER",
     price: 100,
     variants: [
       {
         colorName: "Brown",
         colorHex: "#474130ff",
-        image: "public/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
+        image: "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
         subtitle: "Brown",
       },
       {
         colorName: "Green",
         colorHex: "#395131ff",
-        image: "public/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png",
+        image: "/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png",
         subtitle: "Green",
       }
     ],
     sizes: [],
     images: [
-      "public/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
-      "public/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png"
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
+      "/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png"
     ],
-    desc: "The Tree Runner NZ offers a featherbed insole while preserving the effortless style of our best-selling original."
+    description: "The Tree Runner NZ offers a featherbed insole while preserving the effortless style of our best-selling original."
   },
 
   {
     id: 3,
     label: "",
-    name: "WOMEN'S TREE GLIDER",
+    product_name: "WOMEN'S TREE GLIDER",
     price: 135,
     variants: [
       {
         colorName: "Black",
         colorHex: "#1c1a19ff",
-        image: "/public/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
+        image: "/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
         subtitle: "Natural Black",
       },
       {
         colorName: "Grey",
         colorHex: "#454546ff",
-        image: "public/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png",
+        image: "/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png",
         subtitle: "Grey",
       }
     ],
     sizes: [],
     images: [
-      "/public/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
-      "public/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png"
+      "/images/Products/A11778_25Q3_Trail-Runner-SWT-Natural-Black-Dark-Jungle-Natural-Black-Sole_PDP_LEFT__1.png",
+      "/images/Products/A11789_25Q3_Tree_Runner_Go_Utility_Natural_Black_Dark_Jungle_Natural_White_Sole_PDP_LEFT-2000x2000.png"
     ],
-    desc: "Designed for all-day comfort with a lightweight, breathable knit upper and our signature Tree sole."
+    description: "Designed for all-day comfort with a lightweight, breathable knit upper and our signature Tree sole."
   },
 
   {
     id: 4,
     label: "New",
-    name: "WOMEN'S RUNNER NZ CORDUROY",
+    product_name: "WOMEN'S RUNNER NZ CORDUROY",
     price: 160,
     variants: [
       {
         colorName: "Black",
         colorHex: "#222223",
-        image: "/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+        image: "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
         subtitle: "Natural Black",
       },
       {
         colorName: "White",
         colorHex: "#C4C9C3",
-        image: "public/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png",
+        image: "/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png",
         subtitle: "White",
       }
     ],
     extraColors: 0,
     sizes: [],
     images: [
-      "/public/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
-      "public/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png"
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+      "/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png"
     ],
-    desc: "A seasonal update to our classic Tree Runner, crafted with soft corduroy fabric."
+    description: "A seasonal update to our classic Tree Runner, crafted with soft corduroy fabric."
   },
 
   {
     id: 5,
     label: "New",
-    name: "WOMEN'S TREE DASHER 2",
+    product_name: "WOMEN'S TREE DASHER 2",
     price: 90,
     variants: [
       {
         colorName: "Blue",
         colorHex: "#232439",
-        image: "public/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
+        image: "/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
         subtitle: "Navy Blue",
       },
       {
         colorName: "White",
         colorHex: "#f3f3f3ff",
-        image: "public/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png",
+        image: "/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png",
         subtitle: "White",
       }
     ],
     extraColors: 0,
     sizes: [],
     images: [
-      "public/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
-      "public/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png"
+      "/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
+      "/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png"
     ],
-    desc: "Our lightest and most breathable shoe, designed for maximum comfort and performance."
+    description: "Our lightest and most breathable shoe, designed for maximum comfort and performance."
   },
 
   {
     id: 6,
     label: "New",
-    name: "WOMEN'S WOOL CRUISER SLIP-ON",
+    product_name: "WOMEN'S WOOL CRUISER SLIP-ON",
     price: 121,
     variants: [
       {
         colorName: "Grey",
         colorHex: "#494045ff",
-        image: "public/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
+        image: "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
         subtitle: "Dim Grey",
       },
       {
         colorName: "Navy",
         colorHex: "#f1f1f7ff",
-        image: "public/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png",
+        image: "/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png",
         subtitle: "White",
        
       }
@@ -160,29 +160,29 @@ const womenProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "public/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
-      "public/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png"
+      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
+      "/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png"
     ],
-    desc: "A convenient and comfortable sneaker made with sustainable materials."
+    description: "A convenient and comfortable sneaker made with sustainable materials."
   },
 
   {
     id: 7,
     label: "New",
-    name: "WOMEN'S STRIDER",
+    product_name: "WOMEN'S STRIDER",
     price: 139,
     variants: [
       {
         colorName: "Blue",
         colorHex: "#232439",
-        image: "public/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
+        image: "/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
         subtitle: "Navy Blue",
        
       },
       {
         colorName: "Grey",
         colorHex: "#716b6bff",
-        image: "public/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png",
+        image: "/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png",
         subtitle: "Grey",
       
       }
@@ -190,68 +190,68 @@ const womenProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "public/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
-      "public/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png"
+      "/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
+      "/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png"
     ],
-    desc: "A versatile sneaker designed for all-day comfort."
+    description: "A versatile sneaker designed for all-day comfort."
   },
 
   {
     id: 8,
     label: "New",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     price: 140,
     variants: [
       {
         colorName: "Green",
         colorHex: "#6fc139ff",
-        image: "public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+        image: "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
         subtitle: "Green",
         
       },
       {
         colorName: "Slate",
         colorHex: "#b1b8afff",
-        image: "public/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png",
+        image: "/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png",
         subtitle: "Slate",
         
       }
     ],
     sizes: [],
     images: [
-      "public/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
-      "public/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png"
+      "/images/Products/A11700_25Q3_Wool-Cruiser-Kelly-Green-Natural-White-Sole_PDP_LEFT__1_1.png",
+      "/images/Products/A11702_25Q3_Wool-Cruiser-Light-Grey-Natural-White-Sole_PDP_LEFT__1_1.png"
     ],
-    desc: "A casual sneaker made with sustainable materials and designed for everyday wear."
+    description: "A casual sneaker made with sustainable materials and designed for everyday wear."
   },
 
   {
     id: 9,
     label: "Bestseller",
-    name: "WOMEN'S CANVAS PIPER",
+    product_name: "WOMEN'S CANVAS PIPER",
     price: 140,
     variants: [
       {
         colorName: "Black",
         colorHex: "#000000ff",
-        image: "public/images/mens/womenshoe.png",
+        image: "/images/mens/womenshoe.png",
         subtitle: "Natural Black",
         
       },
       {
         colorName: "Pink",
         colorHex: "#eec38cff",
-        image: "public/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png",
+        image: "/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png",
         subtitle: "Pink",
         
       }
     ],
     sizes: [],
     images: [
-      "public/images/mens/womenshoe.png",
-      "public/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png"
+      "/images/mens/womenshoe.png",
+      "/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png"
     ],
-    desc: "Timeless style and effortless comfort for everyday adventures."
+    description: "Timeless style and effortless comfort for everyday adventures."
   }
 
 ];
