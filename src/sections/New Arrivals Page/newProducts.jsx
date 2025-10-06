@@ -16,7 +16,12 @@ const newProducts = [
     ],
     sizes: [],
     images: [
-      "/images/Products/A11651_25Q3_Strider-Blizzard-Dark-Navy-Blizzard-Sole_PDP_LEFT_f5dd079c-8d74-4d3b-bb81-862710162f7a.png",
+      "/images/Products/A11651_25Q3_Strider-Blizzard-Dark-Navy-Blizzard-Sole_PDP_LEFT_f5dd079c-8d74-4d3b-bb81-862710162f7a (1).png",
+      "/images/Products/A11651_25Q3_Strider_Blizzard_Dark_Navy_Blizzard_Sole_PDP_BACK_4d1e32db-c2d0-41e3-9acf-8f49cdc1da83.png",
+      "/images/Products/A11651_25Q3_Strider-Blizzard-Dark-Navy-Blizzard-Sole_PDP_TD_d456a904-5842-493f-979a-cf89058abaec.png",
+      "/images/Products/httpswww.allbirds.comcdnshopfilesA11651_25Q3_Strider_Blizzard_Dark_Navy_Blizzard_Sole_PDP_SOLE_843f48d0-0c85-450b-8ac6-38e2f6e490b8.pngv=1755806508&width=1024.png",
+      "/images/Products/A11651_25Q3_Strider-Blizzard-Dark-Navy-Blizzard-Sole_PDP_PAIR_3Q_38eca39e-7010-4e78-8085-2467c0cf705e.png"
+
     ],
     description: "All-day comfort in our classic silhouette."
   },
@@ -41,8 +46,11 @@ const newProducts = [
     ],
     sizes: [],
     images: [
-      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1_bec494cd-90bc-4d1a-b180-cd8a56464781.png",
-      "/images/Products/A11693_25Q3_Wool-Cruiser-Forest-Green-Natural-White-Sole_PDP_LEFT__1_dd771e7b-9bb1-4397-a2f8-6ff87359fa1a_1.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_LEFT__1.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_BACK.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_TD.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_SOLE.png",
+      "/images/Products/A11631_25Q3_Wool-Cruiser-Dark-Camel-Natural-White-Sole_PDP_PAIR_3Q.png"
     ],
     description: "Modern comfort with heritage styling."
   },
@@ -68,8 +76,11 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/mens/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_LEFT-2000x2000.png",
-      "/images/mens/A11065_24Q3_Tree_Dasher_Relay_Rugged_Beige_Rugged_Beige_PDP_LEFT-2000x2000.png",
+      "/images/Products/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_LEFT-2000x2000.png",
+      "/images/Products/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_BACK-2000x2000.png",
+      "/images/Products/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_TD-2000x2000.png",
+      "/images/Products/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_SOLE-2000x2000.png",
+      "/images/Products/A11053_24Q3_Tree_Dasher_Relay_Deep_Navy_Deep_Navy_PDP_PAIR_3Q-2000x2000.png"
     ],
     description: "Corduroy update for our iconic runner."
   },
@@ -95,8 +106,12 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438.png",
-      "/images/Products/AB00F7M100_SHOE_PROFILE_GLOBAL_MENS_SUPERLIGHT_TR_BLIZZARD_BLIZZARD.png",
+      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000_f6ff6164-62df-42dc-89a8-fabcb3b5d438 (1).png",
+      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_BACK-2000x2000_a95c1083-3636-43e5-a742-78c9a26a2936.png",
+      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_TD-2000x2000_57af9e6f-e170-4bb5-911e-232a0bdc880f.png",
+      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_SOLE-2000x2000_6de769a9-6ea9-46ab-8a72-fe2a595a695f.png",
+      "/images/Products/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_PAIR_3Q-2000x2000_b2a2dd7a-00a7-4687-8c61-aa6e44f8041c.png"
+
     ],
     description: "Designed for running comfort and breathability."
   },
@@ -122,8 +137,11 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1.png",
-      "/images/Products/Runner-NZ-Corduroy-Stony-Cream-Stony-Cream-Sole_PDP_LEFT__1.png",
+      "/images/Products/A11956_25Q3_Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_LEFT__1_155aa9fc-9fcd-49f8-9382-00b8c2ce2054.png",
+      "/images/Products/A11956_25Q3_Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_BACK_b924ef4f-e138-4461-9789-f77e235faef7.png",
+      "/images/Products/A11956_25Q3_Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_TD_5cd0f780-4c1c-46ac-8e8c-a1c3bb358178.png",
+      "/images/Products/A11956_25Q3_Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_SOLE_d84f2405-2344-40b2-9d48-836772bc975c.png",
+      "/images/Products/A11956_25Q3_Runner-NZ-Corduroy-Dark-Navy-Stony-Cream-Sole_PDP_PAIR_3Q_e7c26faa-f62c-4ab8-8b7a-4c1d73110a63.png"
     ],
     description: "Easy slip-on, easy style."
   },
@@ -149,8 +167,11 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/TP1MMOO_TREE_PIPER_LEFT_GLOBAL_MOONRISE_WHITE_62a74809-a592-4240-9f3b-d888fb001faa.png",
-      "/images/Products/TP1MLUN_TREE_PIPER_LEFT_GLOBAL_LUNA_WHITE.png",
+      "/images/Products/A11512_25Q1_Canvas_Piper_Deep_Navy_Natural_White_PDP_LEFT-2000x2000.png",
+      "/images/Products/A11512_25Q1_Canvas_Piper_Deep_Navy_Natural_White_PDP_BACK-2000x2000.png",
+      "/images/Products/A11512_25Q1_Canvas_Piper_Deep_Navy_Natural_White_PDP_TD-2000x2000.png",
+      "/images/Products/A11512_25Q1_Canvas_Piper_Deep_Navy_Natural_White_PDP_SOLE-2000x2000.png",
+      "/images/Products/A11512_25Q1_Canvas-Piper-Deep-Navy-Natural-White_PDP_PAIR_3Q_ea745559-566b-473f-a5e8-1951fe5d9e12.png"
     ],
     description: "Sleek style meets serious comfort."
   },
@@ -176,8 +197,11 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4_1.png",
-      "/images/Products/A11882_25Q3_Wool-Cruiser-Sulphur-Natural-White-Sole_PDP_LEFT.png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1_fcef493a-0b6b-4785-9d93-ec4931435ef4 (1).png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_BACK_0b450df4-7209-43bb-b688-cf18304fe665.png",
+      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_TD_ef902ed7-6e12-4f4c-8c9d-8da35c383cb6.png",
+      "/images/mens/products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_SOLE_2a7ea35d-c59f-4e7d-a891-75dbb816bcb5.png",
+      "/images/mens/products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_PAIR_3Q_428da3b0-95c3-4343-9915-7ee4792ff409.png"
     ],
     description: "Canvas casual, everyday everywhere."
   },
@@ -202,8 +226,11 @@ const newProducts = [
     ],
     sizes: [],
     images: [
-      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
-      "/images/Products/Cruiser-Slip-On-Corduroy-Stony-Cream-Stony-Cream_PDP_LEFT__1_56ef98d4-5a37-4ce4-83e6-66e6f6085757.png",
+      "/images/mens/products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
+      "/images/mens/products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_BACK.png",
+      "/images/mens/products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_TD.png",
+      "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_SOLE.png",
+      "/images/mens/products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_PAIR_3Q.png"
     ],
     description: "The glider for ultralight steps."
   },
@@ -222,7 +249,9 @@ const newProducts = [
     ],
     sizes: [],
     images: [
-      "/images/mens/A11541_24Q4_Recycled_Tote_Bag_Rugged_Beige_PDP_Front_25059-1300x1300.png",
+      "/images/Products/A11541_24Q4_Recycled_Tote_Bag_Rugged_Beige_PDP_Front_25059-1300x1300.png",
+      "/images/Products/A11541_24Q4_Recycled_Tote_Bag_Rugged_Beige_PDP_Front_25059-1300x1300.png",
+      "/images/mens/products/A11541_24Q4_Recycled_Tote_Bag_Rugged_Beige_PDP_Angle_25288-1300x1300.png"
     ],
     description: "Lightweight, sustainable, and stylish."
   },
@@ -249,8 +278,11 @@ const newProducts = [
     ],
     sizes: [],
     images: [
-      "/images/mens/womenshoe.png",
-      "/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png",
+      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_LEFT-2000x2000.png",
+      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_BACK-2000x2000.png",
+      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_TD-2000x2000.png",
+      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_SOLE-2000x2000.png",
+      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_PAIR_3Q-2000x2000.png"
     ],
     description: "Classic comfort, new hues."
   },
@@ -276,8 +308,11 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/mens/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_LEFT-2000x2000.png",
-      "/images/mens/A11254_25Q1_Courier_Travel_Blizzard_Hazy_Indigo_Blizzard_PDP_LEFT-2000x2000.png",
+      "/images/Products/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_LEFT-2000x2000.png",
+      "/images/Products/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_BACK-2000x2000.png",
+      "/images/mens/products/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_TD-2000x2000.png",
+      "/images/Products/A10868_24Q3_Courier_Stormy_Grey_Medium_Grey_Barely_Grey_PDP_SOLE-2000x2000.png",
+      "/images/Products/A10868_24Q2_Courier-Stormy-Grey-Medium-Grey-Barely-Grey_PDP_PAIR_3Q.png"
     ],
     description: "Messenger-inspired comfort and utility."
   },
@@ -303,8 +338,9 @@ const newProducts = [
     extraColors: 0,
     sizes: [],
     images: [
-      "/images/mens/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Front_25106-2000x2000.png",
-      "/images/mens/A11544_24Q4_Recycled_Shoe_Bag_True_Black_PDP_Front_25120-1300x1300.png",
+      "/images/Products/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Front_25106-2000x2000.png",
+      "/images/Products/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Back_25112-2000x2000.png",
+      "/images/Products/A12158_25Q3_Recycled-Shoe-Bag-Thunder-Green_PDP_Shoe_25314-2000x2000.png"
     ],
     description: "Sustainable, practical and bold."
   },
