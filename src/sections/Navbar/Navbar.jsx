@@ -10,7 +10,8 @@ const Navbar = () => {
   return (
     <nav>
         <div className="navbar">
-            <div className="nav-part1">
+            <div className="laptop-nav">
+                 <div className="nav-part1">
             <div className="logo">
                 <Link to='/'><img src="./images/logo.jpeg" alt="logo-img" /></Link>
             </div>
@@ -21,20 +22,21 @@ const Navbar = () => {
                     <Link to="/new">New Arrivals</Link>
                 </ul>
             </div>
-            </div>
-
-            <div className="nav-part2">
-                <div className="nav-links">
-                <ul>
-                    <Link>Our Stores</Link>
-                    <Link>About</Link>
-                </ul>
-            </div>
+            </div>  
             <div className="nav-options">
                 <Link to='/signup'><FaRegUser/></Link>
                  <BsCart3 onClick={openCart} style={{ cursor: "pointer" }} />
 
             </div>
+            </div>
+           
+
+            <div className="mobile-nav-links">
+                <ul>
+                    <Link to="/men">Mens</Link>
+                    <Link to="/women">Womens</Link>
+                    <Link to="/new">New Arrivals</Link>
+                </ul>
             </div>
             
              

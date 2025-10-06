@@ -131,10 +131,10 @@ const menProducts = [
     extraColors: 0,
     sizes: [],
     images:[
-      "https://www.allbirds.com/cdn/shop/files/TR3MMST080…2fc-aef3-7d6093c605bf.png?v=1751166590&width=1024",
-      "https://www.allbirds.com/cdn/shop/files/TR3MMST080…66b-a5e1-091a32c6382f.png?v=1751166590&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_LEFT-2000x2000.png?v=1751898984&width=1024",
+      "https://www.allbirds.com/cdn/shop/files/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_BACK-2000x2000.png?v=1751898984&width=1024",
       "https://www.allbirds.com/cdn/shop/files/TR2MMST_SHOE_TOP_GLOBAL_MENS_TREE_RUNNER_MIST_WHITE_2be3a688-1266-4a6a-a702-d897c853a2a1.png?v=1751166590&width=1024",
-      "https://www.allbirds.com/cdn/shop/files/TR3MMST080…f95-a531-ddb3d833201e.png?v=1751166590&width=1024"
+      "https://www.allbirds.com/cdn/shop/files/A11959_25Q3_Tree_Runner_NZ_Medium_Grey_Blizzard_Sole_PDP_PAIR_3Q-2000x2000.png?v=1751898984&width=1024"
     ],
     description: "The Superlight TR is our lightest and most breathable shoe, designed for maximum comfort and performance with a sleek, minimalist design."
   },
