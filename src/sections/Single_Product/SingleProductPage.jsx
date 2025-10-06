@@ -8,7 +8,7 @@ import womenData from '../Womens Page/womenProducts'
 import newData from '../New Arrivals Page/newProducts'
 import { useState } from "react";
 import './singleProduct.css'
-import { useCart } from '../../components/Cart/CartContext';
+import { useCart } from '../../context/CartContext';
 
 const SingleProductPage = () => {
   const { category, id } = useParams();

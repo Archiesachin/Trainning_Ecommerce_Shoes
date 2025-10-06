@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import { loginUser } from '../../services/userService'
 
 
 
@@ -11,33 +11,28 @@ const Login = () => {
 
     const navigate = useNavigate()
 
-    const handleLogin = async(e) =>{
-        e.preventDefault()
-        try{
-            const response = await axios.get("http://localhost:3000/user")
-            const users = response.data
-            // console.log(users)
-            const founduser = users.find((u) => u.username === username)
-            if(!founduser){
-                alert("User Not Found")
-                return
-            }
+   const handleLogin = async (e) => {
+    e.preventDefault();
 
-            if(founduser.password !== password){
-                alert("Wrong Password")
-                return
-            }
+    try {
+        const result = await loginUser(username, password);
 
-            alert("Sucessful Login")
-            setData(true)
-        }catch(error){
-            console.log(error)
+        if (!result.success) {
+            alert(result.message);
+            return;
         }
-    }
 
-    if(data){
-        navigate('/')
+        alert(result.message);
+        setData(true);
+    } catch (error) {
+        console.log(error);
+        alert('Login failed. Try again later.');
     }
+};
+
+if (data) {
+    navigate('/');
+}
 
   return (
     <div className='form-container'>
