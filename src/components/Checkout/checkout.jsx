@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './checkout.css';
 import { Link } from 'react-router-dom';
-import { useCart } from '../Cart/CartContext.jsx';
+import { useCart } from '../../context/CartContext.jsx';
 import { useNavigate } from 'react-router-dom';
 
 export default function Checkout() {
