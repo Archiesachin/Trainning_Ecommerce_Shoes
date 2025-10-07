@@ -162,9 +162,8 @@
 /* Responsive for mobile */
 @media (max-width: 600px) {
   .product-card {
-    width: 94vw;
-    max-width: 420px;
-    margin: 0 auto 20px auto;
+    width: 270px;
+    margin: 10px 10px 10px 10px;
   }
   .size-dropdown-float {
     grid-template-columns: repeat(3, 1fr);
