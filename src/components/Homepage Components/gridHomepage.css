@@ -130,3 +130,114 @@
   object-fit: cover;
   display: block;
 }
+
+/* Responsive adjustments */
+/* Tablet: 2 columns, let items flow naturally */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    gap: 12px;
+    width: 100%;
+    margin: 0 8px;
+    padding: 8px;
+  }
+
+  /* Allow items to flow in document order so they stack nicely */
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  .grid-item {
+    height: auto;
+  }
+
+  .main-overlay{
+    top: 32%;
+    left: 6%;
+    transform: translateY(-32%);
+    width: 78%;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .overlay-topright {
+    padding: 36px;
+    font-size: 0.95rem;
+  }
+
+  .shop-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile: single column stack and smaller UI elements */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    gap: 10px;
+    width: 100%;
+    margin: 0 6px;
+    padding: 6px;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6 {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+  }
+
+  .grid-item {
+    border-radius: 12px;
+    height: auto;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+  }
+
+  .main-overlay{
+    top: 28%;
+    left: 6%;
+    transform: translateY(-28%);
+    width: 86%;
+  }
+
+  .main-header {
+    font-size: 0.95rem;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+  }
+
+  .overlay-topright {
+    padding: 18px;
+    font-size: 0.9rem;
+    top: 4%;
+  }
+
+  .shop-btn {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+  }
+}
