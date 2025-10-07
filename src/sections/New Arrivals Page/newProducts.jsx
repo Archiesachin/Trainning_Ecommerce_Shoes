@@ -255,39 +255,9 @@ const newProducts = [
     ],
     description: "Lightweight, sustainable, and stylish."
   },
+  
   {
     id: 10,
-    label: "Bestseller",
-    product_name: "WOMEN'S CANVAS PIPER",
-    price: 140,
-    variants: [
-      {
-        colorName: "Black",
-        colorHex: "#000000ff",
-        image: "/images/mens/womenshoe.png",
-        subtitle: "Natural Black",
-        
-      },
-      {
-        colorName: "Pink",
-        colorHex: "#eec38cff",
-        image: "/images/mens/A11573_25Q3_Tree_Breezer_Bow_Bark_Brown_PDP_LEFT-2000x2000.png",
-        subtitle: "Pink",
-        
-      },
-    ],
-    sizes: [],
-    images: [
-      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_LEFT-2000x2000.png",
-      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_BACK-2000x2000.png",
-      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_TD-2000x2000.png",
-      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_SOLE-2000x2000.png",
-      "/images/Products/A11738_25Q3_Tree_Breezer_Bow_Natural_Black_PDP_PAIR_3Q-2000x2000.png"
-    ],
-    description: "Classic comfort, new hues."
-  },
-  {
-    id: 11,
     label: "New",
     product_name: "MEN'S COURIER",
     price: 120,
@@ -317,7 +287,7 @@ const newProducts = [
     description: "Messenger-inspired comfort and utility."
   },
   {
-    id: 12,
+    id: 11,
     label: "New",
     product_name: "RECYCLED SHOE BAGTOTE ",
     price: 120,
