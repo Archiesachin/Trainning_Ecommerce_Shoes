@@ -35,17 +35,31 @@ function New() {
   });
 
   // Sorting logic
-  const sortedProducts = [...filteredProducts].sort((a, b) => {
-    switch (sortOption) {
-      case "PRICE_LOW_HIGH": return a.price - b.price;
-      case "PRICE_HIGH_LOW": return b.price - a.price;
-      case "ALPHA_AZ": return a.name.localeCompare(b.name);
-      case "ALPHA_ZA": return b.name.localeCompare(a.name);
-      case "DATE_NEW_OLD": return b.id - a.id;
-      case "DATE_OLD_NEW": return a.id - b.id;
-      default: return 0;
-    }
-  });
+ const sortedProducts =
+  sortOption === "FEATURED"
+    ? [...filteredProducts].sort(
+        (a, b) =>
+          newProducts.findIndex(p => p.id === a.id) -
+          newProducts.findIndex(p => p.id === b.id)
+      )
+    : [...filteredProducts].sort((a, b) => {
+        switch (sortOption) {
+          case "PRICE_LOW_HIGH":
+            return a.price - b.price;
+          case "PRICE_HIGH_LOW":
+            return b.price - a.price;
+          case "ALPHA_AZ":
+           return a.product_name.localeCompare(b.product_name);
+          case "ALPHA_ZA":
+           return b.product_name.localeCompare(a.product_name);
+          case "DATE_NEW_OLD":
+            return b.id - a.id;
+          case "DATE_OLD_NEW":
+            return a.id - b.id;
+          default:
+            return 0;
+        }
+      });
 
   // Filter pill actions
   const removeColor = (color) => setColorFilter(colorFilter.filter((c) => c !== color));
@@ -99,13 +113,11 @@ function New() {
           onChange={(e) => setSortOption(e.target.value)}
         >
           <option value="FEATURED">FEATURED</option>
-          <option value="BESTSELLING">BEST SELLING</option>
           <option value="ALPHA_AZ">ALPHABETICALLY, A-Z</option>
           <option value="ALPHA_ZA">ALPHABETICALLY, Z-A</option>
           <option value="PRICE_LOW_HIGH">PRICE, LOW TO HIGH</option>
           <option value="PRICE_HIGH_LOW">PRICE, HIGH TO LOW</option>
-          <option value="DATE_OLD_NEW">DATE, OLD TO NEW</option>
-          <option value="DATE_NEW_OLD">DATE, NEW TO OLD</option>
+          
         </select>
       </div>
 

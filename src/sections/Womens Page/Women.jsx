@@ -35,18 +35,44 @@ function Women() {
     const priceMatch = product.price <= maxPriceFilter;
     return labelMatch && colorMatch && priceMatch;
   });
+ const sortedProducts =
+  sortOption === "FEATURED"
+    ? [...filteredProducts].sort(
+        (a, b) =>
+          womenProducts.findIndex(p => p.id === a.id) -
+          womenProducts.findIndex(p => p.id === b.id)
+      )
+    : sortOption === "BESTSELLING"
+    ? [...filteredProducts].sort((a, b) => {
+        
+        const aIsBest = a.label === "Bestseller" ? 0 : 1;
+        const bIsBest = b.label === "Bestseller" ? 0 : 1;
+        if (aIsBest !== bIsBest) return aIsBest - bIsBest;
+        
+        return (
+          womenProducts.findIndex((p) => p.id === a.id) -
+          womenProducts.findIndex((p) => p.id === b.id)
+        );
+      })
+    : [...filteredProducts].sort((a, b) => {
+        switch (sortOption) {
+          case "PRICE_LOW_HIGH":
+            return a.price - b.price;
+          case "PRICE_HIGH_LOW":
+            return b.price - a.price;
+          case "ALPHA_AZ":
+            return a.product_name.localeCompare(b.product_name);
+          case "ALPHA_ZA":
+            return b.product_name.localeCompare(a.product_name);
+          case "DATE_NEW_OLD":
+            return b.id - a.id;
+          case "DATE_OLD_NEW":
+            return a.id - b.id;
+          default:
+            return 0;
+        }
+      });
 
-  const sortedProducts = [...filteredProducts].sort((a, b) => {
-    switch (sortOption) {
-      case "PRICE_LOW_HIGH": return a.price - b.price;
-      case "PRICE_HIGH_LOW": return b.price - a.price;
-      case "ALPHA_AZ": return a.name.localeCompare(b.name);
-      case "ALPHA_ZA": return b.name.localeCompare(a.name);
-      case "DATE_NEW_OLD": return b.id - a.id;
-      case "DATE_OLD_NEW": return a.id - b.id;
-      default: return 0;
-    }
-  });
 
   return (
     <div className="women-section-bg">
