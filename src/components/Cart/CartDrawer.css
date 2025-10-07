@@ -335,3 +335,15 @@
     min-width: 60px;
   }
 }
+
+@media (max-width: 1168px) {
+  .recommended-section {
+    display: none !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .cart-express-btns {
+    display: none !important;
+  }
+}
