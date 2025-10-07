@@ -1,5 +1,3 @@
-
-
 const newProducts = [
   {
     id: 1,
