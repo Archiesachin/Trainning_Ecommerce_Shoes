@@ -55,8 +55,8 @@ function Men() {
   sortOption === "FEATURED"
     ? [...filteredProducts].sort(
         (a, b) =>
-          womenProducts.findIndex(p => p.id === a.id) -
-          womenProducts.findIndex(p => p.id === b.id)
+          menProducts.findIndex(p => p.id === a.id) -
+          menProducts.findIndex(p => p.id === b.id)
       )
     : sortOption === "BESTSELLING"
     ? [...filteredProducts].sort((a, b) => {
@@ -67,7 +67,7 @@ function Men() {
         // If both are same, keep featured order
         return (
         menProducts.findIndex((p) => p.id === a.id) -
-        menProducts.findIndex((p) => p.id === b.id)
+          menProducts.findIndex((p) => p.id === b.id)
         );
       })
     : [...filteredProducts].sort((a, b) => {
