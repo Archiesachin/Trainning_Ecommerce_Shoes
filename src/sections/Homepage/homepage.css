@@ -77,13 +77,13 @@
 
 @media (max-width: 900px) {
   .hero-container {
-    height: auto;              /* Allow to shrink to content */
+    height: auto;            
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    /* Optional: add padding or margins to separate sections */
-    padding-bottom: 20px;
+    margin: auto;
+    margin-top: -92px;
+    
   }
   .slideshow-img {
     width: 100%;
@@ -114,6 +114,11 @@
     gap: 12px;
     flex-wrap: wrap;
   }
+
+   .category-container{
+    margin-top: 30px;
+   }
+
 }
 
 

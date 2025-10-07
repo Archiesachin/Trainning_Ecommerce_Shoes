@@ -63,4 +63,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media(max-width: 900px){
+    .footer{
+    width: 100%;
+  }
+
+  .footer-main{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+
+  .footer-section{
+    margin-top: 20px;
+  }
+}
+
 

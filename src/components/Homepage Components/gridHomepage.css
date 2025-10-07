@@ -189,8 +189,7 @@
     grid-auto-rows: auto;
     gap: 10px;
     width: 100%;
-    margin: 0 6px;
-    padding: 6px;
+    margin: auto;
   }
 
   .item-1,
