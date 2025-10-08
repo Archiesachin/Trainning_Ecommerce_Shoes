@@ -24,7 +24,6 @@ const womenProducts = [
       "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_LEFT__1.png",
       "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_BACK.png",
       "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_TD.png",
-      "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_SOLE.png",
       "/images/Products/A11888_25Q3_Wool-Cruiser-Terracotta-Natural-White-Sole_PDP_PAIR_3Q.png"
     ],
     description: "The Cruiser is a modern take on a classic silhouette, crafted with sustainable materials and designed for all-day comfort."

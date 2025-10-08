@@ -71,10 +71,15 @@
   .footer-main{
     display: grid;
     grid-template-columns: 1fr ;
+    justify-content: center;
   }
 
   .footer-section{
     margin-top: 20px;
+    text-align: center;
+  }
+  .input-field{
+    justify-content: center;
   }
 }
 
