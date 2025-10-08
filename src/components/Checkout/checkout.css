@@ -1,7 +1,7 @@
 
 .checkout-input-row input[placeholder="ZIP code"] {
   background: white;
-  border: 2px color black;
+  border: 2px solid #232323;
   color: #232323;
   margin-bottom: 20px;
 }
@@ -379,6 +379,87 @@
   font-weight: 700;
   font-size: 16px;
 }
+
+
+.checkout-section > .checkout-input-row + div[style*="color: red"] {
+  margin-top: -30px; /* Pull up the error message */
+  margin-bottom: 8px; /* Only a bit of space after */
+}
+
+.checkout-input-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+.checkout-input-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0; /* prevents overflow in tight layouts */
+}
+.checkout-input-col input {
+  font-size: 18px;
+  border: 2px solid #232323;
+  border-radius: 6px;
+  padding: 12px 13px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 49px; /* optional: match existing inputs */
+}
+.checkout-error {
+  color: red;
+  font-size: 0.9em;
+  min-height: 18px;
+  margin-bottom: 8px;
+  white-space: pre-line;
+}
+
+input[name="address"] {
+  margin-bottom: 6px !important;
+}
+
+input[name="zip"] {
+  margin-bottom: 6px !important; /* try 0px for the tightest spacing */
+}
+
+/* Optionally, reduce margin above the error message if needed */
+input[name="zip"] + .checkout-error {
+  margin-top: 0px !important;
+}
+
+/* Reduce gap below the First Name input field */
+input[name="firstName"] {
+  margin-bottom: 6px !important;  /* Or 0px for ultra-tight spacing */
+}
+
+/* Optionally, reduce gap above the error message */
+input[name="firstName"] + .checkout-error {
+  margin-top: 0px !important;     /* Reduces space directly above error */
+}
+
+/* Reduce gap below the First Name input field */
+input[name="lastName"] {
+  margin-bottom: 6px !important;  /* Or 0px for ultra-tight spacing */
+}
+
+/* Optionally, reduce gap above the error message */
+input[name="lastName"] + .checkout-error {
+  margin-top: 0px !important;     /* Reduces space directly above error */
+}
+
+/* Reduce gap under Name on Card input */
+input[name="nameOnCard"] {
+  margin-bottom: 6px !important; /* Or use 0px for minimal gap */
+}
+
+/* Reduce gap above Name on Card's error message */
+input[name="nameOnCard"] + .checkout-error,
+input[name="nameOnCard"] + div {
+  margin-top: 0px !important;
+}
+
 
 @media (max-width: 1100px) {
   .checkout-page {
