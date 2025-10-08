@@ -20,6 +20,41 @@
       "username": "Yashvi",
       "password": "300",
       "number": "8767222341"
+    },
+    {
+      "id": "e58c",
+      "email": "archie@gmail.com",
+      "username": "archie",
+      "password": "700",
+      "number": "1234567890"
+    },
+    {
+      "id": "f567",
+      "email": "sachin@gmail.com",
+      "username": "sachin",
+      "password": "200",
+      "number": "1234567890"
+    },
+    {
+      "id": "002d",
+      "email": "archie@gmail.com",
+      "username": "reena",
+      "password": "300",
+      "number": "1234567890"
+    },
+    {
+      "id": "0146",
+      "email": "jyoti@gmail.com",
+      "username": "jyoti",
+      "password": "400",
+      "number": "1234567890"
+    },
+    {
+      "id": "fbce",
+      "email": "reena@gmail.com",
+      "username": "Reena",
+      "password": "200",
+      "number": "1234567890"
     }
   ]
 }

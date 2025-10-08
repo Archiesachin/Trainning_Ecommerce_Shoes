@@ -106,7 +106,20 @@ const SingleProductPage = () => {
           </div>
         </div>
         <div className="product-details">
-          {/* Put more details or features here if available */}
+          <div className="product-details-card">
+            <h3>THE DETAILS</h3>
+            <p>Inspired by a classic court style, this signature shoe delivers the right balance of style and comfort. Its lightweight build and supple softness make this your new pick for life on the go.</p>
+          </div>
+
+          <div className="product-details-card">
+            <h3>MATERIALLY BETTER</h3>
+            <p>Our one-of-a-kind Tree Knit made with a TENCELTM Lyocell (tree fiber) keeps your feet feeling fresh and cool while a brand new dual-density insole - The Allbirds Featherbed-uses cushioned memory foam to deliver uncompromising comfort. Read more about our materials.</p>
+          </div>
+
+           <div className="product-details-card">
+            <h3>WASH & CARE</h3>
+            <p>This shoe is washing machine approved. Just remove the insoles and hand wash them separately to keep every step as fresh as the first.</p>
+          </div>
         </div>
       </div>
     </div>
