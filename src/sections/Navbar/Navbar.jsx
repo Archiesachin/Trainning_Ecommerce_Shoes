@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState, useEffect} from 'react'
 import { FaRegUser } from 'react-icons/fa6';
 import { BsCart3 } from 'react-icons/bs';
 import './Navbar.css'
@@ -7,6 +7,15 @@ import { useCart } from '../../context/CartContext';
 
 const Navbar = () => {
     const { openCart } = useCart();
+    const [loggedInUser, setLoggedInUser] = useState("")
+
+    useEffect(() => {
+        const user = localStorage.getItem('loggedInUser');
+        if (user) {
+            setLoggedInUser(user);
+        }
+    }, []);
+
   return (
     <nav>
         <div className="navbar">
@@ -24,7 +33,11 @@ const Navbar = () => {
             </div>
             </div>  
             <div className="nav-options">
+                {loggedInUser ? (
+                    <p>Welcome, {loggedInUser}</p>
+                ):(
                 <Link to='/signup'><FaRegUser/></Link>
+                )}
                  <BsCart3 onClick={openCart} style={{ cursor: "pointer" }} />
 
             </div>

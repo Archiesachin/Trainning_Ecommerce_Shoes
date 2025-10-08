@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { loginUser } from '../../services/userService'
 
@@ -13,7 +13,7 @@ const Login = () => {
 
    const handleLogin = async (e) => {
     e.preventDefault();
-    setError(""); // Reset error on submit
+    setError("");
 
     try {
         const result = await loginUser(username, password);
@@ -23,6 +23,8 @@ const Login = () => {
             return;
         }
 
+        localStorage.setItem('loggedInUser', username);
+
        setData(true);
         } catch (error) {
             console.log(error);
@@ -30,9 +32,14 @@ const Login = () => {
         }
     };
 
-if (data) {
-    navigate('/');
-}
+useEffect(() => {
+    if (data) {
+        navigate('/');
+        setTimeout(() => {
+            window.location.reload();
+        }, 50);
+    }
+}, [data, navigate]);
 
   return (
     <div className='form-container'>
