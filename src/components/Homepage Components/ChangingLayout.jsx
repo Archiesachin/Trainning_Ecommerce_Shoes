@@ -9,8 +9,8 @@ const themes = [
     title: "New Wool Cruiser Collection",
     description: "19 bold colors in super soft recycled Italian felt wool",
     buttons: [
-      { label: "Shop Men", link: "#" },
-      { label: "Shop Women", link: "#" }
+      { label: "Shop Men", link: "/men" },
+      { label: "Shop Women", link: "/women" }
     ],
     rightImg: "./images/homepage/carousel/Carousel-blue.png"
   },
@@ -20,8 +20,8 @@ const themes = [
     title: "New Wool Cruiser Collection",
     description: "19 bold colors in super soft recycled Italian felt wool",
     buttons: [
-      { label: "Shop Men", link: "#" },
-      { label: "Shop Women", link: "#" }
+      { label: "Shop Men", link: "/men" },
+      { label: "Shop Women", link: "/women" }
     ],
     rightImg: "./images/homepage/carousel/carousel-yellow.png"
   },
@@ -31,8 +31,8 @@ const themes = [
     title: "Tree Runner NZ",
     description: "Minimal, modern, and miraculously comfortable",
     buttons: [
-      { label: "Shop Men", link: "#" },
-      { label: "Shop Women", link: "#" }
+      { label: "Shop Men", link: "/men" },
+      { label: "Shop Women", link: "/women" }
     ],
     rightImg: "./images/homepage/carousel/carousel-grey.png"
   },
@@ -42,8 +42,8 @@ const themes = [
     title: "Tree Dasher 2",
     description: "Breathable comfort for everyday performance",
     buttons: [
-      { label: "Shop Men", link: "#" },
-      { label: "Shop Women", link: "#" }
+      { label: "Shop Men", link: "/men" },
+      { label: "Shop Women", link: "/women" }
     ],
     rightImg: "./images/homepage/carousel/Carousel-black.png"
   }

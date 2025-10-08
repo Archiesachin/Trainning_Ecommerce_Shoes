@@ -13,17 +13,7 @@ export function CartProvider({ children }) {
     } catch (e) {
       // ignore parse errors
     }
-    return [
-      {
-        id: 1,
-        image: "/images/Products/A11636_25Q3_Wool-Cruiser-Slip-On-Dark-Grey-Light-Grey-Sole_PDP_LEFT__1.png",
-        name: "WOMEN'S RUNNER NZ CORDUROY",
-        color: "Dark Tan",
-        size: "5.5",
-        price: 120,
-        quantity: 1
-      }
-    ];
+    return [];
   });
 
   useEffect(() => {
