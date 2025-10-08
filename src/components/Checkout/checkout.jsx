@@ -255,39 +255,57 @@ export default function Checkout() {
           </div>
           {errors.country && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.country}</div>}
           <div className="checkout-input-row">
-            <input
-              type="text"
-              placeholder="First name"
-              name="firstName"
-              value={form.firstName}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              placeholder="Last name"
-              name="lastName"
-              value={form.lastName}
-              onChange={handleChange}
-            />
-          </div>
-          {errors.firstName && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.firstName}</div>}
-          {errors.lastName && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.lastName}</div>}
+  <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+    <input
+      type="text"
+      placeholder="First name"
+      name="firstName"
+      value={form.firstName}
+      onChange={handleChange}
+    />
+    {errors.firstName && <div className="checkout-error">{errors.firstName}</div>}
+  </div>
+  <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+    <input
+      type="text"
+      placeholder="Last name"
+      name="lastName"
+      value={form.lastName}
+      onChange={handleChange}
+    />
+    {errors.lastName && <div className="checkout-error">{errors.lastName}</div>}
+  </div>
+</div>
+
           <div className="checkout-input-row">
-            <input
-              type="text"
-              placeholder="Company (optional)"
-              name="company"
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              placeholder="Address"
-              name="address"
-              value={form.address}
-              onChange={handleChange}
-            />
-          </div>
-          {errors.address && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.address}</div>}
+  <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+    <input
+      type="text"
+      placeholder="Company (optional)"
+      name="company"
+      value={form.company}
+      onChange={handleChange}
+    />
+    {/* Always render an error div, even if it's empty */}
+    <div className="checkout-error" style={{ visibility: errors.company ? 'visible' : 'hidden' }}>
+      {errors.company}
+    </div>
+  </div>
+  <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+    <input
+      type="text"
+      placeholder="Address"
+      name="address"
+      value={form.address}
+      onChange={handleChange}
+    />
+    {/* Same pattern for address */}
+    <div className="checkout-error" style={{ visibility: errors.address ? 'visible' : 'hidden' }}>
+      {errors.address}
+    </div>
+  </div>
+</div>
+
           <input
             type="text"
             placeholder="Apartment, suite, etc. (optional)"
@@ -295,31 +313,38 @@ export default function Checkout() {
             onChange={handleChange}
           />
           <div className="checkout-input-row">
-            <input
-              type="text"
-              placeholder="City"
-              name="city"
-              value={form.city}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              placeholder="State"
-              name="state"
-              value={form.state}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              placeholder="ZIP code"
-              name="zip"
-              value={form.zip}
-              onChange={handleChange}
-            />
-          </div>
-          {errors.city && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.city}</div>}
-          {errors.state && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.state}</div>}
-          {errors.zip && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.zip}</div>}
+  <div className="checkout-input-col">
+    <input
+      type="text"
+      placeholder="City"
+      name="city"
+      value={form.city}
+      onChange={handleChange}
+    />
+    <div className="checkout-error">{errors.city || "\u00A0"}</div>
+  </div>
+  <div className="checkout-input-col">
+    <input
+      type="text"
+      placeholder="State"
+      name="state"
+      value={form.state}
+      onChange={handleChange}
+    />
+    <div className="checkout-error">{errors.state || "\u00A0"}</div>
+  </div>
+  <div className="checkout-input-col">
+    <input
+      type="text"
+      placeholder="ZIP code"
+      name="zip"
+      value={form.zip}
+      onChange={handleChange}
+    />
+    <div className="checkout-error">{errors.zip || "\u00A0"}</div>
+  </div>
+</div>
+
           <div className="checkout-checkbox-row">
             <input type="checkbox" id="news2" />
             <label htmlFor="news2">Text me with news and offers</label>
@@ -393,23 +418,32 @@ export default function Checkout() {
               </div>
               {errors.cardNumber && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.cardNumber}</div>}
               <div className="checkout-input-row">
-                <input
-                  type="text"
-                  placeholder="Expiration date (MM / YY)"
-                  name="expDate"
-                  value={form.expDate}
-                  onChange={handleChange}
-                />
-                <input
-                  type="text"
-                  placeholder="Security code"
-                  name="secCode"
-                  value={form.secCode}
-                  onChange={handleChange}
-                />
-              </div>
-              {errors.expDate && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.expDate}</div>}
-              {errors.secCode && <div style={{ color: 'red', fontSize: '0.9em' }}>{errors.secCode}</div>}
+  <div className="checkout-input-col">
+    <input
+      type="text"
+      placeholder="Expiration date (MM / YY)"
+      name="expDate"
+      value={form.expDate}
+      onChange={handleChange}
+    />
+    <div className="checkout-error">
+      {errors.expDate || "\u00A0"}
+    </div>
+  </div>
+  <div className="checkout-input-col">
+    <input
+      type="text"
+      placeholder="Security code"
+      name="secCode"
+      value={form.secCode}
+      onChange={handleChange}
+    />
+    <div className="checkout-error">
+      {errors.secCode || "\u00A0"}
+    </div>
+  </div>
+</div>
+
               <input
                 type="text"
                 placeholder="Name on card"
