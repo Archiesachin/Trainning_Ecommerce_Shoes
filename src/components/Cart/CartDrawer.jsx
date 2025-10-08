@@ -39,6 +39,7 @@ const CartDrawer = () => {
                 <div className="cart-item-info">
                   <span>Color: {item.color}</span>
                   <span>Size: {item.size}</span>
+                   <span className="cart-item-price">Price: ${item.price}</span>
                 </div>
                 <div className="cart-item-actions">
                   <button onClick={() => decreaseQty(item.id)} aria-label={`Decrease quantity of ${item.name}`}>-</button>
@@ -47,7 +48,7 @@ const CartDrawer = () => {
                 </div>
               </div>
               <div className="cart-item-right">
-                <div className="cart-item-price">${item.price}</div>
+               
                 <button className="cart-remove-btn" onClick={() => removeFromCart(item.id)} aria-label={`Remove ${item.name}`}><FaTimes /></button>
               </div>
             </div>

@@ -6,6 +6,20 @@
       "username": "Archie",
       "password": "400",
       "number": "8767222341"
+    },
+    {
+      "id": "1654",
+      "email": "sachin@gmail.com",
+      "username": "Sachin",
+      "password": "100",
+      "number": "9322520621"
+    },
+    {
+      "id": "8b85",
+      "email": "yashvi@gmail.com",
+      "username": "Yashvi",
+      "password": "300",
+      "number": "8767222341"
     }
   ]
 }

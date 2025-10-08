@@ -122,7 +122,7 @@
 }
 .cart-item-price {
   font-weight: 500;
-  margin-left: 14px;
+  /* margin-left: 14px; */
   font-size: 15px;
 }
 .cart-remove-btn {
